@@ -1,12 +1,14 @@
 ---
 title: 'GRE备考指南'
 toc: true
+excerpt_separator: <!--more-->
 tags:
   - GRE
 ---
 
-GRE备考指南，总结了笔者的GRE备考经验
+GRE备考指南，总结了笔者的GRE备考经验。
 
+<!--more-->
 
 ## 写在前面
 
