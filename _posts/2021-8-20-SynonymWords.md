@@ -1,4 +1,9 @@
-# GRE同近义词
+---
+title: 'GRE同近义词'
+toc: true
+tags:
+  - GRE
+---
 
 ## 形容词
 
