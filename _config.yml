@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "TrueNobility303"
 title_separator          : "-"
 name                     : &name "Lesi Chen"
-description              : &description "student in School of Data Science at Fudan University"
+description              : &description "an undergraduate in School of Data Science at Fudan University"
 url                      : https://truenobility303.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "truenobility303.github.io"
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Lesi Chen"
   avatar           : "profile.png"
-  bio              : "student in School of Data Science, Fudan University"
+  bio              : "an undergraduate in School of Data Science, Fudan University"
   location         : "Shanghai"
   employer         :
   pubmed           :
