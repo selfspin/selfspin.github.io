@@ -1,13 +1,14 @@
 ---
 title: '高等线性代数精选题目'
 toc: true
+excerpt_separator: <!--more-->
 tags: 
   - 高等线性代数
 ---
 
-
-
 记录一些精妙的题目，帮助自己记忆。
+
+<!--more-->
 
 ## 题目1
 
