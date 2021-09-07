@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am currently a student in [School of Data Science](http://www.sds.fudan.edu.cn/wp/) at Fudan University. 
+Welcome! I am currently a student in [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University. 
 My research interests are mainly on Artificial Intelligence，Statistics and Algorithm.
