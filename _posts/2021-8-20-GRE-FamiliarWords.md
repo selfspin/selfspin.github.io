@@ -1,4 +1,10 @@
-# GRE熟词僻义
+---
+title: 'GRE熟词僻义'
+tags: 
+  - GRE
+---
+
+GRE熟词僻义整理
 
 wrest 抢夺，挣脱
 
