@@ -1,12 +1,10 @@
 ---
 layout: archive
-title: "Courses"
+title: "Course Projects"
 permalink: /courses/
 author_profile: true
 
 ---
-
-## Projects
 
 * [DATA130007.01-Social-Network-Mining](https://github.com/TrueNobility303/DATA130007.01-Social-Network-Mining)
 * [DATA130051.01-Computer-Vision](https://github.com/TrueNobility303/DATA130051.01-Computer-Vision)
