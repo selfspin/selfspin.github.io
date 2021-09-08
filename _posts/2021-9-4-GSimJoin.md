@@ -1,5 +1,5 @@
 ---
-title: 'GSimJoin'
+title: 'GSimJoin：Path-Based Graph Edit Distance'
 toc: true
 excerpt_separator: <!--more-->
 tags:
