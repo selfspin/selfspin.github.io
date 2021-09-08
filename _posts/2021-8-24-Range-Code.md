@@ -8,7 +8,7 @@ tags:
   - 集合求交
 ---
 
-论文阅读笔记：[**Accelerating Set Intersections over Graphs by Reducing-Merging**](https://dl.acm.org/doi/pdf/10.1145/3447548.3467219)
+论文阅读笔记：[Accelerating Set Intersections over Graphs by Reducing-Merging](https://dl.acm.org/doi/pdf/10.1145/3447548.3467219)
 
 
 
