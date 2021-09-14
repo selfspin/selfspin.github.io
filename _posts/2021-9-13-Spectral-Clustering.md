@@ -27,7 +27,7 @@ $
 \lambda_{n}(A)=\max_{x \in {C}^{n} } \frac{x^{\star} A x}{x^{\star} x}
 $
 
-定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{\star} A x}{x^{\star} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 \vert\sum_i x_i^2=1$
+定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{\star} A x}{x^{\star} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 (\text{when } \sum_i x_i^2=1)$
 
 上述是一个关于$\lambda_i$的凸组合，其最大最小值是显然的。
 
