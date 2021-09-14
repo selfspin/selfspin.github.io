@@ -25,10 +25,10 @@ $\lambda_{1}(A) \leq \lambda_{2}(A) \leq \cdots \leq \lambda_{n}(A), \quad \lamb
 
 可以得到下面的Rayleigh商公式，
 
-$\begin{array}{l}
+$
 \lambda_{1}(A)=\min _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
 \lambda_{n}(A)=\max _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}
-\end{array}$
+$
 
 定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{\star} A x}{x^{\star} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 \vert\sum_i x_i^2=1$
 
@@ -40,8 +40,8 @@ Rayleigh商公式对一般的$\lambda_i(A)$也是成立的，和所限定的子�
 
 ### Courant-Fischer 极小极大定理
 
-$\begin{aligned}\lambda_{k}(A) &=\min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
-&=\max _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=n+1-k } \min _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}\end{aligned}$
+$\begin{align}\lambda_{k}(A) &=\min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
+&=\max _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=n+1-k } \min _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}\end{align}$
 
 基于上述观察，可以直接得到如上定理，证明略，从子空间的角度出发即可。
 
@@ -95,10 +95,10 @@ $X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda
 
 改进的最小割方法定义了一个目标方程, 并在找割的过程中最小化 (或 最大化）目标函数, 以便找到一个更均衡和自然的数据分割。考虑一个图  G(V, E)  。  G  的一次分割 可记为一个  k  元组  $P=\left(P_{1}, P_{2}, P_{3}, \cdots, P_{k}\right)$ , 其中  $P i \subseteq V, \quad P_{i} \cap P_{j}=\varnothing, U_{i=1}^{k} \dot{P}_{i}=V_{\circ}$ 这样, 比例割和 归一化割的目标函数定义如下：
 
-$\begin{array}{l}
+$
 \text { 比例割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\operatorname{cut}\left(P_{i}, \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
 \text { 归一化割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\operatorname{cut}\left(P_{i}, \bar{P}_{i}\right)}{\operatorname{vol}\left(P_{i}\right)}
-\end{array}$
+$
 
 其中，  $\bar{P}_{i}=V-P_{i}$  是割集的补集，  $\operatorname{cut}\left(P_{i}, \bar{P}_{i}\right)$  是割的大小, 割集的容量为  $\operatorname{vol}\left(P_{i}\right)=\sum_{v \in P_{1}} d_{v}$ 。  这两 个目标函数通过除以割集中结点的数量或者是容量 ( 即度的总和) 进行归一化, 使得获得的社区 更加均衡。
 
@@ -108,27 +108,26 @@ $\begin{array}{l}
 
 
 
-$\begin{aligned}
+$\begin{align}
 \text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\operatorname{cut}\left(P_{i,} \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \frac{\boldsymbol{X}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}_{i}}{\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \hat{\boldsymbol{X}}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \hat{\boldsymbol{X}}_{i}
-\end{aligned}$
+\end{align}$
 
 
 
 其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /\left(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}\right)^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  \left.\operatorname{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}_{i i}\right) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min _{\hat{x}} \operatorname{Tr}\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right)$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
 
-$L=\left\{\begin{array}{ll}
-\boldsymbol{D}-\boldsymbol{A} & \text { (比例割) } \\
-\boldsymbol{I}-\boldsymbol{D}^{-1 / 2} \boldsymbol{A D}^{-1 / 2} & \text { (归一化割) }
-\end{array}\right.$
+$
+\boldsymbol{D}-\boldsymbol{A}  \text { (比例割) } \\
+\boldsymbol{I}-\boldsymbol{D}^{-1 / 2} \boldsymbol{A D}^{-1 / 2} \text { (归一化割) }
+$
 
 可以看出，无论是比例割还是归一化割, 它们的最小化问题都是NP难问题; 因此, 我们需 要使用一些具有松弛条件的近似算法。谱聚类就是这样一种松弛算法:
 
-$\begin{array}{c}
-\min _{\dot{X}} \operatorname{Tr}\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right) \\
-\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
-\end{array}$
+$
+\min _{\dot{X}} \operatorname{Tr}\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
+$
 
 
 
