@@ -11,7 +11,7 @@ tags:
 
 
 
-从特征值的变分性质出发，推导樊氏迹极小化原理，从而得到谱聚类算法的解。
+从特征值的变分性质出发，推导樊氏迹极小化原理，从而得到谱聚类。
 
 <!--more-->
 
@@ -26,11 +26,11 @@ $\lambda_{1}(A) \leq \lambda_{2}(A) \leq \cdots \leq \lambda_{n}(A), \quad \lamb
 可以得到下面的Rayleigh商公式，
 
 $\begin{array}{l}
-\lambda_{1}(A)=\min _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}=\min _{\\vertx\\vert_{2}=1} x^{\star} A x \\
-\lambda_{n}(A)=\max _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}=\max _{\\vertx\\vert_{2}=1} x^{\star} A x
+\lambda_{1}(A)=\min _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
+\lambda_{n}(A)=\max _{x \in \mathbb{C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}
 \end{array}$
 
-定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{*} A x}{x^{*} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 \vert\sum_i x_i^2=1$
+定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{\star} A x}{x^{\star} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 \vert\sum_i x_i^2=1$
 
 上述是一个关于$\lambda_i$的凸组合，其最大最小值是显然的。
 
@@ -40,8 +40,8 @@ Rayleigh商公式对一般的$\lambda_i(A)$也是成立的，和所限定的子�
 
 ### Courant-Fischer 极小极大定理
 
-$\begin{aligned}\lambda_{k}(A) &=\min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{*} A x}{x^{*} x} \\
-&=\max _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=n+1-k } \min _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{*} A x}{x^{*} x}\end{aligned}$
+$\begin{aligned}\lambda_{k}(A) &=\min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
+&=\max _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=n+1-k } \min _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}\end{aligned}$
 
 基于上述观察，可以直接得到如上定理，证明略，从子空间的角度出发即可。
 
@@ -59,7 +59,7 @@ $\lambda_{1} \leq \mu_{1} \leq \lambda_{2} \leq \mu_{2} \leq \cdots \leq \lambda
 
 证明：使用Rayleigh商表示特征值，$C$的特征向量张成的子空间为$U_C$, 由于$C$是$A$的主子阵，将$U_C$中的向量的最后一维置0，并且进行基扩充，可以张成$A$的子空间$U_A$.但这种方法张成的子空间是有限制的，前n-1个特征向量的最后一维为0.该限制导致了定理中的不等号。
 $$
-\lambda_k(A) = \min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{*} A x}{x^{*} x} \le \min _{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{*} A x}{x^{*} x} = \min _{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{*} A x}{x^{*} x} =\lambda_k(C)
+\lambda_k(A) = \min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \le \min _{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} = \min _{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} =\lambda_k(C)
 $$
 得到定理的一边，$\lambda_i(A) \le \lambda_i(C)$ 
 
@@ -70,18 +70,18 @@ $$
 - 推论: 若  $\lambda$  是  A  的  m  重特征值, 那么  $\lambda$  至少是  $C$  的m-1重特征值. 该推论直接可得。
 - 推广形式 1 : 若  C  是  A  的  n-k  阶主子阵, 那么$\lambda_{i}(A) \leq \lambda_{i}(C) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$ .证明同理。
 
-- 推广形式 2 : 若  $X \in \mathbb{C}^{n \times k}$  是某个  n  阶西矩阵的子矩阵, 即  $X^{*} X=I_{k}$ , 那 么$\lambda_{i}(A) \leq \lambda_{i}\left(X^{*} A X\right) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$。代入可得，且对$A$进行酉相似变换不改变$A$的特征值。
+- 推广形式 2 : 若  $X \in \mathbb{C}^{n \times k}$  是某个  n  阶西矩阵的子矩阵, 即  $X^{\star} X=I_{k}$ , 那 么$\lambda_{i}(A) \leq \lambda_{i}\left(X^{\star} A X\right) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$。代入可得，且对$A$进行酉相似变换不改变$A$的特征值。
 - 上述几种形式通常都称为 Cauchy 交错定理, 推广形式 2 也称为 Poincaré 隔离定理.
 
 
 
 ### 樊氏迹极小化原理
 
-$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in \mathbb{C} n \times k \atop X^{*} X=I_{k}} \operatorname{tr}\left(X^{*} A X\right)$
+$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in \mathbb{C} n \times k \atop X^{\star} X=I_{k}} \operatorname{tr}\left(X^{\star} A X\right)$
 
-证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min _{X \in \mathbb{C} n \times k \atop X^{*} X=I_{k}} \operatorname{tr}\left(X^{*} A X\right)$
+证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min _{X \in \mathbb{C} n \times k \atop X^{\star} X=I_{k}} \operatorname{tr}\left(X^{\star} A X\right)$
 
-$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in \mathbb{C} n \times k \atop X^{*} X=I_{k}} \operatorname{tr}\left(X^{*} A X\right)$
+$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in \mathbb{C} n \times k \atop X^{\star} X=I_{k}} \operatorname{tr}\left(X^{\star} A X\right)$
 
 
 
