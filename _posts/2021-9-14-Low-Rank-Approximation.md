@@ -65,8 +65,8 @@ $ \min \sum_{ij}Q_{ij}(\lambda_i(A)-\lambda_j(B))^2 = \sum_{i}(\lambda_i(A)-\lam
 
 $$
 \widetilde{A} = \left\( \begin{matrix} 
-0 & A \\\
-A^{\star} & 0 \\\
+0 & A \\
+A^{\star} & 0 \\
 \end{matrix} \right\)
 $$
 
