@@ -71,18 +71,18 @@ $$
 - 推论: 若  $\lambda$  是  A  的  m  重特征值, 那么  $\lambda$  至少是  $C$  的m-1重特征值. 该推论直接可得。
 - 推广形式 1 : 若  C  是  A  的  n-k  阶主子阵, 那么$\lambda_{i}(A) \leq \lambda_{i}(C) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$ .证明同理。
 
-- 推广形式 2 : 若  $X \in {C}^{n \times k}$  是某个  n  阶西矩阵的子矩阵, 即  $X^{\star} X=I_{k}$ , 那 么$\lambda_{i}(A) \leq \lambda_{i}\left(X^{\star} A X\right) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$。代入可得，且对$A$进行酉相似变换不改变$A$的特征值。
+- 推广形式 2 : 若  $X \in {C}^{n \times k}$  是某个  n  阶西矩阵的子矩阵, 即  $X^{\star} X=I_{k}$ , 那 么$\lambda_{i}(A) \leq \lambda_{i}(X^{\star} A X) \leq \lambda_{i+k}(A), \quad(1 \leq i \leq n-k)$。代入可得，且对$A$进行酉相似变换不改变$A$的特征值。
 - 上述几种形式通常都称为 Cauchy 交错定理, 推广形式 2 也称为 Poincaré 隔离定理.
 
 
 
 ### 樊氏迹极小化原理
 
-$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}(X^{\star} A X)$
 
-证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}(X^{\star} A X)$
 
-$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}(X^{\star} A X)$
 
 
 
@@ -94,30 +94,30 @@ $X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda
 
 首先，考虑图上的社区发现，将该任务定义为寻找图上的割，使得分割出的社区尽可能均衡。
 
-改进的最小割方法定义了一个目标方程, 并在找割的过程中最小化 (或 最大化）目标函数, 以便找到一个更均衡和自然的数据分割。考虑一个图  G(V, E)  。  G  的一次分割 可记为一个  k  元组  $P=\left(P_{1}, P_{2}, P_{3}, \cdots, P_{k}\right)$ ,  比例割和 归一化割的目标函数定义如下：
+改进的最小割方法定义了一个目标方程, 并在找割的过程中最小化 (或 最大化）目标函数, 以便找到一个更均衡和自然的数据分割。考虑一个图  G(V, E)  。  G  的一次分割 可记为一个  k  元组  $P=(P_{1}, P_{2}, P_{3}, \cdots, P_{k})$ ,  比例割和 归一化割的目标函数定义如下：
 
 $
-\text { 比例割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i}, \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
-\text { 归一化割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i}, \bar{P}_{i}\right)}{\text{vol}\left(P_{i}\right)}
+\text { 比例割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut} (P_{i}, \bar{P}_{i})}{\vert P_{i}\vert} \\
+\text { 归一化割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}(P_{i}, \bar{P}_{i})}{\text{vol}(P_{i})}
 $
 
-其中，  $\bar{P}_{i}=V - P_{i}$  是割集的补集，  $\text{cut}\left(P_{i}, \bar{P}_{i}\right)$  是割的大小, 割集的容量为  ${vol}\left(P_{i}\right)=\sum_{v \in P_{1}} d_{v}$ 。  这两 个目标函数通过除以割集中结点的数量或者是容量 ( 即度的总和) 进行归一化, 使得获得的社区 更加均衡。
+其中，  $\bar{P}_{i}=V - P_{i}$  是割集的补集，  $\text{cut}(P_{i}, \bar{P}_{i})$  是割的大小, 割集的容量为  ${vol}(P_{i})=\sum_{v \in P_{1}} d_{v}$ 。  这两 个目标函数通过除以割集中结点的数量或者是容量 ( 即度的总和) 进行归一化, 使得获得的社区 更加均衡。
 
 
 
-比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X}\_{i, j}=1$; 否则,  $\boldsymbol{X}\_{i, j}=0$  。假设  $\boldsymbol{D}={diag}\left(d_{1}, d_{2}, \cdots, d_{n}\right) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}(P_{i}, \bar{P}_{i}) $ 值。基于此, 对于比例割, 我们有
+比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X}\_{i, j}=1$; 否则,  $\boldsymbol{X}\_{i, j}=0$  。假设  $\boldsymbol{D}={diag}(d_{1}, d_{2}, \cdots, d_{n}) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}(P_{i}, \bar{P}_{i}) $ 值。基于此, 对于比例割, 我们有
 
 
 
 $\begin{align}
-\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i,} \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
+\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}(P_{i,} \bar{P}_{i})}{\vert P_{i}\vert} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \frac{\boldsymbol{X}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}_{i}}{\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \hat{\boldsymbol{X}}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \hat{\boldsymbol{X}}_{i}
 \end{align}$
 
 
 
-其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /\left(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}\right)^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}\_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  \left.{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}\_{i i}\right) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min_{\hat{x}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right)$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
+其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i})^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}\_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  .{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}\_{i i}) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min_{\hat{x}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}})$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
 
 $
 \boldsymbol{D}-\boldsymbol{A}  \text { (比例割) } \\
@@ -127,7 +127,7 @@ $
 可以看出，无论是比例割还是归一化割, 它们的最小化问题都是NP难问题; 因此, 我们需 要使用一些具有松弛条件的近似算法。谱聚类就是这样一种松弛算法:
 
 $
-\min_{\dot{X}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
+\min_{\dot{X}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
 $
 
 
