@@ -105,19 +105,19 @@ $
 
 
 
-比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X}\_{i, j}=1$; 否则,  $\boldsymbol{X}\_{i, j}=0$  。假设  $\boldsymbol{D}={diag}(d_{1}, d_{2}, \cdots, d_{n}) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}(P_{i}, \bar{P_i}) $ 值。基于此, 对于比例割, 我们有
+比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X_{ij}}=1$; 否则,  $\boldsymbol{X_{ij}}=0$  。假设  $\boldsymbol{D}={diag}(d_{1}, d_{2}, \cdots, d_{n}) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}(P_{i}, \bar{P_i}) $ 值。基于此, 对于比例割, 我们有
 
 
 
 $\begin{align}
-\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}(P_{i,} \bar{P_i})}{\vert P_{i}\vert} \\
-&=\frac{1}{k} \sum_{i=1}^{k} \frac{\boldsymbol{X}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}_{i}}{\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}} \\
+\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}(P_{i} \bar{P_i})}{\vert P_{i}\vert} \\
+&=\frac{1}{k} \sum_{i=1}^{k} \frac{\boldsymbol{X_i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X_i}}{\boldsymbol{X_i}^{\mathrm{T}} \boldsymbol{X_i}} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \hat{\boldsymbol{X}}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \hat{\boldsymbol{X}}_{i}
 \end{align}$
 
 
 
-其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i})^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}\_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  .{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}\_{i i}) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min_{\hat{x}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}})$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
+其中,  $\hat{\boldsymbol{X}_i}=\boldsymbol{X_i} /(\boldsymbol{X_i}^{\mathrm{T}} \boldsymbol{X_i})^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X_i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $( \text{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X_{ii}}}) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min_{\hat{x}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X} })$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
 
 $
 \boldsymbol{D}-\boldsymbol{A}  \text { (比例割) } \\
