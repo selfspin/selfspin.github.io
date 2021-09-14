@@ -26,8 +26,8 @@ $\lambda_{1}(A) \leq \lambda_{2}(A) \leq \cdots \leq \lambda_{n}(A), \quad \lamb
 可以得到下面的Rayleigh商公式，
 
 $
-\lambda_{1}(A)=\min _{x \in {C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
-\lambda_{n}(A)=\max _{x \in {C}^{n} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}
+\lambda_{1}(A)=\min_{x \in {C}^{n} } \frac{x^{\star} A x}{x^{\star} x} \\
+\lambda_{n}(A)=\max_{x \in {C}^{n} } \frac{x^{\star} A x}{x^{\star} x}
 $
 
 定理的证明是显然的，将$A$进行谱分解，$A=\sum_i\lambda_i q_i q_i^T,x=\sum_i x_iq_i$, 则$\frac{x^{\star} A x}{x^{\star} x}=\frac{\sum_i\lambda_ix_i^2}{\sum_i x_i^2} = \sum_i \lambda_i x_i^2 \vert\sum_i x_i^2=1$
@@ -40,8 +40,8 @@ Rayleigh商公式对一般的$\lambda_i(A)$也是成立的，和所限定的子�
 
 ### Courant-Fischer 极小极大定理
 
-$\begin{align}\lambda_{k}(A) &=\min _{\mathcal{V} \subset {C}^{n} \atop {dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \\
-&=\max _{\mathcal{V} \subset {C}^{n} \atop {dim}(\mathcal{V})=n+1-k } \min _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x}\end{align}$
+$\begin{align}\lambda_{k}(A) &=\min_{\mathcal{V} \subset {C}^{n},\text{dim}(\mathcal{V})=k} \max_{x \in \mathcal{V} } \frac{x^{\star} A x}{x^{\star} x} \\
+&=\max_{\mathcal{V} \subset {C}^{n} ,\text{dim}(\mathcal{V})=n+1-k } \min_{x \in \mathcal{V} } \frac{x^{\star} A x}{x^{\star} x}\end{align}$
 
 基于上述观察，可以直接得到如上定理，证明略，从子空间的角度出发即可。
 
@@ -59,7 +59,7 @@ $\lambda_{1} \leq \mu_{1} \leq \lambda_{2} \leq \mu_{2} \leq \cdots \leq \lambda
 
 证明：使用Rayleigh商表示特征值，$C$的特征向量张成的子空间为$U_C$, 由于$C$是$A$的主子阵，将$U_C$中的向量的最后一维置0，并且进行基扩充，可以张成$A$的子空间$U_A$.但这种方法张成的子空间是有限制的，前n-1个特征向量的最后一维为0.该限制导致了定理中的不等号。
 $$
-\lambda_k(A) = \min _{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \le \min _{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} = \min _{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} =\lambda_k(C)
+\lambda_k(A) = \min_{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \le \min_{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} = \min_{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} =\lambda_k(C)
 $$
 得到定理的一边，$\lambda_i(A) \le \lambda_i(C)$ 
 
@@ -77,11 +77,11 @@ $$
 
 ### 樊氏迹极小化原理
 
-$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
 
-证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min _{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+证明：应用Cauthy交错定理,$\lambda_i(A) \le \lambda_i(C)$，可得，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A) \le \min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
 
-$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min _{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
+$X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda_{1}(A)+\lambda_{2}(A)+\ldots+\lambda_{k}(A)=\min_{X \in {C} n \times k \atop X^{\star} X=I_{k}} {tr}\left(X^{\star} A X\right)$
 
 
 
@@ -116,7 +116,7 @@ $\begin{align}
 
 
 
-其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /\left(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}\right)^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  \left.{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}_{i i}\right) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min _{\hat{x}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right)$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
+其中,  $\hat{\boldsymbol{X}}_{i}=\boldsymbol{X}_{i} /\left(\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}\right)^{1 / 2} $ 。可以采用相似的方法对归一化割进行公式化表示，并获得一个不同 的  $\hat{X}_{i}$  。为了在比例割和归一化割中用同样的公式化表示求和, 我们可以使用矩阵迹 $(  \left.{tr}(\hat{\boldsymbol{X}})=\sum_{i=1}^{n} \hat{\boldsymbol{X}}_{i i}\right) $ 。基于矩阵迹, 比例割和归一化割的目标函数可以表示为最小迹问题：$\min_{\hat{x}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right)$ 其中，  L  是（归一化的）图的拉普拉斯算子（graph Laplacian ）：
 
 $
 \boldsymbol{D}-\boldsymbol{A}  \text { (比例割) } \\
@@ -126,7 +126,7 @@ $
 可以看出，无论是比例割还是归一化割, 它们的最小化问题都是NP难问题; 因此, 我们需 要使用一些具有松弛条件的近似算法。谱聚类就是这样一种松弛算法:
 
 $
-\min _{\dot{X}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
+\min_{\dot{X}} Tr\left(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}\right),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
 $
 
 
