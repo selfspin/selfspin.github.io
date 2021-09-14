@@ -63,12 +63,9 @@ $ \min \sum_{ij}Q_{ij}(\lambda_i(A)-\lambda_j(B))^2 = \sum_{i}(\lambda_i(A)-\lam
 
 根据特征值和奇异值的关系，可以将上述两个不等式应用到一般的矩阵$A$上，只需要定义
 
-$$
-\widetilde{A} = \left\( \begin{matrix} 
-0 & A \\
-A^{\star} & 0 \\
-\end{matrix} \right\)
-$$
+$
+\widetilde{A} = (0 A; A^{\star} 0)
+$
 
 则上述矩阵为Hermite矩阵，其其特征值由$A$的特征值或特征值的相反数组成，应用上述不等式得到，
 
