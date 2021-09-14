@@ -104,22 +104,14 @@ $ \text{minimize } \sum_{i=1}^{k} \frac{\text{cut} (P_{i}, \bar{P_i})}{\text{vol
 
 应用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X_{ij}}=1$; 否则,  $\boldsymbol{X_{ij}}=0$  。假设  $\boldsymbol{D}={diag}(d_{1}, d_{2}, \cdots, d_{n}) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}(P_{i}, \bar{P_i}) $ 值。基于此, 
 
+$\text{minimize }  \sum_{i=1}^{k} \frac{\text{cut} (P_{i}, \bar{P_i})}{\text{vol}(P_i)} = \text{minimize } \frac{\text{tr}(X^T (D-A)X)}{\text{tr}(X^T D X)}$.
 
-$$
-\begin{align}
-
-\text{minimize } & \sum_{i=1}^{k} \frac{\text{cut} (P_{i}, \bar{P_i})}{\text{vol}(P_i)} = \text{minimize } \frac{\text{tr}(X^T (D-A)X)}{\text{tr}(X^T D X)}
-
-\end{align}
-$$
-
-
-令$L = I - D^{-1/2} A D^{-1/2}$ 并进行换元，得到$\min_{\dot{X}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}})$
+令$L = I - D^{-1/2} A D^{-1/2}$ 并进行换元，得到$\min Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}})$
 
 上述最小化问题都是NP难问题; 因此, 我们需要使用一些具有松弛条件的近似算法。谱聚类就是这样一种松弛算法:
 
 $
-\min_{\dot{X}} Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
+\min Tr(\hat{\boldsymbol{X}}^{\mathrm{T}} L \hat{\boldsymbol{X}}),\hat{\boldsymbol{X}}^{\mathrm{T}} \hat{\boldsymbol{X}}=I_{k}
 $
 
 经过上述松弛转化为樊氏迹极小化问题，取前k个特征向量和特征值即可。
