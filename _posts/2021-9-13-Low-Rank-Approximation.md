@@ -49,7 +49,7 @@ $\sum_k \vert \lambda_k(A) - \lambda_k(B)^2 \vert \le \Vert A-B \Vert_F^2$
 $\Vert A-B\Vert_F^2 = \Vert U^TAU-V^T B V \Vert_F=\Vert V U^TA- B V U^T \Vert_F^2 = \sum_{ij} w_{ij}^2(\lambda_i(A) -\lambda_j(B))^2=\sum_{ij}P_{ij}(\lambda_i(A) -\lambda_j(B))^2$
 $\text{Let }W=VU^T, P_{ij} = W_{ij}^2$
 
-且可知$P$是一个双随机矩阵，且由著名的Birkhoff 定理，双随机矩阵是有限个排列阵的凸组合，则下式在一个凸顶点处取得最小值
+且可知$P$是一个双随机矩阵，且由著名的Birkhoff 定理，双随机矩阵是有限个排列阵的凸组合，则下式在一个凸顶点处取得下界
 
 $ \min \Vert A-B \Vert_F^2 \ge \min \sum_{ij}Q_{ij}(\lambda_i(A)-\lambda_j(B))^2$
 
