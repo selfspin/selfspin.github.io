@@ -18,13 +18,9 @@ tags:
 
 
 
-本小节假定 $A, B \in {C}^{n \times n}$  都是 Hermite 矩阵, 并且它们的特征值按照升序排列, 即
+本小节假定 $A, B \in {C}^{n \times n}$  都是 Hermite 矩阵, 并且它们的特征值按照升序排列, 即$\lambda_{1}(A) \leq \lambda_{2}(A) \leq \cdots \leq \lambda_{n}(A), \quad \lambda_{1}(B) \leq \lambda_{2}(B) \leq \cdots \leq \lambda_{n}(B)$
 
 ### Rayleigh商定理
-
-$\lambda_{1}(A) \leq \lambda_{2}(A) \leq \cdots \leq \lambda_{n}(A), \quad \lambda_{1}(B) \leq \lambda_{2}(B) \leq \cdots \leq \lambda_{n}(B)$
-
-可以得到下面的Rayleigh商公式，
 
 $
 \lambda_{1}(A)=\min_{x \in {C}^{n} } \frac{x^{\star} A x}{x^{\star} x} \\
