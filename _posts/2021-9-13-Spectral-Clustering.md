@@ -59,7 +59,7 @@ $\lambda_{1} \leq \mu_{1} \leq \lambda_{2} \leq \mu_{2} \leq \cdots \leq \lambda
 
 证明：使用Rayleigh商表示特征值，$C$的特征向量张成的子空间为$U_C$, 由于$C$是$A$的主子阵，将$U_C$中的向量的最后一维置0，并且进行基扩充，可以张成$A$的子空间$U_A$.但这种方法张成的子空间是有限制的，前n-1个特征向量的最后一维为0.该限制导致了定理中的不等号。
 $$
-\lambda_k(A) = \min_{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \le \min_{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} = \min_{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} =\lambda_k(C)
+\lambda_k(A) = \min_{\mathcal{V} \subset \mathbb{C}^{n} \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} \le \min_{\mathcal{V} =U_A   \atop \operatorname{dim}(\mathcal{V})=k} \max _{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} = \min_{\mathcal{V} =U_C   \atop \operatorname{dim}(\mathcal{V})=k} \max_{x \in \mathcal{V} \backslash\{0\}} \frac{x^{\star} A x}{x^{\star} x} =\lambda_k(C)
 $$
 得到定理的一边，$\lambda_i(A) \le \lambda_i(C)$ 
 
