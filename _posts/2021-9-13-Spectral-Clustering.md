@@ -96,20 +96,20 @@ $X$取为$A$前$k$个正交特征向量，得到取等条件，因此，$\lambda
 改进的最小割方法定义了一个目标方程, 并在找割的过程中最小化 (或 最大化）目标函数, 以便找到一个更均衡和自然的数据分割。考虑一个图  G(V, E)  。  G  的一次分割 可记为一个  k  元组  $P=\left(P_{1}, P_{2}, P_{3}, \cdots, P_{k}\right)$ , 其中  $P i \subseteq V, \quad P_{i} \cap P_{j}=\varnothing, U_{i=1}^{k} \dot{P}_{i}=V_{\circ}$ 这样, 比例割和 归一化割的目标函数定义如下：
 
 $
-\text { 比例割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{{cut}\left(P_{i}, \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
-\text { 归一化割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{{cut}\left(P_{i}, \bar{P}_{i}\right)}{{vol}\left(P_{i}\right)}
+\text { 比例割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i}, \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
+\text { 归一化割 }(P)=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i}, \bar{P}_{i}\right)}{{vol}\left(P_{i}\right)}
 $
 
-其中，  $\bar{P}_{i}=V \- P_{i}$  是割集的补集，  $cut\left(P_{i}, \bar{P}\_{i}\right)$  是割的大小, 割集的容量为  ${vol}\left(P_{i}\right)=\sum_{v \in P_{1}} d_{v}$ 。  这两 个目标函数通过除以割集中结点的数量或者是容量 ( 即度的总和) 进行归一化, 使得获得的社区 更加均衡。
+其中，  $\bar{P}\_{i}=V \- P_{i}$  是割集的补集，  $\text{cut}\left(P_{i}, \bar{P}\_{i}\right)$  是割的大小, 割集的容量为  ${vol}\left(P_{i}\right)=\sum_{v \in P_{1}} d_{v}$ 。  这两 个目标函数通过除以割集中结点的数量或者是容量 ( 即度的总和) 进行归一化, 使得获得的社区 更加均衡。
 
 
 
-比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X}_{i, j}=1$; 否则,  $\boldsymbol{X}_{i, j}=0$  。假设  $\boldsymbol{D}={diag}\left(d_{1}, d_{2}, \cdots, d_{n}\right) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  ${cut}\left(P_{i}, \bar{P}\_{i}\right) $ 值。基于此, 对于比例割, 我们有
+比例割和归一化割都可以用矩阵的形式进行公式化表示。假设矩阵  $\boldsymbol{X} \in\{0,1\}^{\vert\eta\vert \times k}$  代表社区关 系矩阵，其中如果结点在社区  j  中, 则  $\boldsymbol{X}\_{i, j}=1$; 否则,  $\boldsymbol{X}\_{i, j}=0$  。假设  $\boldsymbol{D}={diag}\left(d_{1}, d_{2}, \cdots, d_{n}\right) $ 代表 对角度矩阵。那么矩阵  $\boldsymbol{X}^{\mathrm{T}} \boldsymbol{A X}$  对角线上的第  i  个元素代表社区i内部的边的数量。类似地, 矩阵  $\boldsymbol{X}^{\mathrm{T}} A \boldsymbol{X} $ 对角线上的第  i  个元素代表了与社区i的成员相连的边的数量。因此, 矩阵  $\boldsymbol{X}^{\top}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}$  对 角线上的第  i  个元素代表了将社区  i  从其他结点分割开的割的边的数目。事实上,  $\boldsymbol{X}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X} $ 对 角线上的第  i  个元素即为比例割和归一化割中的  $\text{cut}\left(P_{i}, \bar{P}\_{i}\right) $ 值。基于此, 对于比例割, 我们有
 
 
 
 $\begin{align}
-\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{{cut}\left(P_{i,} \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
+\text {比例割}(P) &=\frac{1}{k} \sum_{i=1}^{k} \frac{\text{cut}\left(P_{i,} \bar{P}_{i}\right)}{\vert P_{i}\vert} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \frac{\boldsymbol{X}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \boldsymbol{X}_{i}}{\boldsymbol{X}_{i}^{\mathrm{T}} \boldsymbol{X}_{i}} \\
 &=\frac{1}{k} \sum_{i=1}^{k} \hat{\boldsymbol{X}}_{i}^{\mathrm{T}}(\boldsymbol{D}-\boldsymbol{A}) \hat{\boldsymbol{X}}_{i}
 \end{align}$
