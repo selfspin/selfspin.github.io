@@ -96,6 +96,6 @@ $\min \Vert A-B \Vert_2^2 = \sigma_k^2(A)$
 
 Kehan公式衡量的是一个矩阵$A$距离一个奇异矩阵的距离，
 
-$\left\{\Vert E \Vert_2:\text{det }(A+E)=0\right\}=\sigma_1(A)$
+${\min \Vert E \Vert_2:\text{det }(A+E)=0} = \sigma_1(A)$
 
 根据最佳低秩逼近理论，矩阵到奇异矩阵的最小距离就是其最小的奇异值，得证。
