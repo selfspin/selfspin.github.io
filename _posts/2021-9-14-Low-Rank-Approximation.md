@@ -4,9 +4,12 @@ toc: true
 excerpt_separator: <!--more-->
 tags:
   - 高等线性代数
+
 ---
 
 
+
+从Hermite矩阵的特征值不等式出发，利用奇异值推广到一般矩阵，得到最佳低秩逼近定理。
 
 <!--more-->
 
