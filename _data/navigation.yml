@@ -4,4 +4,6 @@ main:
     url: /courses/
   - title: "Blogs"
     url: /posts/
-  
+    
+  - title: "CV"
+    url: /CV/
