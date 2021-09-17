@@ -69,7 +69,7 @@ tags:
 
 ![img](/images/posts/AdvanceAgreProblem.assets/clip_image014.gif)
 
-证法2： 利用 Weyl 不等式， 拆分矩阵为对角元和非对角元。
+证法2： 利用 Weyl 不等式， 拆分矩阵为对角元和非对角元，但Weyl不等式只对Hermit矩阵成立。
 
 ![img](/images/posts/AdvanceAgreProblem.assets/clip_image016.gif)
 
