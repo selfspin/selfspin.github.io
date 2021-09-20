@@ -107,7 +107,6 @@ $Y$同样符合正态分布，因此,$E[e^{iY}]=e^{E[Y]-D[Y]^2/2}=e^{\sum_i \mu_
 因此，$E[(n-1)S^2] =E[\sum_i(X_i-\bar{X})^2]=(n-1)\sigma^2,E[S^2] = \sigma^2$
 
 
-
 只需要证明，$Cov[X_i- \bar{X},\bar{X}]=0$, 证明较为简单，
 
 $X_i - \bar{X} = \sum_k I[k=i] - X_k /n$, $\bar{X} = \sum_k X_k /n$
@@ -116,6 +115,17 @@ $X_i - \bar{X} = \sum_k I[k=i] - X_k /n$, $\bar{X} = \sum_k X_k /n$
 
 又根据性质1.2，正态分布不相关即为独立，因此$S$与$\bar{X}$也独立。
 
+另一种证明的方法是构造正交变换矩阵，首先对于$ X \sim N(\mu, \sigma^2 I)$, 
+
+构造一个正交矩阵，可以使得 $Y = AX, Y \sim N(A \mu, \sigma^2 I)$
+
+这个正交矩阵还应该满足，$Y_1^2 = n \bar{X}^2$ ,根据基扩充定理，容易知道这样的正交矩阵$A$是存在的。
+
+此时根据正交矩阵不改变范数，又有$\sum_i Y_i^2 = \sum_i X_i^2$, 因此，
+
+$S^2 = \sum_i (X_i - \bar{X})^2 = \sum_i X_i^2 - n \bar{X}^2 = \sum_{i=2}^n Y_i^2$
+
+又因为$Y_i$相互独立，而且$\bar X$只依赖于$Y_1$ , 而$S^2$只依赖于$Y_2...Y_n$，因此这两者也相互独立。
 
 
 ### 卡方分布
@@ -128,7 +138,7 @@ $X_i - \bar{X} = \sum_k I[k=i] - X_k /n$, $\bar{X} = \sum_k X_k /n$
 
 **性质2.2 $(n-1)S^2 / \sigma^2 \sim \chi(n-1)$**
 
-根据$(n-1)S= \sum_i(X_i-\mu)^2-((\bar{X}-\mu) / \sqrt{n})^2 $
+根据上述利用正交变换对正态分布的样本均值和样本方差的独立性的证明，
 
 可以发现,$(n-1)S^2 / \sigma^2 \sim \chi(n-1)$
  
