@@ -31,13 +31,13 @@ RangeCode旨在加速图上的邻居集合求交操作（set intersection on gra
 
 
 
-#### 1.1 Problem of Set Intersection
+**1.1 Problem of Set Intersection**
 
 给定两个结点$u,v$, 其邻居$N(u),N(v)$ 构成了两个集合$S_a,S_b$, 求解$S=S_a \cap S_b$ .（集合元素已经有序）
 
 
 
-#### 1.2 Naive Method
+**1.2 Naive Method**
 
 最简单的方法是遍历$S_a,S_b$中的每个元素，然后将相同的元素加入到$S$中。
 
@@ -47,7 +47,7 @@ RangeCode旨在加速图上的邻居集合求交操作（set intersection on gra
 
 
 
-#### 1.3 Reduce-Merge Method
+**1.3 Reduce-Merge Method**
 
 Reduce-Merge框架在Merge步之前加入Recuce步，进行简单的剪枝。
 
@@ -59,7 +59,7 @@ Reduce操作之后将获得更小的$S_a',S_b'$ 集合，之后再使用Merge操
 
 
 
-#### 1.4 Time Complexity
+**1.4 Time Complexity**
 
 时间复杂度为$O(log(\vert S_a \vert) + log(\vert S_b \vert ) +\vert S_a' \vert+\vert S_b' \vert)$.
 
@@ -69,7 +69,7 @@ Reduce操作之后将获得更小的$S_a',S_b'$ 集合，之后再使用Merge操
 
 
 
-#### 2.1 Range Code Optimization 
+**2.1 Range Code Optimization**
 
 由于Reduce操作中用到了集合元素的Range，而Range来自元素的id，因此不同的id标记方法（Range Code）会造成不同的效果。
 
@@ -87,7 +87,7 @@ $$
 
 
 
-#### 2.2 NP-Hard 
+**2.2 NP-Hard**
 
 上述最优编码问题是NP-Hard的。
 
@@ -136,7 +136,7 @@ $$
 
 ## Global Range Code 
 
-#### 3.1 Divide into Part1 and Part2
+**3.1 Divide into Part1 and Part2**
 
 全局Range Code为较简单的形式，也即求解问题:$$ \min_f \sum_{u,v \in V} L(u \vert v) + L(v \vert u)$$
 
@@ -156,7 +156,7 @@ $$
 
 
 
-#### 3.2 Computation of Part1
+**3.2 Computation of Part1**
 
 考虑Part1，也即Range包含了$h$的结点个数，有两种可能：
 
@@ -182,8 +182,7 @@ $$
 其中，$C(x)$表示图中$h \in [l,r]$ 的结点个数（包括$h$), $C'(h)$表示满足$h \in [l,r]$ 的$x$的邻居结点个数
 
 
-
-#### 3.3 Acceleration for Computation of Part1
+**3.3 Acceleration for Computation of Part1**
 
 使用前缀和的思想，可以减少时间复杂度，记$h \in [l,r]$ 的结点个数为$C(h)$
 
@@ -201,7 +200,7 @@ $$
 
 
 
-#### 3.4 Boundary of h
+**3.4 Boundary of h**
 
 尽管使用递推代替枚举可以减小复杂度，但当$h \in [-\infty,\infty]$ 的时候，搜索代价过大。因此，需要对$h$有一个更紧地上界：
 
@@ -211,7 +210,7 @@ $$
 
 
 
-#### 3.5 Computation of Part2
+**3.5 Computation of Part2**
 
 Part2的代价来自于$h$给结点$u$带来的Range的扩展，此时所有值在$[r+1,h] \text{ or } [h,l-1]$  中的结点都将贡献1的代价，因此只需统计该结点数即可。同样类似前缀和的思想，可以在$O(R+d)$时间内计算。
 
