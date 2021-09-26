@@ -33,7 +33,7 @@ tags:
 
 几乎处处收敛本质上为给定了一个数列后的数列收敛性。
 
-用分析的语言表述为，$\forall \epsilon>0, \exist n, \forall k >n, \vert X_k- X \vert < \epsilon$，该事件发生的概率为1.
+用分析的语言表述为，$\forall \epsilon>0, \exists n, \forall k >n, \vert X_k- X \vert < \epsilon$，该事件发生的概率为1.
 
 令$n \rightarrow \infty$, $\forall \epsilon > 0, P(\cap_{k=n}^{\infty} \vert X_k -X \vert < \epsilon) = 1$
 
