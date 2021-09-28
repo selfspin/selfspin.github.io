@@ -145,6 +145,8 @@ $$
 
 证明细节暂略，直观上来说，根据随机矩阵理论，此时转移矩阵的极限矩阵趋近于秩一矩阵，$\lim_{n \rightarrow \infty} P_{ij}^{(n)} = \mu_j = \pi_j$
 
+这其实是个Perron投影，随机矩阵必有右特征向量$P e = e$, 且有左特征向量$\pi^T P = \pi^T$, 则 $\lim_{n \rightarrow \infty} P = \pi e^T$
+
 
 
 ## Reversible Markov Chain
