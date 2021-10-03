@@ -16,7 +16,7 @@ tags:
 
 ## Definition
 
-* 依概率收敛($p$)，$\lim P(X = X_n) = 1$ 
+* 依概率收敛($p$)，$\lim P(X_n = X) = 1$ 
 * 几乎处处收敛($a.s.$)，$P(\lim X_n = X ) = 1$
 * 依分布收敛($d$)，$\lim F_n(x) = F(x)$
 * 依范数收敛($L_p$)，$\lim E[X-X_n]^p = 0$
