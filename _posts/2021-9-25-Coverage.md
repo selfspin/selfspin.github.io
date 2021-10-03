@@ -43,9 +43,7 @@ tags:
 
 也即，几乎处处收敛蕴含了依概率收敛。
 
-利用上述的证明过程，也可以给出几乎处处收敛的一个充要条件:
-
-$ \sum_{n=1}^{\infty} P(\vert X - X_n \vert > \epsilon) < \infty $
+利用上述的证明过程，也可以给出几乎处处收敛的一个充要条件: $ \sum_{n=1}^{\infty} P(\vert X - X_n \vert > \epsilon) < \infty $
 
 ### $L_p \rightarrow p$
 
