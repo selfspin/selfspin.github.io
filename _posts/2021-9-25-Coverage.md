@@ -61,7 +61,7 @@ $F_n(x) = P(X_n \le x) = P(X_n \le x, X \le x+\epsilon)+P(X_n \le x, X > x+\epsi
 
 类似地，$F(x - \epsilon) \le F_n(x) + P(\vert X -X_n \vert > \epsilon)$
 
-合并两式可得，$F(x-\epsilon) + P(\vert X - X_n \vert > \epsilon) \le F_n(x) \le F(x+\epsilon) +P(\vert X - X_n \vert > \epsilon)$
+合并两式可得，$F(x-\epsilon) - P(\vert X - X_n \vert > \epsilon) \le F_n(x) \le F(x+\epsilon) +P(\vert X - X_n \vert > \epsilon)$
 
 利用分布函数$F(x)$的连续性以及极限的夹逼定理可以得到，$F_n(x) \rightarrow F(x)$.
 
