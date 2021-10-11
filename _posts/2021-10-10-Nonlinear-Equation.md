@@ -165,9 +165,7 @@ Secant方法的核心是将Newton法中的一阶微分用一阶差分代替：
 
 $$
 \begin{align}
-
 \text{Since } f'(x_k) &\approx \frac{f(x_k)-f(x_{k-1})}{x_k - x_{k-1}} \\
-
 \text{Let } x_{k+1}& = x_k - \frac{f(x_k)(x_k - x_{k-1})}{f(x_k)-f(x_{k-1})} \\
 \end{align}
 $$
@@ -310,17 +308,12 @@ $$
 
 $$
 \begin{align}
-
 x_{k+1} &= x_k - J_k^{-1} f(x_k) \\
 \text{With }J_k^{-1} &= J_{k-1}^{-1} + (\Delta x_k - J_{k-1}^{-1} \Delta f_k) \frac{\Delta f_k^T}{\Delta f_k^T \Delta f_k} \\
 \Delta x_k & = x_k - x_{k-1}, \Delta f_k = f(x_k) - f(x_{k-1}) \\
-
 \end{align}
 $$
 
-$$
-
-$$
 
 
 
