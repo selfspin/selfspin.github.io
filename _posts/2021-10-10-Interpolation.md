@@ -321,7 +321,11 @@ $$
 
 下面我们证明由Chebshev多项式给出的上述$\Vert \prod_j^n (x-x_j) \Vert_{\infty} $的界是最小的界，
 
-假设存在其他某些插值结点插值而成的$n$阶首一多项式$p(x) = \prod_j^n (x-x_j)$ 有更小的界,也即 $\Vert \prod_j^n (x-x_j) \Vert_{\infty} < \frac{1}{2^{n-1}}$
+假设存在其他某些插值结点插值而成的$n$阶首一多项式$p(x) = \prod_j^n (x-x_j)$ 有更小的界,也即 
+
+$$
+\Vert \prod_j^n (x-x_j) \Vert_{\infty} < \frac{1}{2^{n-1}}
+$$
 
 构造函数$g(x) = p(x) - \frac{T_n(x)}{2^{n-1}}$ ,且已知Chebyshev多项式在$x_j = \cos \frac{j}{n} \pi$ 这些结点上取到极值，在这些极值点上，有
 
