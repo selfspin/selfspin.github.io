@@ -298,7 +298,7 @@ $$
 
 此时定义，$r_k = \Delta x_k - J_{k-1}^{-1} \Delta f_k$,类似Good Broyden方法中的推导，$\Delta J \Delta f_k = r_k \\$。
 
-再根据最小化$\Vert \Delta J \Vert_F $的条件，同样类似地可以得到，$\Delta J = \frac{r_k \Delta f_k^T}{\Delta f_k^T \Delta f_k}$
+再根据最小化$\Vert \Delta J \Vert_F$的条件，同样类似地可以得到，$\Delta J = \frac{r_k \Delta f_k^T}{\Delta f_k^T \Delta f_k}$
 
 综上得到，最终迭代公式为，
 
