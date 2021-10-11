@@ -1,8 +1,8 @@
 ---
-title:'非线性方程组的解法'
+title: '非线性方程组的解法'
 toc: true
 excerpt_separator: <!--more-->
-tags:
+tags: 		
   - 数值算法
 ---
 
