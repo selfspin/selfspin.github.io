@@ -261,7 +261,6 @@ $$
 
 $$
 \begin{align}
-
 J_k^{-1} &= (J_{k-1} + (\Delta f_k - \Delta J_{k-1} \Delta x_k) \frac{\Delta x_k^T}{\Delta x_k^T \Delta x_k})^{-1} \\
 &= J_{k-1}^{-1}- \frac{J_{k-1}^{-1} (\Delta f_k - \Delta J_{k-1} \Delta x_k)  \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T \Delta x_k+ \Delta x_k^T J_{k-1}^{-1}(\Delta f_k - \Delta J_{k-1} \Delta x_k)} \\
 &= J_{k-1}^{-1} + \frac{(\Delta x_k - J_{k-1}^{-1} \Delta f_k) \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T J_{k-1}^{-1}\Delta f_k}
@@ -274,11 +273,9 @@ $$
 
 $$
 \begin{align}
-
 x_{k+1} &= x_k - J_k^{-1} f(x_k) \\
 \text{With }J_k^{-1} &= J_{k-1}^{-1} + \frac{(\Delta x_k - J_{k-1}^{-1} \Delta f_k) \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T J_{k-1}^{-1}\Delta f_k} \\
 \Delta x_k & = x_k - x_{k-1}, \Delta f_k = f(x_k) - f(x_{k-1}) \\
-
 \end{align}
 $$
 
