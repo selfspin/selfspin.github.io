@@ -1,5 +1,5 @@
 ---
-title: '插值'
+title: '函数的插值'
 toc: true
 excerpt_separator: <!--more-->
 tags: 		
