@@ -105,7 +105,7 @@ $\sigma_1(A) ={\min \Vert E \Vert_2:\text{det }(A+E)=0} $
 
 主成分分析，用于数据降维，目标是选择投影矩阵$Q_k$,最小化数据$X$投影后产生的误差，投影后的空间即为降维后的子空间。
 
-$ \text{min } \Vert A - Q Q^T A \Vert_F = \sum_{i=1}^k \sigma_i$
+$ \text{min } \Vert A -  A Q Q^T\Vert_F = \sum_{i=1}^k \sigma_i$
 
 根据最佳低秩逼近，只需取$Q$为前k个奇异向量，上面的式子可以取到最小值。
 
