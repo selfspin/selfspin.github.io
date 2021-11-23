@@ -89,7 +89,7 @@ $$
 
 当$g(x)$满足一些额外条件时，通常可以在局部得到更高阶的收敛性，例如:
 
-当$g'(x_{\star}) = 0$的时候，不动点迭代法满足局部二次收敛（Quadratic Coverage）,证明在$x_{\star}$的领域使用Taylor展开即可，
+当$g'(x_{\star}) = 0$的时候，不动点迭代法满足局部二次收敛（Quadratic Coverage）,证明在$x_{\star}$的邻域使用Taylor展开即可，
 
 
 
