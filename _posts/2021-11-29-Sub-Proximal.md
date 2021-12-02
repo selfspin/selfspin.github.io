@@ -213,8 +213,7 @@ f(x_{k+1}) - f(x_{\star}) &\le \frac{1}{k} \sum_{i=1}^k f(x_{i+1}) - f(x_i) \\
 $$
 
 
-算法在$O(\frac{1}{\epsilon})$的时间内给出了$\epsilon$-最优解，再考虑距离最优点的距离， 并且算法也是线性收敛的，
-
+算法在$O(\frac{1}{\epsilon})$的时间内给出了$\epsilon$-最优解，再考虑距离最优点的距离是线性收敛的，
 
 $$
 \begin{align}
