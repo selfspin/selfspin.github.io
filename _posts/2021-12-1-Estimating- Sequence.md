@@ -1,5 +1,5 @@
 ---
-title: 'Neterov加速方法与估计序列'
+title: '从估计序列看Neterov加速方法'
 toc: true
 excerpt_separator: <!--more-->
 tags:
