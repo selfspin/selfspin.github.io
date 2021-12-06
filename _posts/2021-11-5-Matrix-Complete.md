@@ -38,12 +38,13 @@ $$
 
 
 **Example1** $f(X) = tr(X^T A) = \langle X,A \rangle$
+
 $$
 \begin{align}
 \lim_{t \rightarrow 0} \frac{f(X+tY)- f(X)}{t} &= \lim_{t \rightarrow 0} \frac{\langle tY,A \rangle}{t} = \langle Y,A \rangle  \\
-
 \end{align}
 $$
+
 因此，$\nabla f(X) = A$
 
 
