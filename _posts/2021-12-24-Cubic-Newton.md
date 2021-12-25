@@ -241,7 +241,7 @@ $$
 $$
 \begin{align}
 \mu_M(x) &= \max[\sqrt{\frac{2}{L+M} \Vert \nabla f(x) \Vert} , -\frac{2}{2L+M} \lambda_{\min}(\nabla^2 f(x))] \\
-\mu_M(T_M(x)) \le r_M(x)
+\mu_M(T_M(x)) &\le r_M(x)
 \end{align}
 $$
 
