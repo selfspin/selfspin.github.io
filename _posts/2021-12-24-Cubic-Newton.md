@@ -186,7 +186,7 @@ $$
 
 $$
 \begin{align}
-\bar f_M(y) &= \min_y [f(x) + \langle \nabla f(x) , y-x \rangle +\frac{1}{2} \langle \nabla^2 f(x) (y-x) , y-x \rangle + \frac{M}{6} \Vert y - x \Vert^3] \\ 
+\bar f_M(x) &= \min_y [f(x) + \langle \nabla f(x) , y-x \rangle +\frac{1}{2} \langle \nabla^2 f(x) (y-x) , y-x \rangle + \frac{M}{6} \Vert y - x \Vert^3] \\ 
 &\le \min_y [f(y) + \frac{L+M}{6} \Vert y-x \Vert^3] \\
 \bar f_M(x)-f(x) &= \langle \nabla f(x) , T_M(x)-x \rangle  +\frac{1}{2} \langle \nabla^2 f(x) (T_M(x)-x) , T_M(x)-x \rangle + \frac{M}{6} r_M(x)^3  \\
 &= \frac{1}{2}\langle \nabla f(x) , T_M(x)-x \rangle - \frac{M}{12} r_M(x)^3 \\
