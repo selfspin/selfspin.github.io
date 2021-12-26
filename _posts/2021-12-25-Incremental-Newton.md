@@ -2,10 +2,9 @@
 title: '增量式牛顿算法'
 toc: true
 excerpt_separator: <!--more-->
-tags
+tags:
   - 优化
 ---
-
 
 
 论文阅读笔记：[A Newton-type Incremental Method with a Superlinear Convergence Rate](http://opt-ml.org/oldopt/papers/OPT2015_paper_16.pdf)
