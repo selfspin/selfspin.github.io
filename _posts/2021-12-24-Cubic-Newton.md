@@ -254,8 +254,6 @@ $$
 f(x_0) - f(x_{\star}) &= \sum_{i=0}^{k-1} f(x_i) - f(x_{i+1}) \\
 &\ge \frac{\min M}{12}\sum_{i=0}^{k-1} r_M(x_i)^3 \\
 &\ge \frac{L}{12}\sum_{i=0}^{k-1} \mu_M(x_{i+1})^3 \\
-&\ge \frac{3L}{16}\sum_{i=0}^{k-1} \mu_L(x_{i+1})^3 \\
-&\ge \frac{3kL}{16} \min_k\mu_L(x_{k})^3 \\
 \end{align}
 $$
 
@@ -265,8 +263,8 @@ $$
 
 $$
 \begin{align}
-\min_k \mu_L(x_k) &\le (\frac{16(f(x_0) - f(x_{\star}))}{3kL})^{\frac{1}{3}}  \\
-\min_k \Vert \nabla f(x_k) \Vert &\le (\frac{8(L+M)(f(x_0) - f(x_{\star}))}{3kL})^{\frac{2}{3}} 
+\min_k \mu_L(x_k) &\le (\frac{12(f(x_0) - f(x_{\star}))}{kL})^{\frac{1}{3}}  \\
+\min_k \Vert \nabla f(x_k) \Vert &\le (\frac{6(L+M)(f(x_0) - f(x_{\star}))}{kL})^{\frac{2}{3}} 
 \end{align}
 $$
 
