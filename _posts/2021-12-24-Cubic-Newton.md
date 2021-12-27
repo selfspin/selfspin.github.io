@@ -252,8 +252,8 @@ $$
 $$
 \begin{align}
 f(x_0) - f(x_{\star}) &= \sum_{i=0}^{k-1} f(x_i) - f(x_{i+1}) \\
-&\ge \frac{\min M}{12}\sum_{i=0}^{k-1} r_M(x_i)^3 \\
-&\ge \frac{L}{12}\sum_{i=0}^{k-1} \mu_M(x_{i+1})^3 \\
+&\ge \frac{L}{12}\sum_{i=0}^{k-1} r_M(x_i)^3 \\
+&\ge \frac{Lk}{12} \min_{i=0}^{k-1} \mu_M(x_{i+1})^3 \\
 \end{align}
 $$
 
