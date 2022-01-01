@@ -18,7 +18,7 @@ tags:
 
 
 
-本文内容j紧承接自 [回归分析上](https://truenobility303.github.io/Rregression-First/)
+本文内容紧承接自 [回归分析上](https://truenobility303.github.io/Rregression-First/)
 
 
 
