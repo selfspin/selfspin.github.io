@@ -296,7 +296,7 @@ $$
 
 $$
 \begin{align}
-P(R(h) > \hat R(h) + \epsilon, \exist h \in \mathcal{H}) &\le d P(R(h) > \hat R(h) + \epsilon) \\
+P(R(h) > \hat R(h) + \epsilon, \exists h \in \mathcal{H}) &\le d P(R(h) > \hat R(h) + \epsilon) \\
 &\le d \exp(-2m \epsilon^2) ,\text{By Hoeffding Inequality}\\
 &= \delta 
 \end{align}
