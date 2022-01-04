@@ -1,7 +1,7 @@
 ---
 title: '稳定性，泛化性，可学性，正则化'
 toc: true
-excerpt_separatore: <!--more-->
+excerpt_separator: <!--more-->
 tags:
   - 统计机器学习
 ---
@@ -13,7 +13,6 @@ tags:
 
 
 <!--more-->
-
 
 
 
