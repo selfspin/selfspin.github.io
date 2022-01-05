@@ -236,7 +236,7 @@ $$
 
 $$
 \begin{align}
-P(R_\phi(f) > \hat R(f) + \epsilon, \exist f \in \mathcal{H}) &\le d P(R_\phi(f) > \hat R_\phi(f) + \epsilon) \\
+P(R_\phi(f) > \hat R(f) + \epsilon, \exists f \in \mathcal{H}) &\le d P(R_\phi(f) > \hat R_\phi(f) + \epsilon) \\
 &\le d \exp(-\frac{2m \epsilon^2}{M}) ,\text{By Hoeffding Inequality}\\
 &= \delta 
 \end{align}
