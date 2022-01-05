@@ -420,8 +420,8 @@ Q(0) &=1 , Q(f_{\star}^\phi) =-\eta \log \eta -(1-\eta) \log (1-\eta)  \\
 \nabla g &= -\log \eta + \log (1-\eta)\\ 
 \nabla^2 g &= -\frac{1}{\eta(1-\eta)} \\
 Q(0) - Q(f_{\star}^\phi)  &= g(\frac{1}{2}) - g(\eta) \\
-&= g(\frac{1}{2}) - (g(\frac{1}{2})  - \frac{1}{\eta' (1-\eta')} (\eta - \frac{1}{2})^2) ,\exists \eta' \in (0,\eta) \\
-&= \frac{1}{\eta'(1-\eta')} (\eta - \frac{1}{2})^2 \\
+&= g(\frac{1}{2}) - (g(\frac{1}{2})  - \frac{1}{2\eta' (1-\eta')} (\eta - \frac{1}{2})^2) ,\exists \eta' \in (0,\eta) \\
+&= \frac{1}{2\eta'(1-\eta')} (\eta - \frac{1}{2})^2 \\
 &\le 2 (\eta - \frac{1}{2})^2 \\
 &= c^s \vert \eta - \frac{1}{2} \vert^s, \text{Let } c = \sqrt 2, s=2
 \end{align}
