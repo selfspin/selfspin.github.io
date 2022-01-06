@@ -351,7 +351,6 @@ $$
 \begin{align}
 Y^T Y &= Y^T(H+I-H) Y \\
 &=  Y^T H Y +Y^T (I-H)Y\\
-&=  \hat Y^T \hat Y + \hat \epsilon^T \hat \epsilon^T
 \end{align}
 $$
 
@@ -361,7 +360,8 @@ $$
 
 $$
 \begin{align}
-Y^T(I - \frac{1}{n}ee^T)Y = Y^T(H - \frac{1}{n}ee^T)Y +Y^T(I-H)Y \\
+Y^T(I - \frac{1}{n}ee^T)Y &= Y^T(H - \frac{1}{n}ee^T)Y +Y^T(I-H)Y \\
+SST &= SSR + SSE
 \end{align}
 $$
 
@@ -376,7 +376,7 @@ $$
 
 
 $$
-R^2 = \frac{ (\hat Y - \bar Y)^T (\hat Y - \bar Y)}{(Y - \bar Y)^T (Y - \bar Y)}
+R^2 = \frac{SSR}{SST}
 $$
 容易知道,$0 \le R^2 \le 1$, 且：
 
@@ -403,17 +403,8 @@ Corr^2[Y,\hat Y] &= \frac{Cov[Y,\hat Y]}{Var[Y] Var[\hat Y]} \\
 $$
 
 
-因此，上式实际上说明了，
 
-$$
-\begin{align}
- Corr^2[Y, \hat Y] = R^2
-\end{align}
-$$
-
-
-
-由于$R^2$ 随着自变量的增加而增加，越复杂的模型$R^2$越大，通常使用自由度调整后的R方，可以衡量你和效果和复杂度之间的关系，
+由于$R^2$ 随着自变量的增加而增加，越复杂的模型$R^2$越大，通常使用自由度调整后的R方，可以衡量拟合效果和复杂度之间的关系，
 
 $$
 \begin{align}
@@ -442,47 +433,30 @@ $$
 
 当假设 $\beta_1 = \beta_2= ... =\beta_{p-1}= 0$ 成立的时候，
 
-样本因变量的值都为随机正态误差，也即，$Y \sim \epsilon$ , 因此根据独立同分布正态变量的样本方差的熟知结论，见 [Blog](https://truenobility303.github.io/Hypothesis-Testing/)
+样本因变量的值都为均值相同的随机正态误差，也即，$Y = \alpha + \epsilon$ ,  因此有
 
 
 $$
 \begin{align}
-(Y - \bar Y)^T (Y - \bar Y) & = Y^T(I - \frac{1}{n} ee^T)Y \\
-(Y - \bar Y)^T (Y - \bar Y) &\sim \chi^2(n-1) \\
+SSR &= Y^T (H - \frac{1}{n}ee^T) Y \\
+&=(\alpha + \epsilon)^T(H - \frac{1}{n}ee^T) (\alpha +\epsilon) \\
+&= \epsilon^T(H - \frac{1}{n}ee^T) \epsilon , \text{With } H \alpha = \frac{1}{n} ee^T\alpha = \alpha  \\
+& \sim \chi^2(p-1)
 \end{align}
 $$
 
 
-
-而考虑，$(\hat Y - \bar Y)^T (\hat Y - \bar Y)$ , 类似于对 $\hat \sigma^2$ 的分布的证明，易得到, 
-$$
-\begin{align}
-(\hat Y - \bar Y)^T (\hat Y - \bar Y) &= Y^T(H - \frac{1}{n} ee^T) Y \\
-(\hat Y - \bar Y)^T (\hat Y - \bar Y) &\sim \chi^2(p-1)
-\end{align}
-$$
-
-类似对于 $\hat \beta  \perp \hat \sigma^2$ 的证明
-
-$$
-\begin{align}
-\text{Since } (H - \frac{1}{n} ee^T) (I - H) &= 0 \\
-(\hat Y - \bar Y)^T (\hat Y - \bar Y) & \perp \hat \epsilon^T  \hat \epsilon
-\end{align}
-$$
-
-其实这个独立性的证明不依赖于零假设，
-
+而且我们知道 $SSE,SSR$ 的独立性甚至不依赖于零假设，不管零假设成不成立都有，
 
 $$
 \begin{align}
 SSR &= Y^T(H- \frac{1}{n}ee^T)Y \\
-SSE &= Y^T(I-H) Y \\
+SSE &= Y^T(I-H)Y =\epsilon^T(I-H) \epsilon \\
 Cov[(H- \frac{1}{n}ee^T)Y, (I-H) Y] &= Cov[(H- \frac{1}{n}ee^T) \epsilon, (I-H) \epsilon] \\
 &= \sigma^2 (H- \frac{1}{n}ee^T)(I-H) =0
 \end{align}
 $$
-对于该线性回归模型，满足正态性的假设，因此$Y$服从正态分布，而正态分布不相关等价于独立，因此SSR和SSE一定是相互独立的。本质上是由于两者前面的投影矩阵，正好投影到了不同的空间上面。
+对于该线性回归模型，满足正态性的假设，因此$Y$服从正态分布，而正态分布不相关等价于独立，因此 $SSR$ 和 $SSE$ 一定是相互独立的。本质上是由于两者前面的投影矩阵，正好投影到了不同的空间上面。
 
 
 
@@ -682,7 +656,7 @@ $$
 
 
 
-本质上，由于
+本质上，由于我们有如下的统计量，
 
 
 $$
@@ -690,7 +664,8 @@ C \hat \beta \sim \mathcal{N}(C \beta,C (X^TX)^{-1}C^T)
 $$
 
 
-因此，
+
+因此推导出的分布相当于对上述的正态随机变量做了归一化为卡方分布，
 $$
 \begin{align}
 SSE  - SSE' &=  \Vert X A \hat \beta \Vert_2 \\
@@ -725,8 +700,8 @@ $$
 $$
 
 
-而对于包括截距项在内的所有回归系数的显著性检验，只需要令$C=I$, 则可以得到，
 
+而对于包括截距项在内的所有回归系数的显著性检验，只需要令$C=I$, 则可以得到，
 $$
 \begin{align}
 \frac{\hat \beta (X^TX)^{-1} \hat \beta}{SSE / (n-p)} = \frac{SSR/ p}{SSE/(n-p)} \sim F(p,n-p)
@@ -735,9 +710,7 @@ $$
 
 
 
-
 本质上，采用其他的方法也可以推出上述的两个显著性检验，例如根据 $\hat \beta$的分布，
-
 
 $$
 \begin{align}
@@ -829,14 +802,6 @@ Cov[\hat \beta_0,\hat \beta_1] &= Cov[\bar y - \hat \beta_1 \bar x, \hat \beta_1
 &= -\bar x Var[\hat \beta_1] \\
 &= -\frac{\bar x \sigma^2}{S_{xx}}
 \end{align}
-$$
-
-
-推导过程中用到了如下这个常用的结论，参见 [Blog](https://truenobility303.github.io/Hypothesis-Testing/)
-
-
-$$
-Cov[Y_i - \bar Y,\bar Y] = 0
 $$
 
 
@@ -1184,7 +1149,7 @@ Y_{t+1} - \rho X_t &= (X_{t+1}-\rho X_t) \beta + \epsilon_t, \epsilon_t \sim \ma
 $$
 
 
-而对于相关系数未知的情况，可以借助于 [EM算法](https://truenobility303.github.io/EM/) 中对于隐变量的处理手段，基于迭代的方法进行处理，
+而对于相关系数未知的情况，基于迭代的方法进行处理，
 
 迭代法先使用普通的最小二乘估计得到残差的结果，之后对该残差的结果使用自回归，从而得到对于相关系数$\rho$的估计，
 
