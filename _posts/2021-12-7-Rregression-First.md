@@ -5,6 +5,7 @@ excerpt_separator: <!--more-->
 tags: 
   - 统计机器学习
 
+
 ---
 
 
@@ -17,7 +18,7 @@ tags:
 
 ## Linear Regression Model  
 
-给定模型真实参数$\theta$， 统计推断的目的是根据数据$X$估计出参数$\hat \theta$.
+给定模型真实参数 $\theta$， 统计推断的目的是根据数据 $X$ 估计出参数 $\hat \theta$ .
 
 常用的估计方法有：
 
@@ -133,11 +134,11 @@ Var[\hat \beta] &= Var[(X^T X)^{-1} X^T  \epsilon] = (X^TX)^{-1} \sigma^2 \\
 $$
 
 
-可以看到$\hat \beta$ 为真实参数$\beta$的无偏估计，且方差与$\sigma^2$相关。
+可以看到$\hat \beta$ 为真实参数$\beta$的无偏估计，且方差与 $\sigma^2$ 相关。
 
 
 
-我们关心$\hat \beta$的方差，而我们可以证明$\hat \beta$满足如下的Gauss-Markov定理，也即其为最小无偏估计(B.L.U.E, Best Least Unbiased Estimator)
+我们关心 $\hat \beta$ 的方差，而我们可以证明 $\hat \beta$ 满足如下的Gauss-Markov定理，也即其为最小无偏估计(B.L.U.E, Best Least Unbiased Estimator)
 
 
 $$
@@ -181,13 +182,13 @@ $$
 
 
 
-上面我们估计了参数$\hat \beta$，而模型中还有一个未知参数$\hat \sigma^2$需要估计，为了对其进行估计，首先需要对$\epsilon$ 的分布进行假设。
+上面我们估计了参数 $\hat \beta$ ，而模型中还有一个未知参数 $\hat \sigma^2$ 需要估计，为了对其进行估计，首先需要对 $\epsilon$ 的分布进行假设。
 
-简单的假设是$\epsilon \sim \mathcal{N(0,\sigma^2)}$ ,这也符合多元正态的联合分布中的假设。
+简单的假设是 $\epsilon \sim \mathcal{N(0,\sigma^2)}$ ,这也符合多元正态的联合分布中的假设。
 
 
 
-我们可以发现，在上述假设之下，基于$\epsilon$的似然函数对$\hat \beta, \hat \theta $做极大似然估计(MLE,Maximum Likelihood Estimate)，
+我们可以发现，在上述假设之下，基于 $\epsilon$ 的似然函数对 $\hat \beta, \hat \theta $ 做极大似然估计(MLE,Maximum Likelihood Estimate)，
 
 写出对数似然函数为，
 
@@ -203,7 +204,7 @@ $$
 
 
 
-对于$\hat \beta$，需要最小化$ \Vert y - X \beta \Vert_2^2$ ,也即等价于最小二乘估计.
+对于 $\hat \beta$ ，需要最小化 $ \Vert y - X \beta \Vert_2^2$  ,也即等价于最小二乘估计.
 
 
 
@@ -213,7 +214,7 @@ $$
 
 
 
-对于$\hat \sigma^2$，对对数似然函数求导可以得到，
+对于 $\hat \sigma^2$ ，对对数似然函数求导可以得到，
 
 
 
@@ -223,14 +224,14 @@ $$
 
 
 
-因此化简可以得到，$\sigma^2$的极大似然估计，
+因此化简可以得到，$\sigma^2$ 的极大似然估计，
 
 $$
 \hat \sigma^2 = \frac{1}{n} \Vert y - X \hat \beta \Vert_2^2
 $$
 
 
-令$\hat \epsilon = y - X \hat \beta$, 则
+令 $\hat \epsilon = y - X \hat \beta$,  则
 
 
 $$
@@ -239,7 +240,7 @@ $$
 
 ---
 
-从投影的角度来理解最小二乘，令$H = X(X^TX)^{-1}X^T$, 并且对比$Y=  X \beta +\epsilon$ ,
+从投影的角度来理解最小二乘，令 $H = X(X^TX)^{-1}X^T$ ,  并且对比$Y=  X \beta +\epsilon$ ,
 
 
 
@@ -253,13 +254,13 @@ $$
 
 
 
-也即残差项的估计$\hat \epsilon$ 即为投影的误差.
+也即残差项的估计 $\hat \epsilon$ 即为投影的误差.
 
-对于投影矩阵$H,I-H$，易验证其均为对称矩阵，也为幂等矩阵，其性质至关重要，且$HX = X,(I-H)X = O$
+对于投影矩阵 $H,I-H$，易验证其均为对称矩阵，也为幂等矩阵，其性质至关重要，且 $HX = X,(I-H)X = O$
 
 
 
-上面给出了对其方差的估计$\hat \sigma^2$，但实际上该估计是有偏的，由于
+上面给出了对其方差的估计 $\hat \sigma^2$ ，但实际上该估计是有偏的，由于
 
 
 
@@ -288,7 +289,7 @@ $$
 
 
 
-在假设了$\epsilon \sim \mathcal{N}(0,\sigma^2)$的前提后，可以求出估计量的分布，有以下的重要结论：
+在假设了 $\epsilon \sim \mathcal{N}(0,\sigma^2)$ 的前提后，可以求出估计量的分布，有以下的重要结论：
 
 
 $$
@@ -303,7 +304,7 @@ $$
 
 其中，$\hat \beta \sim \mathcal{N}(\beta, (X^TX)^{-1} \sigma^2)$ 是显然的，因为正态分布仅由其均值和方差决定。
 
-而对于$\hat \sigma^2$ ,可以通过将幂等矩阵$I - H$进行正交对角化实现，
+而对于 $\hat \sigma^2$ ,可以通过将幂等矩阵 $I - H$ 进行正交对角化实现，
 
 
 $$
@@ -315,13 +316,13 @@ $$
 $$
 
 
-可见，$\hat \sigma^2$为$n-p$个独立的零方差同均值正态随机变量的组合，因此$(n-p) \hat \sigma^2 \sim \chi^2(n-p) \sigma^2$
+可见，$\hat \sigma^2$ 为 $n-p$ 个独立的零方差同均值正态随机变量的组合，因此 $(n-p) \hat \sigma^2 \sim \chi^2(n-p) \sigma^2$
 
 
 
-对于$\hat \beta  \perp \hat \sigma^2$ ，实际上可以证明$\hat \beta  \perp \hat \epsilon$ 
+对于 $\hat \beta  \perp \hat \sigma^2$ ，实际上可以证明 $\hat \beta  \perp \hat \epsilon$ 
 
-由于$\hat \beta, \hat \epsilon$ 都服从正态分布，因此只需验证其协方差为0，则不相关等价于独立
+由于 $\hat \beta, \hat \epsilon$ 都服从正态分布，因此只需验证其协方差为0，则不相关等价于独立
 
 
 
@@ -392,10 +393,11 @@ $$
 
 $$
 \begin{align}
-Corr^2[Y,\hat Y] &= \frac{Cov^2[Y,\hat Y]}{Var[Y] Var[\hat Y]} \\
+Corr^2[Y,\hat Y] &= \frac{Cov[Y,\hat Y]}{Var[Y] Var[\hat Y]} \\
 &= \frac{[Y^T (I - \frac{1}{n}ee^T) (I - \frac{1}{n}ee^T)HY]^2}{[Y^T(I-\frac{1}{n}ee^T)Y][Y^T(H-\frac{1}{n}ee^T)Y] } \\
 &= \frac{[Y^T (I - \frac{1}{n}ee^T) HY]^2}{[Y^T(I-\frac{1}{n}ee^T)Y][Y^T(H-\frac{1}{n}ee^T)Y] } \\
 &= \frac{Y^T(H-\frac{1}{n}ee^T)Y}{Y^T(I-\frac{1}{n}ee^T)Y} \\
+&= \frac{SSR}{SST} \\
 &= R^2
 \end{align}
 $$
@@ -438,7 +440,7 @@ $$
 
 
 
-当假设$\beta_1 = \beta_2= ... =\beta_{p-1}= 0$成立的时候，
+当假设 $\beta_1 = \beta_2= ... =\beta_{p-1}= 0$ 成立的时候，
 
 样本因变量的值都为随机正态误差，也即，$Y \sim \epsilon$ , 因此根据独立同分布正态变量的样本方差的熟知结论，见 [Blog](https://truenobility303.github.io/Hypothesis-Testing/)
 
@@ -452,8 +454,7 @@ $$
 
 
 
-而考虑，$(\hat Y - \bar Y)^T (\hat Y - \bar Y)$, 类似于对$\hat \sigma^2$的分布的证明，易得到, 
-
+而考虑，$(\hat Y - \bar Y)^T (\hat Y - \bar Y)$ , 类似于对 $\hat \sigma^2$ 的分布的证明，易得到, 
 $$
 \begin{align}
 (\hat Y - \bar Y)^T (\hat Y - \bar Y) &= Y^T(H - \frac{1}{n} ee^T) Y \\
@@ -461,9 +462,7 @@ $$
 \end{align}
 $$
 
-
-类似对于$\hat \beta  \perp \hat \sigma^2$ 的证明
-
+类似对于 $\hat \beta  \perp \hat \sigma^2$ 的证明
 
 $$
 \begin{align}
@@ -499,7 +498,7 @@ $$
 
 自变量和隐变量相互独立的假设检验，根据$\hat \beta=0$做t检验 
 
-对$\beta_n = 0$ 进行假设检验的时候，用到了联合正态分布的边缘分布，
+对 $\beta_n = 0$ 进行假设检验的时候，用到了联合正态分布的边缘分布，
 
 
 $$
@@ -510,9 +509,9 @@ $$
 $$
 
 
-当$\sigma^2$已知的时候，可以使用z检验，但此时$\sigma^2$未知。
+当 $\sigma^2$ 已知的时候，可以使用z检验，但此时 $\sigma^2$ 未知。
 
-因此我们使用$\hat \sigma^2$进行嵌入，并且利用到了$\hat \beta  \perp \hat \sigma^2$的关系，构造出相应的t统计量，
+因此我们使用 $\hat \sigma^2$ 进行嵌入，并且利用到了 $\hat \beta  \perp \hat \sigma^2$ 的关系，构造出相应的t统计量，
 
 
 
@@ -543,9 +542,9 @@ $$
 
 
 
-据此在$\sigma^2$已知的前提下，可以根据正态分布的$\alpha$分位数得到一个置信区间，称为Mean Response
+据此在 $\sigma^2$ 已知的前提下，可以根据正态分布的$\alpha$分位数得到一个置信区间，称为Mean Response
 
-在模型中，$\sigma^2$未知，此时需要利用估计量$\hat \sigma^2$进行嵌入，得到t统计量
+在模型中，$\sigma^2$ 未知，此时需要利用估计量 $\hat \sigma^2$ 进行嵌入，得到t统计量
 
 
 
@@ -585,7 +584,7 @@ $$
 
 
 
-此时的最小二乘问题转化为带约束的最小二乘问题，使用Lagrange乘子法，同时根据$\hat \beta = (X^TX)^{-1}X^T Y$
+此时的最小二乘问题转化为带约束的最小二乘问题，使用Lagrange乘子法，同时根据 $\hat \beta = (X^TX)^{-1}X^T Y$
 
 
 
@@ -855,16 +854,20 @@ $$
 Corr^2[\hat Y, Y] = R^2
 $$
 
-
 而在一元的情况下，上式还有更加明显的含义，
+
 
 
 $$
 \begin{align}
-R^2 &= Corr^2[\hat Y, Y] \\
-&= Corr^2[\hat \beta X, Y] \\
-&= Corr^2[X,Y] \\
-&= \frac{S_{xy}^2}{S_{xx} S_{yy}}
+R^2 &= \frac{SSR}{SST} \\
+&= \frac{\sum_{i=1}^n (\hat \beta_0 + x_i \hat \beta_1 - \bar y)^2}{ \sum_{i=1}^n (y_i - \bar y)^2} \\
+&=  \frac{\sum_{i=1}^n ( x_i \hat \beta_1 - \bar x \hat \beta_1)^2}{ \sum_{i=1}^n (y_i - \bar y)^2} ,\text{With } \hat \beta_0 = \bar y - \bar x \hat \beta_1\\
+&= \hat \beta_1^2 \frac{\sum_{i=1}^n ( x_i - \bar x )^2}{ \sum_{i=1}^n (y_i - \bar y)^2} \\
+&=\hat \beta_1^2 \frac{S_{xx}}{S_{yy}} \\
+&= \frac{S_{xy}^2}{S_{xx}^2} \frac{S_{xx}}{S_{yy}}, \text{With } \hat \beta_1 = \frac{S_{xy}}{S_{xx}} \\
+&= \frac{S_{xy}^2}{S_{xx}S_{xy}} \\
+&= Corr^2[X,Y]
 \end{align}
 $$
 
@@ -918,6 +921,8 @@ $$
 下面介绍评价准则，最简单的评价准则是基于回归系数$R^2$或者调整后的回归系数$R_a^2$. 
 
 由于$R^2$随着变量个数的增多而增大，因此对于$R^2$应该选择增益小的变量。而对于$R_a^2$，考虑了对过多的变量进行惩罚，选择$R_a^2$最大的模型即可。
+
+
 
 ### $\text{AIC}$
 
@@ -1134,7 +1139,8 @@ $$
 $$
 \begin{align}
 E[e_t] &= 0\\
-Cov[e_t] &= \frac{\sigma^2}{1- \rho^2}, \vert \rho \vert <1
+Var[e_t] &= \frac{\sigma^2}{1- \rho^2}, \vert \rho \vert <1 \\
+Cov[e_t,e_{t+h}] &= \frac{\sigma^2 \rho^h}{1- \rho^2}
 \end{align}
 $$
 
