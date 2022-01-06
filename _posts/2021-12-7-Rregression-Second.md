@@ -244,7 +244,6 @@ $$
 \end{align}
 $$
 
-
 为了求解所需要的项，利用Woodbury公式，
 
 
@@ -267,10 +266,10 @@ x_i^T (X^TX+\lambda I)^{-1} &= x_i^T A^{-1} - x_i^T A^{-1} x_i(1+x_i^T A^{-1}x_i
 &=(1-x_i^T A^{-1} x_i(1+x_i^T A^{-1}x_i)^{-1}) x_i^T A^{-1} \\
 &= (1-\frac{x_i^T A^{-1}x_i} {1+x_i^T A^{-1}x_i} )x_i^T A^{-1} \\
 &= \frac{1}{1+x_i^T A^{-1}x_i} x_i^T A^{-1} \\
-x_i^T A^{-1} &= (1+ x_i^T A^{-1}x_i) x_i^T (X^TX+\lambda I)^{-1} \\
+x_i^T A^{-1} &= (1+x_i^T A^{-1}x_i) x_i^T (X^TX+\lambda I)^{-1} \\
 x_i^T A^{-1}x_i &= (1+ x_i^T A^{-1}x_i) x_i^T (X^TX+\lambda I)^{-1}x_i \\
-x_i^T A^{-1}x_i &= \frac{x_i^T (X^TX+\lambda I)^{-1}x_i}{1+x_i^T (X^TX+\lambda I)^{-1}x_i} \\
-x_i^T A^{-1} &= \frac{x_i^T (X^TX+\lambda I)^{-1}}{1+x_i^T (X^TX+\lambda I)^{-1}x_i}  \\
+x_i^T A^{-1}x_i &= \frac{x_i^T (X^TX+\lambda I)^{-1}x_i}{1-x_i^T (X^TX+\lambda I)^{-1}x_i} \\
+x_i^T A^{-1} &= \frac{x_i^T (X^TX+\lambda I)^{-1}}{1-x_i^T (X^TX+\lambda I)^{-1}x_i}  \\
 \end{align}
 $$
 
@@ -280,25 +279,47 @@ $$
 
 $$
 \begin{align}
-(x_i \hat \beta_{(i)} - y_i)^2 
+(x_i^T \hat \beta_{(i)} - y_i)^2 
 &=(x_i^T A^{-1} X_{(i)}^T y_i- y_i)^2 \\
 &=(x_i^T A^{-1} (X^T -x_i)y_i- y_i)^2 \\
-&=(\frac{x_i^T (X^TX+\lambda I)^{-1}(X^T-x_i)y_i}{1+x_i^T (X^TX+\lambda I)^{-1}x_i}  - y_i)^2 \\
-&= (\frac{x_i^T (X^TX+\lambda I)^{-1}X^Ty_i-y_i}{1+x_i^T (X^TX+\lambda I)^{-1}x_i} )^2 \\
-&= \frac{(x_i^T \hat \beta - y_i)^2}{(1+H_{ii})^2}, \text{With } H = X^T (X^TX+\lambda I)^{-1}X \\
+&=(\frac{x_i^T (X^TX+\lambda I)^{-1}(X^T-x_i)y_i}{1-x_i^T (X^TX+\lambda I)^{-1}x_i}  - y_i)^2 \\
+&= (\frac{x_i^T (X^TX+\lambda I)^{-1}X^Ty_i-y_i}{1-x_i^T (X^TX+\lambda I)^{-1}x_i} )^2 \\
+&= \frac{(x_i^T \hat \beta - y_i)^2}{(1-H_{ii})^2}, \text{With } H = X^T (X^TX+\lambda I)^{-1}X \\
 \end{align}
 $$
 
 
-如果当$p \rightarrow \infty$的时候，根据大数定理，利用矩阵的迹的均值近似矩阵的对角元素，可以得到广义的留一交叉验证的公式，
+
+上面的推导稍微复杂了一点，但推导中用到的求解矩阵方程的技术仍不失为一种好的技巧，下面利用另一边的Woodbury公式，给出一个稍微简单一点的证明，
 
 
 $$
-(x_i \hat \beta_{(i)} - y_i)^2  = \frac{(\hat y_i - y_i)^2}{(1+ \frac{tr(H)}{p})^2}
+\begin{align}
+x_i^T \hat \beta_{(i)} - y_i &= x_i^T( (X_{(i)}^T X_{(i)} + \lambda I)^{-1}X_{(i)}^Ty_i) - y_i \\
+&= x_i^T( (X^TX + \lambda I - x_ix_i^T)^{-1}X_{(i)}^Ty_i) - y_i \\
+&= x_i^T( (X^TX + \lambda I - x_ix_i^T)^{-1}(X^Ty_i - x_i y_i) - y_i \\
+&= x_i^T( (K - x_ix_i^T)^{-1}(X^Ty_i - x_i y_i) - y_i ,\text{Let } K = X^TX+\lambda I \\
+&=x_i^T (K^{-1}+K^{-1} x_i(1- x_i^T K^{-1} x_i)^{-1}x_i^TK^{-1})(X^Ty_i - x_i y_i) - y_i , \text{By Woodbury Formula} \\
+&=x_i^T (K^{-1}+\frac{K^{-1} x_ix_i^TK^{-1}}{1-x_i^TK^{-1}x_i })(X^Ty_i - x_i y_i) - y_i \\
+&= \frac{x_i^TK^{-1}}{1-x_i^T K^{-1}x_i}(X^Ty_i - x_i y_i) - y_i \\
+&= \frac{x_i^TK^{-1}X^Ty_i - x_i^T K^{-1} x_i y_i}{1-x_i^T K^{-1}x_i} - y_i \\
+&= \frac{x_i^TK^{-1}X^Ty_i - y_i}{1-x_i^T K^{-1}x_i} \\
+&= \frac{x_i^T \hat \beta - y_i}{1-H_{ii}}
+\end{align}
+$$
+
+
+
+
+如果当$p \rightarrow \infty$的时候，根据大数定理，利用矩阵的迹的均值近似矩阵的对角元素，可以得到广义的留一交叉验证的公式，
+
+$$
+(x_i \hat \beta_{(i)} - y_i)^2  = \frac{(x_i^T \hat \beta - y_i)^2}{(1- \frac{tr(H)}{n})^2}
 $$
 
 
 遍历所有的$i$，取上述平方损失的平均值，可以得到平均的留一交叉验证的损失，根据该损失就可以选取最优的$\lambda$ 
+
 
 ---
 
