@@ -31,8 +31,8 @@ tags:
 
 $$
 \begin{align}
-\text{If } \text{diam}(\Omega(x)) &\rightarrow 0, N(x) \rightarrow \infty \text{With Prob. 1}\\
-\text{Then } R(f) &\rightarrow R(f_{\star}) \text{ With Prob. 1}
+\text{If } P(\text{diam}(\Omega(x)) = 0) &\rightarrow 1, P(N(x) = \infty) \rightarrow 1 \\
+\text{Then } R(f) &\rightarrow R(f_{\star})
 \end{align}
 $$
 
