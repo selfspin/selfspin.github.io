@@ -316,7 +316,11 @@ $$
 
 其次定理要求最优代理分类器的损失 $Q(f_{\star}^\phi)$ 相较于随机猜测的损失 $Q(0)$ 应该至少有如下关于条件概率 $\eta(x)$ 相关的提升， 
 
-也即表达式的含义：  $\vert \eta(x) - \frac{1}{2} \vert^s \le c^s(Q(0)- Q(f_{\star}^\phi)), \exists c>0, \exists s\ge 1 \\$ 
+也即表达式的含义：  
+
+$$ 
+\vert \eta(x) - \frac{1}{2} \vert^s \le c^s(Q(0)- Q(f_{\star}^\phi)), \exists c>0, \exists s\ge 1 
+$$ 
 
 最终可以推出，如果我们可以得到一个逼近最优代理分类器的函数序列，则该函数序列也可以逼近贝叶斯最优分类器，
 
