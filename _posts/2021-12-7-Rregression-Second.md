@@ -315,7 +315,7 @@ $$
 如果当$p \rightarrow \infty$的时候，根据大数定理，利用矩阵的迹的均值近似矩阵的对角元素，可以得到广义的留一交叉验证的公式，
 
 $$
-(x_i \hat \beta_{(i)} - y_i)^2  = \frac{(x_i^T \hat \beta - y_i)^2}{(1- \frac{tr(H)}{n})^2}
+(x_i \hat \beta_{(i)} - y_i)^2  = \frac{(x_i^T \hat \beta - y_i)^2}{(1- \frac{tr(H)}{p})^2}
 $$
 
 
