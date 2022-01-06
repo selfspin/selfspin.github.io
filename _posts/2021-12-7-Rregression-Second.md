@@ -99,8 +99,8 @@ $$
 
 $$
 \begin{align}
-\hat \beta &= U(D^2 +\lambda I)^{-1} D V^T Y \\
-&= U diag(\frac{d_i}{d_i^2+\lambda}) V^T Y
+\hat \beta &= V(D^2 +\lambda I)^{-1} D U^T Y \\
+&= V diag(\frac{d_i}{d_i^2+\lambda}) U^T Y
 \end{align}
 $$
 
