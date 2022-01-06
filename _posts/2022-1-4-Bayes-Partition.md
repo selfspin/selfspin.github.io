@@ -95,7 +95,7 @@ $$
 
 
 $$
-P(N(x) = \infty) =1
+P(N(x) = \infty) \rightarrow 1
 $$
 
 
@@ -131,7 +131,7 @@ $$
 
 
 $$
-P( T \rightarrow \infty) = 1
+P( T = \infty) \rightarrow 1
 $$
 进而可以计算对每一个属性的划分次数 $S$，从而得到每个属性的边长 $L$ 的期望，给定该区域被划分的总次数 $T$ 可以计算出该属性被划分的次数 $S$, 给定$S$ 每次划分一次都会对属性的边长 $L$ 有期望意义下的衰减，
 
@@ -164,7 +164,7 @@ E[\text{diam}^2(\Omega(x))] &= E[\sum_{i=1}^d L_i^2]\\
 \forall D, P(\text{diam}(\Omega(x)) \ge D) &= P(\text{diam}^2(\Omega(x)) \ge D^2) \\
 &\le \frac{E[\text{diam}^2(\Omega(x))]}{D^2} \\
 &\rightarrow 0  \\
-P(\text{diam}(\Omega(x) \rightarrow 0) &= 1
+P(\text{diam}(\Omega(x) = 0) & \rightarrow 1
 \end{align}
 $$
 
