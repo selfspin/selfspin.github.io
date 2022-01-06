@@ -170,7 +170,7 @@ $$
 
 $$
 \begin{align}
-\nabla_{\lambda=0} &= -2\sigma^2 diag(\frac{d_i^2}{(d_i^2 +\lambda)^3}) + 2\lambda  \beta^T V^T diag(\frac{1}{d_i^2+\lambda} )V \beta - \lambda^2 \beta^T V^T diag(\frac{1}{(d_i^2+\lambda)^2} )V \beta \\
+\nabla_{\lambda=0} &= -2\sigma^2 diag(\frac{d_i^2}{(d_i^2 +\lambda)^3}) + 2\lambda  \beta^T V^T diag(\frac{1}{(d_i^2+\lambda)^2} )V \beta - 2 \lambda^2 \beta^T V^T diag(\frac{1}{(d_i^2+\lambda)^3} )V \beta \\
 &= -2\sigma^2 diag(\frac{d_i^2}{(d_i^2 +\lambda)^3}) <0
 \end{align}
 $$
