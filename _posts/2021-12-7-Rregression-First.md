@@ -798,18 +798,14 @@ $$
 $$
 \begin{align}
 \hat \beta &\sim \mathcal{N}(\beta , (X^TX)^{-1} \sigma^2) \\
-
 X^TX &= 
-
 \begin{pmatrix}
 n & n \bar x \\
 n \bar x & \sum_i x_i^2
 \end{pmatrix} \\
-
 det(X^TX) &= n \sum_i x_i^2 - (n \bar x)^2  = n S_{xx}\\
 \hat \beta_0 & \sim \mathcal{N}(\beta_0, \frac{\sigma^2 \sum_i x_i^2}{n S_{xx}}) \sim \mathcal{N}(\beta_0, \sigma^2(\frac{1}{n}+ \frac{\bar x^2}{S_{xx}})  \\
 \hat \beta_1 & \sim \mathcal{N}(\beta_1, \frac{\sigma^2 }{S_{xx}}) \\
-
 \end{align}
 $$
 
