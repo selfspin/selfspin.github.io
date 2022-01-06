@@ -437,12 +437,5 @@ $$
 
 
 
-$$
-\begin{align}
-
-\end{align}
-$$
-
-
 
 
