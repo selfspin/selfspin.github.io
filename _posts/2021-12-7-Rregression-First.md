@@ -392,7 +392,7 @@ $$
 
 $$
 \begin{align}
-Corr^2[Y,\hat Y] &= \frac{Cov[Y,\hat Y]}{Var[Y] Var[\hat Y]} \\
+Corr^2[Y,\hat Y] &= \frac{Cov^2[Y,\hat Y]}{Var[Y] Var[\hat Y]} \\
 &= \frac{[Y^T (I - \frac{1}{n}ee^T) (I - \frac{1}{n}ee^T)HY]^2}{[Y^T(I-\frac{1}{n}ee^T)Y][Y^T(H-\frac{1}{n}ee^T)Y] } \\
 &= \frac{[Y^T (I - \frac{1}{n}ee^T) HY]^2}{[Y^T(I-\frac{1}{n}ee^T)Y][Y^T(H-\frac{1}{n}ee^T)Y] } \\
 &= \frac{Y^T(H-\frac{1}{n}ee^T)Y}{Y^T(I-\frac{1}{n}ee^T)Y} \\
