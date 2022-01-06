@@ -716,14 +716,24 @@ $$
 $$
 
 
-而对于所有回归系数的显著性检验，只需要令$C=I$, 则可以得到，
 
+对于所有回归系数的显著性检验，不包括截距项，可以得到,
+
+
+$$
+\frac{(SSE_R - SSE_F)/(p-1)}{SSE_F/(n-p)} =   \frac{SSR/(p-1)}{SSE/(n-p)} \sim F(p-1,n-p)
+$$
+
+
+而对于包括截距项在内的所有回归系数的显著性检验，只需要令$C=I$, 则可以得到，
 
 $$
 \begin{align}
-\frac{\hat \beta (X^TX)^{-1} \hat \beta}{SSE / (n-p)} = \frac{SSR/(p-1)}{SSE/(n-p)} \sim F(p-1,n-p)
+\frac{\hat \beta (X^TX)^{-1} \hat \beta}{SSE / (n-p)} = \frac{SSR/ p}{SSE/(n-p)} \sim F(p,n-p)
 \end{align}
 $$
+
+
 
 
 本质上，采用其他的方法也可以推出上述的两个显著性检验，例如根据 $\hat \beta$的分布，
