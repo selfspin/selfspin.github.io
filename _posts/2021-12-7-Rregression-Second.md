@@ -232,11 +232,12 @@ $$
 $$
 \begin{align}
 \text{AIC} &= -\frac{n}{2} \log SSE - tr(X(X^TX+\lambda I)^{-1}X^T) \\
-&=-\frac{n}{2} \log SSE - tr((X^TX+\lambda I)^{-1}X^TX)
+&= -\frac{n}{2} \log SSE - tr(H), \text{With } H = X(X^TX+\lambda I)^{-1}X^T
 \end{align}
 $$
 
 为了选择好的超参数$\lambda$, 常见的做法是使用交叉验证，例如K-折交叉验证，而特殊的情况是留一交叉验证，其好处是其之可以用公式计算得到，考虑用除掉样本$X_i$以外的所有数据作为训练集，而采用$X_i$作为测试集，计算平方误差损失，利用$X_{(i)}$表示去除该样本剩下的样本，
+
 $$
 \begin{align}
 (x_i \hat \beta_{(i)} - y_i)^2 &= (x_i^T (X_{(i)}^TX_{(i)}+\lambda I)^{-1}X_{(i)}^T y_i - y_i)^2\\
