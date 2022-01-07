@@ -46,14 +46,14 @@ $$
 &\le 2 E_{\text{sign}(\hat \eta(x)) \ne \text{sign} (\eta(x))} [\vert \eta(x) - \hat \eta(x) \vert \\
 &\le 2E_x[\vert \eta(x) - \hat \eta(x)] \\
 &\le 2E_x[ \vert \hat \eta(x) - \bar \eta(x) \vert] + 2 E_x[\vert \bar \eta(x) - \eta(x)\vert ] \\
-&\le 2E_x[ \vert \hat \eta(x) - \bar \eta(x) \vert] + \frac{\epsilon}{2} , \text{By Continuous of } \eta(x) \text{And } \text{diam}(\Omega(x)) \rightarrow 0 \\
-&\le 2E_{x,N(x)} [ \vert \hat \eta(x) - \bar \eta(x)\vert] + \frac{\epsilon}{2} \\
-&=  2E_{x,N(x)} [ \vert \sum_{x_i \in \Omega(x)} \frac{I(y_i=1)- \bar \eta(x) \vert}{N(x)} ] + \frac{\epsilon}{2} \\
-&\le 2E_x\sqrt {E[\vert \sum_{x_i \in \Omega(x)} \frac{I(y_i=1)- \bar \eta(x)}{N(x)} ]^2} + \frac{\epsilon}{2}, \text{By Jessen's Inequality} \\
-&=2E_x\sqrt {\frac{1}{N(x)^2}E[\sum_{x_i \in \Omega(x)}I(y_i=1)- \bar \eta(x) ]^2} + \frac{\epsilon}{2} \\
-&= 2E_x\sqrt{\frac{Var(X)}{N(x)}} + \frac{\epsilon}{2}, \text{Let } X \text{ Be } I(y_i = 1) \\
-&=2E_x\sqrt{ \frac{\bar \eta(x) (1-\bar \eta(x))}{N(x)}} + \frac{\epsilon}{2} \\
-&\le E_x\sqrt{ \frac{1}{N(x)}} + \frac{\epsilon}{2} ,\text{By } \bar \eta(x) (1-\bar \eta(x)) \le \frac{1}{4}\\
+&\le 2E_x[ \vert \hat \eta(x) - \bar \eta(x) \vert] + \frac{\epsilon}{4} , \text{By Continuous of } \eta(x) \text{And } \text{diam}(\Omega(x)) \rightarrow 0 \\
+&\le 2E_{x,N(x)} [ \vert \hat \eta(x) - \bar \eta(x)\vert] + \frac{\epsilon}{4} \\
+&=  2E_{x,N(x)} [ \vert \sum_{x_i \in \Omega(x)} \frac{I(y_i=1)- \bar \eta(x) \vert}{N(x)} ] + \frac{\epsilon}{4} \\
+&\le 2E_x\sqrt {E[\vert \sum_{x_i \in \Omega(x)} \frac{I(y_i=1)- \bar \eta(x)}{N(x)} ]^2} + \frac{\epsilon}{4}, \text{By Jessen's Inequality} \\
+&=2E_x\sqrt {\frac{1}{N(x)^2}E[\sum_{x_i \in \Omega(x)}I(y_i=1)- \bar \eta(x) ]^2} + \frac{\epsilon}{4} \\
+&= 2E_x\sqrt{\frac{Var(X)}{N(x)}} + \frac{\epsilon}{4}, \text{Let } X \text{ Be } I(y_i = 1) \\
+&=2E_x\sqrt{ \frac{\bar \eta(x) (1-\bar \eta(x))}{N(x)}} + \frac{\epsilon}{4} \\
+&\le E_x\sqrt{ \frac{1}{N(x)}} + P(N(x) \le N) + \frac{\epsilon}{4} ,\text{By } \bar \eta(x) (1-\bar \eta(x)) \le \frac{1}{4}\\
 &=E_{x,N(x) \ge N} \sqrt{ \frac{1}{N(x)} } +\frac{\epsilon}{2} ,\forall N ,\text{By } N(x) \rightarrow \infty \\
 &\le \frac{1}{\sqrt N} + \frac{\epsilon}{2} \\
 &\le \epsilon ,\text{Let } N \ge (\frac{\epsilon}{2})^2\\
