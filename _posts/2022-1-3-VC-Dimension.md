@@ -374,7 +374,7 @@ $$
 
 $$
 \begin{align}
-P( \sup_{h \in \mathcal{H}} (R(h) - \hat R_D(h) > \epsilon  ) &= P(  R(h) > \hat R_D(h) + \epsilon  ) ,\text{With Given } h \\
+P( \sup_{h \in \mathcal{H}} (R(h) - \hat R_D(h)) > \epsilon  ) &= P(  R(h) > \hat R_D(h) + \epsilon  ) ,\text{With Given } h \\
 &\le  2 P(R(h) > \hat R_D(h) + \epsilon )P( \hat R_{D'}(h) \le R (h) + \frac{\epsilon}{2})) \\
 &\le 2 P( \hat R_{D'}(h) > \hat R_D (h) + \frac{\epsilon}{2})) \\ 
 &\le 2P(\sup_{h \in \mathcal{H}} (\hat R_{D'}(h) - \hat R_D (h)) > \frac{\epsilon}{2}) \\
