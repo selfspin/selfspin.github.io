@@ -327,7 +327,7 @@ $$
 
 
 $$
-P( \sup_{h \in \mathcal{H}} (R(h) - \hat R_D(h) > \epsilon  ) \le 2 P(\sup_{h \in \mathcal{H}} (\hat R_{D'}(h) - \hat R_D (h)) > \frac{\epsilon}{2}), \text{With } m \epsilon^2 \ge 2
+P( \sup_{h \in \mathcal{H}} (R(h) - \hat R_D(h)) > \epsilon  ) \le 2 P(\sup_{h \in \mathcal{H}} (\hat R_{D'}(h) - \hat R_D (h)) > \frac{\epsilon}{2}), \text{With } m \epsilon^2 \ge 2
 $$
 
 
