@@ -6,13 +6,11 @@ tags:
   - 优化
 ---
 
-
-
-随机方差缩减梯度方法（SVRG）及其加速版本（Katyusha）的简易版变种，分别称为L-SVRG和L-Latyusha
-
 论文阅读笔记：[Don’t Jump Through Hoops and Remove Those Loops: SVRG and Katyusha are Better Without the Outer Loop](http://proceedings.mlr.press/v117/kovalev20a)
 
 <!--more-->
+
+随机方差缩减梯度方法（SVRG）及其加速版本（Katyusha）的简易版变种，分别称为L-SVRG和L-Latyusha
 
 ## Problem Set-up
 
