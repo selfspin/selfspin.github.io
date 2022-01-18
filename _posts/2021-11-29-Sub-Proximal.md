@@ -163,7 +163,7 @@ $$
 $$
 \begin{align}
 x_{k+1} &=  x_k - \alpha G(x_k) \\
-&= \min_u \text{prox}_{\alpha h} (x_k - \alpha \nabla f(x_k)) \\ 
+&= \min_u \text{prox}_{\alpha h} (x_k - \alpha \nabla g(x_k)) \\ 
 G(x_k) &\in \nabla g(x_k) + \partial h(x_k - \alpha G(x_k)) 
 \end{align}
 $$
@@ -171,7 +171,7 @@ $$
 
 ### Coverage
 
-在该算法中，我们优化的目标仍然为$f(x)$，但我们可以加上不可导的惩罚项$h(x)$，例如可能是稀疏优化或者低秩优化中的内容，可以参见 [稀疏优化与低秩优化](https://truenobility303.github.io/Matrix-Complete/) 
+在该算法中，我们优化的目标仍然为$f(x) = g(x) + h(x) $，也即原本的 $f(x)$ 加上不可导的惩罚项$h(x)$，例如可能是稀疏优化或者低秩优化中的内容，可以参见 [稀疏优化与低秩优化](https://truenobility303.github.io/Matrix-Complete/) 
 
 
 
