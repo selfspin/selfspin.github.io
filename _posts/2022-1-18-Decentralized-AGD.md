@@ -3,7 +3,7 @@ title: '去中心化的Nesterov分布式加速'
 toc: true
 excerpt_separtor: <!--more-->
 tags: 
-	- 优化
+  - 优化
 ---
 
 
