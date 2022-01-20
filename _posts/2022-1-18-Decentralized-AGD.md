@@ -1,5 +1,5 @@
 ---
-title: '去中心化的Nesterov分布式加速'
+title: '去中心化的分布式Nesterov加速'
 toc: true
 excerpt_separtor: <!--more-->
 tags: 
