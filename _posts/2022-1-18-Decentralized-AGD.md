@@ -1,5 +1,5 @@
 ---
-title: '去中心化的分布式Nesterov加速'
+title: 'Decentralized AGD'
 toc: true
 excerpt_separtor: <!--more-->
 tags: 
