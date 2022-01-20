@@ -1,9 +1,10 @@
 ---
-title: 'Decentralized AGD'
+title: '去中心化的Nesterov分布式加速'
 toc: true
-excerpt_separator: <!--more-->
+excerpt_separtor: <!--more-->
 tags: 
   - 优化
+
 ---
 
 
@@ -768,7 +769,7 @@ $$
 &= \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 8L \rho \sqrt {\frac{m}{\mu}} \frac{(\sqrt{1 -\frac{\alpha}{2} })^{k+1}-2^{-k}}{2 \sqrt{1 -\frac{\alpha}{2} }-1} (\sqrt{\mathcal{V_0}} +\sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\
 &\le \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
 &\le 2\rho D_3  (\sqrt{1-\frac{\alpha}{2}})^{k+1} \Vert \mathbf{z}_0 \Vert +24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
-&=\rho (\sqrt{1-\frac{\alpha}{2}})^{k+1} D_4(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) ,\text{Let } D_4 = 2D_3 + 24L \sqrt{\frac{m}{\mu}}
+&=\rho (\sqrt{1-\frac{\alpha}{2}})^{k+1} D_4 \sqrt m(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) ,\text{Let } D_4 = 2D_3 \sqrt{\frac{1}{C}}  + 24L \sqrt{\frac{1}{\mu}}
 \end{align}
 $$
 
@@ -779,12 +780,12 @@ $$
 $$
 \begin{align}
 \mathcal{V_{k}} &\le (1-\frac{\alpha}{2})^k (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\ 
-\Vert \mathbf{z}_k \Vert &\le \rho (\sqrt{1-\frac{\alpha}{2}})^{k} D_4(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) \\
-&\le \sqrt{2}\rho (\sqrt{1-\frac{\alpha}{2}})^{k} D_4 \sqrt{\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2}\\
-\Vert \mathbf{z}_k \Vert^2 &\le 2\rho^2 (1-\frac{\alpha}{2})^k D_4^2 (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
-&\le 2\rho (1-\frac{\alpha}{2})^k D_4^2 (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
-\sqrt{\mathcal{V_k}} \Vert \mathbf{z_k} \Vert &\le  \sqrt 2 \rho (1-\frac{\alpha}{2})^k D_4(\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
-&\le 2 \rho (1-\frac{\alpha}{2})^k D_4(\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
+\Vert \mathbf{z}_k \Vert &\le \rho (\sqrt{1-\frac{\alpha}{2}})^{k} D_4 \sqrt m(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) \\
+&\le \sqrt{2}\rho (\sqrt{1-\frac{\alpha}{2}})^{k} D_4 \sqrt m  \sqrt{\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2}\\
+\Vert \mathbf{z}_k \Vert^2 &\le 2\rho^2 (1-\frac{\alpha}{2})^k D_4^2 m (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
+&\le 2\rho (1-\frac{\alpha}{2})^k D_4^2 m(\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
+\sqrt{\mathcal{V_k}} \Vert \mathbf{z_k} \Vert &\le  \sqrt 2 \rho (1-\frac{\alpha}{2})^k D_4 \sqrt m(\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
+&\le 2 \rho (1-\frac{\alpha}{2})^k D_4 \sqrt m(\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) \\
 \end{align}
 $$
 
@@ -795,16 +796,16 @@ $$
 $$
 \begin{align}
 \mathcal{V_{K+1}} &\le (1-\alpha) \mathcal{V_k} + \frac{D_1}{\sqrt m} \sqrt{\mathcal{V_k}} \Vert \mathbf{z_k} \Vert + \frac{D_2}{m} \Vert \mathbf{z_k} \Vert^2 \\
-&\le (1-\alpha) (1-\frac{\alpha}{2})^k (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) + \frac{2D_1D_4 \rho}{\sqrt m} (1-\frac{\alpha}{2})^k (\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) 
-+ \frac{2D_2 \rho}{m}  (1-\frac{\alpha}{2})^k D_4^2 (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  \\
-&\le (1-\frac{\alpha}{2})^{k+1} (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  + \rho D_5 (1-\frac{\alpha}{2})^{k}(\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  ,\text{Let } D_5 = \frac{2 D_1 D_4}{\sqrt m}+ \frac{2D_2 D_4^2}{m}  \\
+&\le (1-\alpha) (1-\frac{\alpha}{2})^k (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) + 2D_1D_4 \rho(1-\frac{\alpha}{2})^k (\mathcal{V_0}+ \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) 
++ 2D_2 D_4^2\rho  (1-\frac{\alpha}{2})^k  (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  \\
+&\le (1-\frac{\alpha}{2})^{k+1} (\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  + \rho D_5 (1-\frac{\alpha}{2})^{k}(\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2)  ,\text{Let } D_5 = 2 D_1 D_4+ 2D_2 D_4^2  \\
 &\le (1-\frac{\alpha}{2})^{k+1}(\mathcal{V_0} + \frac{C}{m} \Vert \mathbf{z_0} \Vert^2) , \text{Let } \rho D_5 \le \frac{\alpha}{2}  \le 1- \frac{\alpha}{2} 
 \end{align}
 $$
 
 
 
-最终完成归纳，
+且 $D_1,D_2,D_3,D_4,D_5$ 都是与机器数目 $m$ 无关的量，最终完成归纳，
 
 
 $$
