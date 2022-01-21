@@ -765,7 +765,7 @@ $$
  \mathbf{z}_{k+1}  &\le A^{k+1} \mathbf{z_0} + 8L \rho \sqrt m \sum_{i=0}^k A^{k-i} (0,0,\sqrt{\frac{\mathcal{V_i}}{\mu}})^T \\
 \Vert \mathbf{z}_{k+1} \Vert &\le \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert+ 8L\rho \sqrt {\frac{m}{\mu}} \sum_{i=0}^k 2^{-(k-i)} \sqrt{\mathcal{V_i}}\\
 &\le \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 8L \rho \sqrt {\frac{m}{\mu}} \sum_{i=0}^k 2^{-(k-i)} (\sqrt {1- \frac{\alpha}{2}})^i (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\
-&= \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 8L \rho \sqrt {\frac{m}{\mu}} \frac{(\sqrt{1 -\frac{\alpha}{2} })^{k+1}-2^{-k}}{2 \sqrt{1 -\frac{\alpha}{2} }-1} (\sqrt{\mathcal{V_0}} +\sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\
+&= \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 8L \rho \sqrt {\frac{m}{\mu}} \frac{2(\sqrt{1 -\frac{\alpha}{2} })^{k+1}-2^{-k}}{2 \sqrt{1 -\frac{\alpha}{2} }-1} (\sqrt{\mathcal{V_0}} +\sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\
 &\le \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
 &\le 2\rho D_3  (\sqrt{1-\frac{\alpha}{2}})^{k+1} \Vert \mathbf{z}_0 \Vert +24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
 &=\rho (\sqrt{1-\frac{\alpha}{2}})^{k+1} D_4 \sqrt m(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) ,\text{Let } D_4 = 2D_3 \sqrt{\frac{1}{C}}  + 24L \sqrt{\frac{1}{\mu}}
