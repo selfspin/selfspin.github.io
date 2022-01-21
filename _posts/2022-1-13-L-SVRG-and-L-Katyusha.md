@@ -4,7 +4,7 @@ toc: true
 excerpt_separator: <!--more-->
 tags:
   - 优化
-  - 随即优化
+  - 随机优化
 ---
 
 论文阅读笔记：[Don’t Jump Through Hoops and Remove Those Loops: SVRG and Katyusha are Better Without the Outer Loop](http://proceedings.mlr.press/v117/kovalev20a)
