@@ -742,9 +742,9 @@ $$
 \begin{align}
 \mathcal{V_1} &\le (1-\alpha) \mathcal{V_0} + \frac{D_1}{\sqrt m} \sqrt{\mathcal{V_0}} \Vert \mathbf{z_0} \Vert + \frac{D_2}{m} \Vert \mathbf{z_0} \Vert^2 \\
 &\le (1-\alpha) \mathcal{V_0} + \frac{\alpha}{2 }\mathcal{V_0} + \frac{D_1^2}{2\alpha m} \Vert \mathbf{z_0} \Vert^2 + \frac{D_2}{m} \Vert \mathbf{z_0} \Vert^2 \\
-&\le (1-\frac{\alpha}{2}) \mathcal{V_0} + (1-\frac{\alpha}{2}) (\frac{D_1^2}{\alpha m} + \frac{D_2}{m}) \Vert \mathbf{z_0} \Vert^2 \\
+&\le (1-\frac{\alpha}{2}) \mathcal{V_0} + (1-\frac{\alpha}{2}) (\frac{D_1^2}{\alpha m} + \frac{2D_2}{m}) \Vert \mathbf{z_0} \Vert^2 \\
 &\le(1-\frac{\alpha}{2}) (\mathcal{V_0} + \frac{C}{m}  \Vert \mathbf{z}_0  \Vert^2) \\
-\text{Let } C &= D_1^2 \sqrt \kappa + D_2 
+\text{Let } C &= D_1^2 \sqrt \kappa + 2D_2 
 \end{align}
 $$
 
