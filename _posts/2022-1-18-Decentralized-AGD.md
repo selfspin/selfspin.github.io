@@ -735,7 +735,7 @@ $$
 $$
 
 
-假设 $\alpha > \frac{1}{2}$ , 对于 $\mathcal{V_1}$ 有
+假设 $\alpha \le \frac{1}{2}$ , 对于 $\mathcal{V_1}$ 有
 
 
 $$
