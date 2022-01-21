@@ -4,6 +4,7 @@ toc: true
 excerpt_separator: <!--more-->
 tags:
   - 优化
+  - 牛顿法
 ---
 
 
