@@ -205,7 +205,7 @@ f(T_M(x)) \le \bar f_M(x) \le f(x) - \frac{M}{12}r_M(x)^3 \le f(x)
 $$
 
 
-## Non-Convex Coverage
+## Non-Convex Convergence
 
 
 
@@ -329,7 +329,7 @@ $$
 
 
 
-## Convex Coverage
+## Convex Convergence
 
 本节分析三次正则Newton方法在凸函数上面的收敛率，但值得注意的是，本节证明中仅仅用到了星-凸函数的性质，定义如下：
 
