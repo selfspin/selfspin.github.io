@@ -720,7 +720,7 @@ $$
 
 
 
-## Main Theorem for Coverage
+## Main Theorem for Convergence
 
 
 
