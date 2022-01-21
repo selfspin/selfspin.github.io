@@ -53,7 +53,7 @@ $$
 
 基于上述假设提出次梯度方法，可以看作是梯度方法的自然拓展，
 
-### Coverage
+### Convergence
 
 为了分析其收敛性，利用单步的迭代公式之后进行求和操作，
 
@@ -169,7 +169,7 @@ G(x_k) &\in \nabla g(x_k) + \partial h(x_k - \alpha G(x_k))
 $$
 
 
-### Coverage
+### Convergence
 
 在该算法中，我们优化的目标仍然为$f(x) = g(x) + h(x) $，也即原本的可导的 $g(x)$ 加上不可导的惩罚项$h(x)$，例如可能是稀疏优化或者低秩优化中的内容，可以参见 [稀疏优化与低秩优化](https://truenobility303.github.io/Matrix-Complete/) 
 
