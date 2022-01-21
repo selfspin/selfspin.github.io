@@ -128,7 +128,7 @@ $$
 \begin{align}
 E[\mathcal{D_{k+1}}] &= (1-p)\mathcal{D_k} + p \frac{4 \eta^2}{p} E[ \Vert \nabla f_i(x_k) - \nabla f_i(x_{\star}) \Vert_2^2] \\ 
 &=(1-p)\mathcal{D_k} + 4 \eta^2 E[ \Vert \nabla f_i(x_k) - \nabla f_i(x_{\star}) \Vert_2^2] \\ 
-&\le (1-p)\mathcal{D_k} + 8 \eta^2L (f(x_k) - f(x_{\star}) \\ 
+&\le (1-p)\mathcal{D_k} + 8 \eta^2L (f(x_k) - f(x_{\star})) \\ 
 \end{align}
 $$
 
