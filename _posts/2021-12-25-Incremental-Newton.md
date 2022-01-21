@@ -48,7 +48,7 @@ $$
 
 
 
-## Local SuperLinear Convergence
+## SuperLinear Convergence
 
 局部超线性收敛性的证明的核心是利用与增量式轮换更新相关的递归式数列估计收敛率。
 
