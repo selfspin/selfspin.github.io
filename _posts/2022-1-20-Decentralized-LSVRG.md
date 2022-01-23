@@ -549,7 +549,7 @@ $$
 \begin{align}
 \Vert B \Vert_2 &\le \Vert B \Vert_F \le \sum_{ij} B_{ij} \le \rho^2 D_4 \le \frac{1}{2} \\
 \rho^2 D_4 &\le \frac{1}{2},\text{Let } D_4 = 4+ \frac{97L^2}{2} + \frac{1}{32L^2}  \\
-\rho &\le \sqrt \frac{1}{{2 D_4}} = \sqrt{\frac{1}{{8+ 97L^2+ \frac{1}{16L^2}}}} 
+\rho &\le \sqrt{\frac{1}{2 D_4} } = \sqrt{\frac{1}{8+ 97L^2+ \frac{1}{16L^2} } }  \\
 \end{align}
 $$
 
