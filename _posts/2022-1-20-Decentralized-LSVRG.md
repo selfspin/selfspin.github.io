@@ -5,7 +5,6 @@ excerpt_separator: <!--more-->
 tags:
   - 优化
   - 分布式优化
-  - 随机优化
 ---
 
 
