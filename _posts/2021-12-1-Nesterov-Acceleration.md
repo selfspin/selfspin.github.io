@@ -1,5 +1,5 @@
 ---
-title: 'AGD: Nesterov's Accelerated Proximal Gradient Descent '
+title: 'AGD: Nesterov's Accelerated Proximal Gradient Descent'
 toc: true
 excerpt_separator: <!--more-->
 tags:
