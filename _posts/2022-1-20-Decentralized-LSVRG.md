@@ -215,7 +215,7 @@ $$
 $$
 \begin{align}
 \Vert \bar g_k - \nabla f(\bar x_k) \Vert &= \Vert \frac{1}{m} \sum_{i=1}^m \nabla f_i(\mathbf{x}_k^{(i)}) - \nabla f_i( \bar x_k) \Vert \\
-&\le  \frac{1}{\sqrt m } \Vert \mathbf{x}_k - \mathbf{1} \cdot \bar x_k \Vert
+&\le  \frac{L}{\sqrt m } \Vert \mathbf{x}_k - \mathbf{1} \cdot \bar x_k \Vert
 \end{align}
 $$
 
