@@ -1,5 +1,5 @@
 ---
-title: '增量式牛顿算法'
+title: 'Incremental Newton Method'
 toc: true
 excerpt_separator: <!--more-->
 tags:
