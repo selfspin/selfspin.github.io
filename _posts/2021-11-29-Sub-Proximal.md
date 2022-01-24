@@ -1,5 +1,5 @@
 ---
-title: '次梯度方法和近端梯度方法'
+title: 'Sub-Gradient Descent and Proximal Gradient Descent'
 toc: true
 excerpt_separator: <!--more-->
 tags:
