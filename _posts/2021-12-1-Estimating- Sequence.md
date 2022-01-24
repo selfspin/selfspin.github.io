@@ -1,5 +1,5 @@
 ---
-title: '从估计序列看Neterov加速方法'
+title: 'Estimate Sequence and AGD'
 toc: true
 excerpt_separator: <!--more-->
 tags:
