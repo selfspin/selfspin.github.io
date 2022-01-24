@@ -769,7 +769,7 @@ $$
 &= \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 8L \rho \sqrt {\frac{m}{\mu}} \frac{2(\sqrt{1 -\frac{\alpha}{2} })^{k+1}-2^{-k}}{2 \sqrt{1 -\frac{\alpha}{2} }-1} (\sqrt{\mathcal{V_0}} +\sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\
 &\le \rho D_3 2^{-k} \Vert \mathbf{z_0} \Vert + 24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
 &\le 2\rho D_3  (\sqrt{1-\frac{\alpha}{2}})^{k+1} \Vert \mathbf{z}_0 \Vert +24L \rho \sqrt{\frac{m}{\mu}} (\sqrt{1-\frac{\alpha}{2}})^{k+1} (\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert)\\ 
-&=\rho (\sqrt{1-\frac{\alpha}{2}})^{k+1} D_4 \sqrt m(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) ,\text{Let } D_4 = 2D_3 \sqrt{\frac{1}{C}}  + 24L \sqrt{\frac{1}{\mu}}
+&\le \rho (\sqrt{1-\frac{\alpha}{2}})^{k+1} D_4 \sqrt m(\sqrt{\mathcal{V_0}} + \sqrt{\frac{C}{m}} \Vert \mathbf{z_0} \Vert ) ,\text{Let } D_4 = 2D_3 \sqrt{\frac{1}{C}}  + 24L \sqrt{\frac{1}{\mu}}
 \end{align}
 $$
 
