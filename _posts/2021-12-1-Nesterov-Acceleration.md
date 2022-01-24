@@ -1,5 +1,5 @@
 ---
-title: 'AGD: Nesterov's Accelerated Method '
+title: 'AGD: Nesterov Accelerated Method '
 toc: true
 excerpt_separator: <!--more-->
 tags:
