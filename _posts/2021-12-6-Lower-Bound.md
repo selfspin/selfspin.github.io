@@ -1,5 +1,5 @@
 ---
-title: '光滑-凸函数和光滑-强凸函数的复杂度下界'
+title: 'Lower Bound for Smooth (Strongly) Convex Function'
 toc: true
 excerpt_separator: <!--more-->
 tags:
