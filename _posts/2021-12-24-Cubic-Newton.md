@@ -1,5 +1,5 @@
 ---
-title: '三次正则牛顿方法'
+title: 'Cubic Regularized Newton Method'
 toc: true
 excerpt_separator: <!--more-->
 tags: 
