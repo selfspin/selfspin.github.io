@@ -1,5 +1,5 @@
 ---
-title: '正则化牛顿方法'
+title: 'Regularized Newton Method'
 toc: true
 excerpt_separator: <!--more-->
 tags:
