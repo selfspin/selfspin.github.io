@@ -1,12 +1,10 @@
 ---
-title: 'AGD: Nesterov's Accelerated Proximal Gradient Descent'
+title: 'AGD: Nesterov's Accelerated Proximal Gradient Descent '
 toc: true
 excerpt_separator: <!--more-->
 tags:
   - 优化
 ---
-
-
 
 Nesterov对于近端梯度下降的加速方法以及详细证明。
 
