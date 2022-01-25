@@ -555,8 +555,11 @@ $$
 
 
 回顾归纳假设，
+
 $$
-\mathbb{E} [ \mathcal{V_k}] \le (1-\frac{\alpha}{2})^k (\mathcal{V_0}+ \frac{1}{m} \Vert \mathbf{z}_0  \Vert^2) \\
+\begin{align}
+\mathbb{E} [\mathcal{V_k}] \le (1-\frac{\alpha}{2})^k (\mathcal{V_0}+ \frac{1}{m} \Vert \mathbf{z}_0  \Vert^2) \\
+\end{align}
 $$
 
 
