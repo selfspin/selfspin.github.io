@@ -161,6 +161,8 @@ $$
 \mathbf{s}_k &= \frac{1}{\alpha} (\mathbf{x}_k - \mathbf{x}_{k+1} - U \lambda _k - V^2 \mathbf{x_k})
 \end{align}
 $$
+
+
 因此，
 
 
