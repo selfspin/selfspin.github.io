@@ -65,6 +65,8 @@ L(\mathbf{x}, \lambda) &= f(\mathbf{x}) + \frac{1}{2 \alpha} \Vert V \mathbf{x} 
 \lambda_{k+1} &= \lambda_k + U\mathbf{x}_{k+1}
 \end{align}
 $$
+
+
 结合方差缩减技术，每次采样大小为 $b$ 的MiniBatch，
 
 
@@ -110,12 +112,11 @@ $$
 
 
 
-定义 $ x_{\ast} $ 为问题的解，而 $ \mathbf{x}_{\ast} = \mathbf{1} \cdot x_{\ast} $ 满足最优性条件，
-
+定义 $ x_{\ast} $ 为问题的解，应该满足最优性条件，
 
 $$
 \begin{align}
-\nabla f(\mathbf{x}_{\ast}) + \frac{1}{\alpha} U \lambda^{\ast} = 0
+\nabla f(\mathbf{x}_{\ast}) + \frac{1}{\alpha} U \lambda^{\ast} = 0 , \text{ With } \mathbf{x}_{\ast}=\mathbf{1} \cdot x_{\ast}  
 \end{align}
 $$
 
