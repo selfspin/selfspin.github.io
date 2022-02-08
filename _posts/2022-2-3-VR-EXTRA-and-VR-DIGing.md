@@ -110,7 +110,7 @@ $$
 
 
 
-定义 $x_{\ast}$ 为问题的解，而 $\mathbf{x}_{\ast} = \mathbf{1} \cdot x_{\ast}$ 满足最优性条件，
+定义 $ x_{\ast} $ 为问题的解，而 $ \mathbf{x}_{\ast} = \mathbf{1} \cdot x_{\ast} $ 满足最优性条件，
 
 
 $$
