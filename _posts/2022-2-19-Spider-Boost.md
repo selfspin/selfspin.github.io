@@ -18,7 +18,13 @@ tags:
 
 ## Offline Setting
 
-算法每隔 $q$ 轮计算全梯度 $v_k = \nabla f(x_k)$  ,其他时候使用如下式子计算梯度 $v_{k}  = \frac{1}{\vert S \vert} \sum_{i \in S} \nabla f_i(x_k)- \nabla f_i(x_{k-1} ) +v_{k-1} $
+算法每隔 $q$ 轮计算全梯度 $v_k = \nabla f(x_k)$  ,其他时候使用如下式子计算梯度 
+
+$$
+\begin{align*}
+v_{k}  &= \frac{1}{\vert S \vert} \sum_{i \in S} \nabla f_i(x_k)- \nabla f_i(x_{k-1} ) +v_{k-1} 
+\end{align*}
+$$
 
 如此进行方差缩减，与SVRG中的无偏估计不同，Spider采用的是有偏估计，但利用鞅的性质可以缩小其方差，
 
