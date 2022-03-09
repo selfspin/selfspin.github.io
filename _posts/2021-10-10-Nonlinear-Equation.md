@@ -236,7 +236,7 @@ $$
 $$
 
 
-令$r = \Delta f_k - \Delta J_{k-1} \Delta x_k$, 则$\Delta J \Delta x = r$.
+令$r = \Delta f_k -  J_{k-1} \Delta x_k$, 则$\Delta J \Delta x = r$.
 
 由于$rank(\Delta J)=1$, $\exists y, \Delta J = r y^T, y^T \Delta x = 1$
 
@@ -250,7 +250,7 @@ $$
 
 
 $$
-J_k = J_{k-1} + (\Delta f_k - \Delta J_{k-1} \Delta x_k) \frac{\Delta x_k^T}{\Delta x_k^T \Delta x_k}
+J_k = J_{k-1} + (\Delta f_k -  J_{k-1} \Delta x_k) \frac{\Delta x_k^T}{\Delta x_k^T \Delta x_k}
 $$
 
 
@@ -261,8 +261,8 @@ $$
 
 $$
 \begin{align}
-J_k^{-1} &= (J_{k-1} + (\Delta f_k - \Delta J_{k-1} \Delta x_k) \frac{\Delta x_k^T}{\Delta x_k^T \Delta x_k})^{-1} \\
-&= J_{k-1}^{-1}- \frac{J_{k-1}^{-1} (\Delta f_k - \Delta J_{k-1} \Delta x_k)  \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T \Delta x_k+ \Delta x_k^T J_{k-1}^{-1}(\Delta f_k - \Delta J_{k-1} \Delta x_k)} \\
+J_k^{-1} &= (J_{k-1} + (\Delta f_k -  J_{k-1} \Delta x_k) \frac{\Delta x_k^T}{\Delta x_k^T \Delta x_k})^{-1} \\
+&= J_{k-1}^{-1}- \frac{J_{k-1}^{-1} (\Delta f_k - J_{k-1} \Delta x_k)  \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T \Delta x_k+ \Delta x_k^T J_{k-1}^{-1}(\Delta f_k -  J_{k-1} \Delta x_k)} \\
 &= J_{k-1}^{-1} + \frac{(\Delta x_k - J_{k-1}^{-1} \Delta f_k) \Delta x_k^T J_{k-1}^{-1}}{\Delta x_k^T J_{k-1}^{-1}\Delta f_k}
 \end{align}
 $$
