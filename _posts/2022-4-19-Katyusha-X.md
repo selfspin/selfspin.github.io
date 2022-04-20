@@ -232,12 +232,11 @@ $$
 
 
 将上述参数代入前述式子可以得到，
+
 $$
 \begin{align*}
-\mathbb{E} \left[ \frac{m \eta}{2\tau_{k}^2} \left( F(y_{k+1}) - F(x^{\ast})\right)\right ] &\le \mathbb{E}\left[ \frac{(1-\tau_k) m \eta}{2\tau_k^2} \left( F(y_k) - F(x^{\ast}) \right)\right] 
- + \mathbb{E}\left[\frac{1}{2} \Vert z_k - x^{\ast} \Vert^2 - \frac{1}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
- &\le \mathbb{E}\left[ \frac{ m \eta}{2\tau_{k-1}^2} \left( F(y_k) - F(x^{\ast}) \right)\right] 
- + \mathbb{E}\left[\frac{1}{2} \Vert z_k - x^{\ast} \Vert^2 - \frac{1}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
+\mathbb{E} \left[ \frac{m \eta}{2\tau_{k}^2} \left( F(y_{k+1}) - F(x^{\ast})\right)\right ] &\le \mathbb{E}\left[ \frac{(1-\tau_k) m \eta}{2\tau_k^2} \left( F(y_k) - F(x^{\ast}) \right)\right] + \mathbb{E}\left[\frac{1}{2} \Vert z_k - x^{\ast} \Vert^2 - \frac{1}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
+&\le \mathbb{E}\left[ \frac{ m \eta}{2\tau_{k-1}^2} \left( F(y_k) - F(x^{\ast}) \right)\right]  + \mathbb{E}\left[\frac{1}{2} \Vert z_k - x^{\ast} \Vert^2 - \frac{1}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
 \end{align*}
 $$
 
