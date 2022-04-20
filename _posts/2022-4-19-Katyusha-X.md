@@ -127,6 +127,7 @@ $$
 
 
 利用 [Linear Couping](https://truenobility303.github.io/Linear-Coupling/) 的技巧， 得到如下的Katyusha-X的算法，
+
 $$
 \begin{align*}
 x_{k+1} &= \tau_k z_k  + (1-\tau_k) y_k \\
