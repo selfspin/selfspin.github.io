@@ -35,7 +35,9 @@ $$
 z_{k+1} &= \text{argmin}_z \frac{1}{2\alpha} \Vert z - z_k \Vert^2 + g_k^\top z + h(z),
 \end{align*}
 $$
+
 利用最优性条件，
+
 $$
 \begin{align*}
 0 &= \frac{1}{\alpha} (z_{k+1} - z_k) + g_k + \nabla h(z_{k+1}).
@@ -44,6 +46,7 @@ $$
 
 
 因此，
+
 $$
 \begin{align*}
 &\quad g_k^\top (z_k - u) + h(z_{k+1}) - h(u)\\ &= g_k^\top (z_k - z_{k+1}) + g_k^\top (z_{k+1} - u) + h(z_{k+1}) - h(u)\\
@@ -102,7 +105,6 @@ $$
 使用方差缩减技术过后，令 $ m \ge 2, \eta \le \frac{1}{2L}  \min \{ 1, \sqrt{\frac{b}{m}} \} $, 则
 
 
-
 $$
 \begin{align*}
 &\quad\mathbb{E} [ f(w_{M+1} ) + \psi(w_{M+1}) - f(u) - \psi(u)] \\
@@ -135,6 +137,7 @@ z_{k+1} &= \text{argmin}_z  \{ \frac{1}{2\alpha_{k+1}} \Vert z - z_k \Vert^2 + g
 $$
 
 因此，
+
 $$
 \begin{align*}
 &\quad\mathbb{E}[\alpha_{k+1} ( f(y_{k+1}) + \psi (y_{k+1})- f(u) - \psi (u))] \\
@@ -153,6 +156,7 @@ $$
 
 
 令 $F = f + \psi$,  移项后得到，
+
 $$
 \begin{align*}
 \mathbb{E} \left[ \frac{\alpha_{k+1}}{\tau_{k}} \left( F(y_{k+1}) - F(u)\right)\right ] &\le \mathbb{E}\left[ \frac{(1-\tau_k)\alpha_{k+1}}{\tau_k} \left( F(y_k) - F(u) \right)\right] + \mathbb{E} \left[ \left(\frac{\alpha_{k+1}^2}{2} - \frac{\alpha_{k+1} m \eta}{4 \tau_k}\right) \Vert g_{k+1} \Vert^2 \right ] \\
@@ -167,6 +171,7 @@ $$
 
 
 选择以下参数，
+
 $$
 \begin{align*}
 \eta &= \frac{1}{2 L\sqrt{n} }, m = n ,\\ 
@@ -174,14 +179,18 @@ $$
 \alpha_{k+1} &= \frac{m \eta}{2 \tau} =\frac{2 \tau }{\mu} = \sqrt{\frac{\sqrt{n} }{2 \mu L}}.
 \end{align*}
 $$
+
 代入上述参数后可以得到，
+
 $$
 \begin{align*}
 \mathbb{E} \left[ \frac{2}{\mu} ( F(y_{k+1} ) - F(x^{\ast}))\right] &\le \mathbb{E} \left[ \frac{2(1- \tau)}{\mu} (F(y_k) - F(x^{\ast}))\right] + \mathbb{E}\left[\frac{1}{2} \Vert z_k - u \Vert^2 - \frac{1+\tau}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
 &\le \mathbb{E} \left[ \frac{2}{(1+\tau)\mu} (F(y_k) - F(x^{\ast}))\right] + \mathbb{E}\left[\frac{1}{2} \Vert z_k - u \Vert^2 - \frac{1+\tau}{2} \Vert z_{k+1} - x^{\ast} \Vert^2 \right] \\
 \end{align*}
 $$
+
 移项后得到，
+
 $$
 \begin{align*}
 \mathbb{E} \left[ \frac{2}{\mu} ( F(y_{k+1} ) - F(x^{\ast})) + \frac{1+ \tau}{2} \Vert z_{k+1} - x^{\ast} \Vert^2\right] &\le \frac{1}{1+\tau} \mathbb{E} \left[  \frac{2}{\mu} ( F(y_{k} ) - F(x^{\ast})) + \frac{1+ \tau}{2} \Vert z_{k} - x^{\ast} \Vert^2 \right].
@@ -190,6 +199,7 @@ $$
 
 
 算法的复杂度为，
+
 $$
 \begin{align*}
 K & \le \left( \frac{1}{\tau}  +1\right) n \log \frac{1}{\epsilon} \\
@@ -201,6 +211,7 @@ $$
 
 
 如果使用Minibatch，可以选择，
+
 $$
 \begin{align*}
 \eta &= \frac{1}{2 L}, m = \sqrt{n} , b = \sqrt{n}\\ 
@@ -208,7 +219,9 @@ $$
 \alpha_{k+1} &= \frac{m \eta}{2 \tau} =\frac{2 \tau }{\mu} = \sqrt{\frac{\sqrt{n} }{2 \mu L}}.
 \end{align*}
 $$
+
 递推关系式仍然成立，此时算法的复杂度同样为，
+
 $$
 \begin{align*}
 T & \le \left( \frac{1}{\tau}  +1\right) n \log \frac{1}{\epsilon} = \mathcal{O}( n + n^{3/4} \sqrt{\kappa}) \log \frac{1}{\epsilon}.
