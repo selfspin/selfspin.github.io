@@ -1,5 +1,5 @@
 ---
-title: 'Katyusha X'
+title: 'KatyushaX'
 toc: true
 excerpt_separator: <!--more-->
 tags:
