@@ -72,7 +72,7 @@ Neyman-Pearson告诉我们最优的假设检验其实是如下的似然比检验
 
 $$
 \begin{align*}
-R = \left\{\frac{f(X, \theta_1)}{f(X, \theta_0)} \ge \text{const} \right\}
+R = \left\{ \frac{f(X, \theta_1)}{f(X, \theta_0)} \ge \text{const} \right\}
 \end{align*}
 $$
 
