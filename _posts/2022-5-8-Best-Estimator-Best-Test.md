@@ -21,6 +21,7 @@ Cramér–Rao 下界与Neyman-Pearson引理简证。
 在实际中可以存在多个无偏估计量，Cramér–Rao 下界告诉我们哪一个统计量是最好的。Cramér–Rao 下界实际上是一个关于估计量的方差的不等式，达到不等式下界的估计量即为最小方差无偏估计量。该不等式实际上是关于Fisher信息的Cauthy不等式。
 
 对于对数似然函数，成立如下性质，
+
 $$
 \begin{align*}
 \mathbb{E}\left[ \frac{\partial \log f(X, \theta)}{\partial \theta}\right] = \int \frac{\partial f(X,\theta)}{\partial \theta}  \text{d}X = \frac{\partial}{\partial \theta} \int  f(X,\theta) \text{d}X = 0. 
