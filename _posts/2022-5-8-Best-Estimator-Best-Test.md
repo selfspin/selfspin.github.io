@@ -26,23 +26,37 @@ $$
 \mathbb{E}\left[ \frac{\partial \log f(X, \theta)}{\partial \theta}\right] = \int \frac{\partial f(X,\theta)}{\partial \theta}  \text{d}X = \frac{\partial}{\partial \theta} \int  f(X,\theta) \text{d}X = 0. 
 \end{align*}
 $$
+
 以及，
+
 $$
 \begin{align*}
 \mathcal{I}(\theta) = Var \left[ \frac{\partial \log f(X,\theta)}{\partial \theta}  \right]=\mathbb{E}\left[ \left(\frac{\partial \log f(X,\theta)}{\partial \theta}\right)^2 \right] = -\mathbb{E}\left[ \frac{\partial^2 \log f( X, \theta)}{\partial \theta^2}\right].
 \end{align*}
 $$
+
 对于满足 $\mathbb{E}[T(X)] = g(\theta)$ 的无偏统计量，成立
+
 $$
+\begin{align*}
 Cov\left[ T(X), \frac{\partial \log f(X,\theta)}{\partial  \theta} \right] = \int T(X) \frac{\partial f(X, \theta)}{\partial \theta} \text{d}X = \frac{\partial }{\partial \theta} \int T(X) f(X, \theta) \text{d}X = \frac{\partial g(\theta)}{\partial \theta}.
+\end{align*}
 $$
+
 根据Cuthy不等式，
+
 $$
+\begin{align*}
 Var[T(X)] Var \left[ \frac{\partial \log f(X,\theta)}{\partial \theta}  \right] \ge Cov\left[ T(X), \frac{\partial \log f(X,\theta)}{\partial  \theta} \right]
+\end{align*}
 $$
+
 也即
+
 $$
+\begin{align*}
 Var[T(X)] \ge  g'(\theta)/ \mathcal{I}(\theta).
+\end{align*}
 $$
 
 
@@ -56,15 +70,25 @@ $$
 
 Neyman-Pearson告诉我们最优的假设检验其实是如下的似然比检验，在如下的拒绝域下拒绝 $H_0$.
 $$
+\begin{align*}
 R = \left\{\frac{f(X, \theta_1)}{f(X, \theta_0)} \ge \text{const} \right\}
+\end{align*}
 $$
+
 下面进行证明，注意到犯一类错误的概率为，
+
 $$
+\begin{align*}
 \mathbb{P}( \text{Type I}) = \int_R f(X, \theta_0 ) \text{d}X  = \alpha
+\end{align*}
 $$
+
 而犯第二类错误的概率为，
+
 $$
+\begin{align*}
 \mathbb{P}( \text{Type II}) = 1 - \int_R f(X, \theta_1) \text{d}X.
+\end{align*}
 $$
 对于任意的其他假设检验，设其拒绝域为 $R'$, 可以验证如下不等式成立
 
