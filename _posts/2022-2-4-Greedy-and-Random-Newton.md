@@ -47,7 +47,7 @@ $$
 
 $$
 \begin{align}
-\sigma_A(G) = tr(A^{-1}(G-A))  = tr(A^{-1}G ) -1
+\sigma_A(G) = tr(A^{-1}(G-A))  = tr(A^{-1}G ) -n
 \end{align}
 $$
 
@@ -57,7 +57,7 @@ $$
 
 $$
 \begin{align}
-\sigma_A(G_{k+1}) &= \sigma_A(G_k) - \frac{u^\top G_k A^{-1} G_k u}{u^\top G_k u } + 1
+\sigma_A(G_{k+1}) &= \sigma_A(G_k) - \frac{u^\top G_k A^{-1} G_k u}{u^\top G_k u } + n
 \end{align}
 $$
 
@@ -77,9 +77,9 @@ $$
 
 $$
 \begin{align}
-\sigma_A(G_{k+1}) &= \sigma_A(G_k) - \max_{e_i} \frac{e_i^\top L A^{-1} L^\top e_i}{e_i^\top  e_i } + 1 \\
-&\le \sigma_A(G_k) - \frac{1}{n} tr(L A^{-1} L^\top) + 1 \\
-&= \sigma_A(G_k) - \frac{1}{n} tr(A^{-1} G_k) +1 \\
+\sigma_A(G_{k+1}) &= \sigma_A(G_k) - \max_{e_i} \frac{e_i^\top L A^{-1} L^\top e_i}{e_i^\top  e_i } + n \\
+&\le \sigma_A(G_k) - \frac{1}{n} tr(L A^{-1} L^\top) + n \\
+&= \sigma_A(G_k) - \frac{1}{n} tr(A^{-1} G_k) +n \\
 &=(1- \frac{1}{n}) \sigma_A(G_k)
 \end{align}
 $$
