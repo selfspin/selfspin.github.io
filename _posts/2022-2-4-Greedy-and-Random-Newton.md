@@ -273,7 +273,7 @@ $$
 \begin{align}
 \sigma_A(G_{k+1}) &=  \sigma_A(G_k) - \max_u \frac{u^\top G_k u}{u^\top A u} +1 \\
 &= \sigma_A(G_k ) - \max_{e_i} \frac{e_i^\top A^{-\frac{1}{2}}G_k A^{-\frac{1}{2}} e_i}{e_i^\top e_i}+1 \\
-&= \sigma_A(G_k) - \frac{1}{n} tr(A^{-1} G_k) +1\\
+&\le \sigma_A(G_k) - \frac{1}{n} tr(A^{-1} G_k) +1\\
 &= (1- \frac{1}{n}) \sigma_A(G_k)
 \end{align}
 $$
