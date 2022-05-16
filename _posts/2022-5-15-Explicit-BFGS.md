@@ -1,7 +1,7 @@
 ---
 title: 'BFGS的显式收敛率'
 toc: true
-except_separator: <!--more-->
+excerpt_separator: <!--more-->
 tags:
   - 优化
 ---
