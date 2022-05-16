@@ -332,7 +332,7 @@ $$
 G_{k+1} &= \text{Broyd}_\tau(G_k,A , u) \\
 &=  \tau \text{DFP}(G_k,A,u) + (1- \tau) \text{SR1}(G_k,A,u) \\
 &= G_k  -  \frac{A uu^\top G_k + G_k uu^\top A}{u^\top G_k u } + (\frac{u^\top G_k u}{u^\top A u}+1) \frac{A uu^\top A}{u^\top G_k u} - \frac{(G_k - A) uu^\top(G_k -A)}{u^\top G_k u} \\
-&= G_k - \frac{G_k uu^\top G_k}{u^\top G_k u }  - \frac{A uu^\top A}{u^\top A u} \\
+&= G_k - \frac{G_k uu^\top G_k}{u^\top G_k u }  + \frac{A uu^\top A}{u^\top A u} \\
 &= \text{BFGS}(G_k,A,\mu)
 \end{align}
 $$
