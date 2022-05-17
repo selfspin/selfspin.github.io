@@ -230,7 +230,7 @@ $$
 \begin{align*}
 x_{k+1} &= x_k - G_k^{-1} \nabla f(x_k) \\
 \tilde u &= \text{agrmax}_{\rm{e}_i } \{ \rm{e}_i^\top G_k^{1/2} A^{-1} G_k^{1/2} \rm{e_i} \}\\
- u &= G_k^{-1/2} u'\\
+ u &= G_k^{-1/2} \tilde u\\
 G_{k+1} &= G_k - \frac{G_k u u^\top G_k}{u^\top G_k u} + \frac{A uu^\top A}{u^\top A u }.
 \end{align*}
 $$
