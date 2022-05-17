@@ -48,7 +48,7 @@ Quasi-Newton算法应该也可以以一个显式的收敛率找到该问题的�
 
 ---
 
-上述文章中的分析适用于整个Broyden类算法，并且将对应的超线性收敛率从矩阵近似问题推广到了一大类比光滑强凸函数更广的函数：自和谐函数。但在本文中，我将仅仅关注于某一个具体的Broyden类算法。由于在实际中BFGS常被认为是收敛更快的，因此我选取BFGS算法作为研究对象。关于BFGS迭代公式的解释，以及使用线搜索算法下对应的全局收敛率以及局部渐进超线性收敛率的证明，由于其并非本文所关注的重点，我也将其放在如下链接中 [4] .
+上述文章中的分析适用于整个Broyden类算法，并且将对应的超线性收敛率从矩阵近似问题推广到了一大类比光滑强凸函数更广的函数：自和谐函数。但在本次Project中，我将仅仅关注于某一个具体的Broyden类算法。由于在实际中BFGS常被认为是收敛更快的，因此我选取BFGS算法作为研究对象。关于BFGS迭代公式的解释，以及使用线搜索算法下对应的全局收敛率以及局部渐进超线性收敛率的证明，由于其并非本次Project所关注的重点，我也将其放在如下链接中 [4] .
 
 为了简便起见，我也仅仅关于于二次函数的最小化问题。但是已经足以展现相关工作的核心。
 
@@ -70,10 +70,57 @@ $$
 
 在算法中，如果函数的 $\mu,L$ 已知或者对应的下界或者上界已知，我们可以得到关于 $A$ 的范围的初始猜测，那么后续迭代都将在我们控制的界中。更具体地，选定 $G_0 = LI_n$, 那么对产生的序列 $G_k$ 都成立 $ A \preceq G_k  \preceq \frac{L}{\mu} A$
 
+对于极小化二次函数的收敛率，考虑采用如下的残差衡量，
 
 
-为了衡量算法的收敛率，选取如下指标衡量矩阵近似的程度，
 
+$$
+\begin{align*}
+\lambda(x) = \Vert x- x^{\ast} \Vert_A^2 = \nabla f(x)^\top A^{-1} \nabla f(x).
+\end{align*}
+$$
+
+
+
+根据
+
+$$
+\begin{align*}
+\nabla f(x_{k+1}) &=\nabla f(x_k) + A(x_{k+1} - x_k)  = -(A^{-1}-G_k^{-1}) A \nabla f(x_k) 
+\end{align*}
+$$
+
+以及
+
+
+$$
+\begin{align*}
+(A^{-1} - G_k^{-1}) A (A^{-1} - G_k^{-1}) \le \left( 1- \frac{\mu}{L}\right)^2 A^{-1}
+\end{align*}
+$$
+
+
+可以看到残差单步下降
+
+$$
+\begin{align*}
+\lambda(x_{k+1}) &= \nabla f(x_k)^\top (A^{-1} - G_k^{-1}) A (A^{-1} - G_k^{-1}) \nabla f(x_k) \le \left( 1 - \frac{\mu}{L}\right)^2 \lambda(x_k). 
+\end{align*}
+$$
+
+因此算法首先是全局线性收敛的，
+
+
+$$
+\begin{align*}
+\lambda(x_{k+1}) &\le \left(1 - \frac{\mu}{L}\right)^{2k} \lambda(x_k).
+\end{align*}
+$$
+
+
+
+
+更进一步，为了衡量矩阵近似的超线性收敛率，选取如下指标衡量矩阵近似的程度，
 
 $$
 \begin{align*}
@@ -111,16 +158,6 @@ G_{k+1} &= G_k - \frac{G_k u u^\top G_k}{u^\top G_k u} + \frac{A uu^\top A}{u^\t
 $$
 
 
-对于极小化二次函数的收敛率，考虑采用如下指标衡量，
-
-
-$$
-\begin{align*}
-\lambda(x) = \Vert x- x^{\ast} \Vert_A^2 = \nabla f(x)^\top A^{-1} \nabla f(x).
-\end{align*}
-$$
-
-
 根据
 
 
@@ -131,7 +168,7 @@ $$
 $$
 
 
-可以得到该指标的递推关系式，可以看到该指标每次衰减的系数为如下定义的 $\theta_k$ ，
+可以得到残差的递推关系式，可以看到残差每次衰减的系数为如下定义的 $\theta_k$ ，
 
 
 $$
@@ -168,8 +205,18 @@ $$
 $$
 
 
-最后一步代入了 $G_0$ 的选择保证了 $\sigma_A(G_0) \le L / \mu$. 
+最后一步代入了 $G_0$ 的选择保证了 $\sigma_A(G_0) \le nL / \mu$. 
 
+
+
+结合算法的全局线性收敛性，可以导出当 $x_{k_0}$ 进入某个局部使得 $\sigma_A(x_{k_0}) \le 1/2$ 之后，成立
+
+
+$$
+\begin{align*}
+\lambda(x_{k_0+ k}) &\le \left( \frac{\sigma_A(G_{k_0})}{k} \right)^k \lambda(x_{k_0}) \le \left(\frac{1}{k} \right)^k \left( \frac{1}{2}\right)^k   \left(1 - \frac{\mu}{L}\right)^{2{k_0}} \lambda(x_0).
+\end{align*}
+$$
 
 
 ## Greedy BFGS
@@ -183,7 +230,7 @@ $$
 \begin{align*}
 x_{k+1} &= x_k - G_k^{-1} \nabla f(x_k) \\
 \tilde u &= \text{agrmax}_{\rm{e}_i } \{ \rm{e}_i^\top G_k^{1/2} A^{-1} G_k^{1/2} \rm{e_i} \}\\
- u &= G_k^{1/2} u'\\
+ u &= G_k^{-1/2} u'\\
 G_{k+1} &= G_k - \frac{G_k u u^\top G_k}{u^\top G_k u} + \frac{A uu^\top A}{u^\top A u }.
 \end{align*}
 $$
@@ -210,12 +257,21 @@ $$
 
 $$
 \begin{align*}
-\lambda(x_{k+1}) \le \prod_{i=0}^{k-1} \theta_i \lambda(x_0) \le \prod_{i=0}^{k-1} \sigma_A(G_i) \lambda(x_0) &\le \left(1 - \frac{1}{n}\right)^{k(k-1)/2} \left(\frac{L}{\mu}\right) \lambda(x_0)
+\lambda(x_{k+1}) \le \prod_{i=0}^{k-1} \theta_i \lambda(x_0) \le \prod_{i=0}^{k-1} \sigma_A(G_i) \lambda(x_0) &\le \left(1 - \frac{1}{n}\right)^{k(k-1)/2} \left(\frac{nL}{\mu}\right)^k \lambda(x_0)
+\end{align*}
+$$
+
+结合算法的全局线性收敛性，可以导出当 $x_{k_0}$ 进入某个局部使得 $\sigma_A(x_{k_0}) \le 1/2$ 之后，成立
+
+
+$$
+\begin{align*}
+\lambda(x_{k_0+k}) \le \left(1 - \frac{1}{n} \right)^{k(k-1)/2} \left( \frac{1}{2}\right)^k \left( 1- \frac{\mu}{L} \right)^{2k_0} \lambda(x_0).
 \end{align*}
 $$
 
 
-如果仔细对比与经典BFGS给出的数列估计可以发现 “贪心”的BFGS算法的收敛速度更快。同时，经过对比也可以发现 “贪心” 的BFGS算法关于条件数 $\kappa \triangleq L/\mu$ 也具有明显更好的依赖。
+如果对比与经典BFGS给出的数列估计可以发现 “贪心”的BFGS算法的收敛速度更快。
 
 
 
@@ -230,7 +286,7 @@ $$
 \begin{align*}
 x_{k+1} &= x_k - G_k^{-1} \nabla f(x_k) \\
 \tilde u &= \mathcal{N}(0, I_n) \\
-u &= G_k^{1/2} \tilde u\\
+u &= G_k^{-1/2} \tilde u\\
 G_{k+1} &= G_k - \frac{G_k u u^\top G_k}{u^\top G_k u} + \frac{A uu^\top A}{u^\top A u }.
 \end{align*}
 $$
@@ -262,15 +318,10 @@ $$
 \end{align*}
 $$
 
+可以发现随机的BFGS算法得到的收敛率估计与 “贪心”的BFGS算法得到的估计相同，只是不等号变成了等号。因此，尽管随机的BFGS算法可能实际会稍慢一些，但是其期望意义下超线性收敛率的阶却仍然是相同的.
 
-可以发现随机的BFGS算法得到的收敛率估计与 “贪心”的BFGS算法得到的估计相同，只是不等号变成了等号。因此，尽管随机的BFGS算法可能实际会稍慢一些，但是其期望意义下超线性收敛率的阶却仍然是相同的，也即满足
 
 
-$$
-\begin{align*}
-\mathbb{E}[\lambda(x_{k+1})] \le \mathbb{E} \left[\left(1 - \frac{1}{n}\right)^{k(k-1)/2} \left(\frac{L}{\mu}\right) \lambda(x_0) \right]
-\end{align*}
-$$
 
 
 ## Summary
@@ -296,4 +347,3 @@ $$
 [5] https://truenobility303.github.io/Greedy-and-Random-Newton
 
 [6] [Incremental Greedy BFGS: An Incremental Quasi-Newton Method with Explicit Superlinear Rate](https://opt-ml.org/oldopt/papers/2020/paper_65.pdf)
-
