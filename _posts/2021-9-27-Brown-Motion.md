@@ -45,7 +45,7 @@ $E[B_{t+s} - B_s]  = t, Var[B_{t+s}-B_s] =  t$， 因此，$B_{t+s} - B_s \sim N
 
 对于增量独立性质，由于正态分布不相关等价于独立，计算协方差：
 
-$Cov[B_{t+s}-B_t, B_t] = Cov(B_{t+s},B_t)=0$ ,因此，$B_{t+s} - B_s \perp B_s$
+$Cov[B_{t+s}-B_t, B_t] = Cov(B_{t+s},B_t) - Cov(B_{t},B_t)=0$ ,因此，$B_{t+s} - B_s \perp B_s$
 
 ## Simple Transformation
 
