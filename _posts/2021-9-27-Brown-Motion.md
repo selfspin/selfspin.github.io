@@ -207,7 +207,7 @@ $$
 
 因此，$P(B_t \le x, M_t >y) = P(B_t > 2y-x)$
 
-综上，$P(B_t \le x, M_t \le y) = \Phi(\frac{x}{\sqrt t}) + 1 - \Phi(\frac{2y-x}{\sqrt t})$
+综上，$P(B_t \le x, M_t \le y) = \Phi(\frac{x}{\sqrt t}) - 1 + \Phi(\frac{2y-x}{\sqrt t})$
 
 **Absorbed Brown Motion**
 
