@@ -94,7 +94,7 @@ $E[X_t] = \sum_{i=1}^n E[Z_i] = 0, Var[X_t] = \sum_{i=1}^n Var[Z_i] = nh^2 = t,\
 
 本节定义几个布朗运动的变形，在后面这些变形可能扮演者重要的作用
 
-**Reflected Brown Motion **
+**Reflected Brown Motion**
 
 反射布朗运动，定义为$\vert B_t \vert$，下面计算其期望、方差、分布函数等。
 
