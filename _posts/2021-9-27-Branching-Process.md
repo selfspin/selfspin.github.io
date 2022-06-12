@@ -22,7 +22,7 @@ tags:
 
 可以得到，$\phi(0) = 0, \phi(1) = E[X] $
 
-$\phi^{(n)}(s) = \sum_{k=n}^{\infty} k! s^{n-k} P_n(X=k), P_n(X=k)=\frac{\phi^{(k)}(0)}{k!}$ 
+$\phi^{(n)}(s) = \sum_{k=n}^{\infty} k! s^{n-k} P_n(X=k)$
 
 类似于特征函数，生成函数和分布函数也一一对应。
 
@@ -48,11 +48,13 @@ $Var[X_n] = Var[E[\sum_{i=1}^{X_{n-1}} Z_i] +E[Var[\sum_{i=1}^{X_{n-1}}Z_i]] =Va
 
 我们希望研究一个分支过程是否会走向灭绝，定义$\tau_n$为第$n$代灭绝的概率。
 
-显然地，$\tau_{n+1} \ge \tau_n$ , 且灭绝概率的上界为1，单调有界数列必有极限，该极限就是灭绝概率，定义为$\tau$
+显然地，$\tau_{n+1} \ge \tau_n$ , 且灭绝概率的上界为1。
+
+单调有界数列必有极限，该极限就是灭绝概率，定义为$\tau$。
 
 $\tau = \lim_{n \rightarrow \infty} P_n(X=0) = \phi^{(n)}(0)$
 
-根据，$\phi^{(n+1)}(0) = \phi (\phi^{(n)}(0))$ ,两端同时取极限，可以得到,$\tau = \phi(\tau)$
+根据，$\phi^{(n+1)}(0) = \phi (\phi^{(n)}(0))$ ,两端同时取极限，可以得到, $\tau = \phi(\tau)$
 
 观察$\phi(\tau)$的性质，$\phi(0) = p_0,\phi(1) = 1, \phi'(1)= \mu,  \phi''(t) \ge 0$
 
