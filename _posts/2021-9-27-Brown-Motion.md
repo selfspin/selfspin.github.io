@@ -114,7 +114,7 @@ $E[\exp(a B_t)]  = \exp(\frac{a^2 t}{2})$ ,由于$a B_t \sim N(0,\alpha^2 t)$
 
 $Var[\exp(a B_t)] = E[\exp(2 a B_t)] - E[\exp(aB_t)]^2 = \exp(2a^2t) - \exp(a^2t)$
 
-$P( \exp(a B_t) \le x) = \Phi(\frac{\ln a}{a \sqrt{t}})$,对分布函数求导可以得到密度函数。
+$P( \exp(a B_t) \le x) = \Phi(\frac{\ln x}{a \sqrt{t}})$,对分布函数求导可以得到密度函数。
 
 **Brown Bridge**
 
