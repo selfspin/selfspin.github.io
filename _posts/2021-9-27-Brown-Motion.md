@@ -98,7 +98,7 @@ $E[X_t] = \sum_{i=1}^n E[Z_i] = 0, Var[X_t] = \sum_{i=1}^n Var[Z_i] = nh^2 = t,\
 
 反射布朗运动，定义为$\vert B_t \vert$，下面计算其期望、方差、分布函数等。
 
-$E[ \vert B_t \vert] = \int_{0}^{\infty} \vert x \vert f(x) dx=  \sqrt\frac{2 t}{\pi}$
+$E[ \vert B_t \vert] = \int_{-\infty}^{\infty} \vert x \vert f(x) dx=  \sqrt\frac{2 t}{\pi}$
 
 $Var[\vert B_t \vert] = E[B_t^2] - E[\vert B_t \vert]^2 = t - \frac{2t}{\pi}$
 
