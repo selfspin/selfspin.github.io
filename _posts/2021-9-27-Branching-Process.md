@@ -56,7 +56,7 @@ $\tau = \lim_{n \rightarrow \infty} P_n(X=0) = \phi^{(n)}(0)$
 
 根据，$\phi^{(n+1)}(0) = \phi (\phi^{(n)}(0))$ ,两端同时取极限，可以得到, $\tau = \phi(\tau)$
 
-观察$\phi(\tau)$的性质，$\phi(0) = p_0,\phi(1) = 1, \phi'(1)= \mu,  \phi''(t) \ge 0$
+观察$\phi(\tau)$的性质，$\phi(0) = p_0,\phi(1) = 1, \phi'(1)= \mu,  \phi^{''}(t) \ge 0$
 
 可以得到下面的结论：
 
