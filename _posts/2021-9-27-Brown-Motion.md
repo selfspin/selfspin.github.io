@@ -174,7 +174,6 @@ $$
 
 综上，$P(M_t > x) = 2P(B_t > x) = P(\vert B_t \vert > x)$
 
-也即有：$ M_t \sim \vert B_t \vert $, 即最大值的分布与反射布朗运动的分布相同。
 
 **Hitting Time**
 
