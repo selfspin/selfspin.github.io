@@ -85,7 +85,7 @@ $$
 
 若已知$i$为常返态，$\sum_{s=1}^{\infty} P_{ii}^{(s)}  = \infty$.
 
-则，$\sum_{s=1}^{\infty} P_{ii}^{(s)}  \ge  \sum_{s=1}^{\infty} P_{ii}^{(s+m+n)}  \ge P_{ii}^{(n)} P_{ii}^{(m)}\sum_{s=1}^{\infty} P_{ii}^{(s)} = \infty$.
+则，$\sum_{s=1}^{\infty} P_{jj}^{(s)}   \ge P_{ij}^{(n)} P_{ji}^{(m)}\sum_{s=1}^{\infty} P_{ii}^{(s)} = \infty$.
 
 故，$j$也为常返态。
 
