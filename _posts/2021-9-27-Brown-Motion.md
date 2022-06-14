@@ -144,7 +144,7 @@ $$
 Cov[X_tX_s] &= E[\int_0^s B_udu\int_0^t B_vdv ] \\
 &=\int_0^s du \int_0^t dv  Cov[B_u,B_v] \\
 &= \int_0^s du \int_0^u  vdv  +\int_0^s du \int_u^t udv \\
-& = \frac{ts^2}{2} - \frac{s^3}{2}
+& = \frac{ts^2}{2} - \frac{s^3}{6}
 \end{align}
 $$
 
