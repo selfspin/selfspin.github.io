@@ -55,7 +55,7 @@ $Cov[B_{t+s}-B_t, B_t] = Cov(B_{t+s},B_t) - Cov(B_{t},B_t)=0$ ,因此，$B_{t+s}
 * $x_t = tB_{\frac{1}{t}}$
 * $x_t = \frac{1}{\sqrt{c}} B_{ct}$ 
 
-首先上述过程均为布朗运动这个正态过程的线性组合，因而也为正态过程。根据正态过程与布朗运动的关系，计算可以得到，$E[x_t] = 0, Cov[x_t,x_s] = \min (s,t)$ ，因此根据上述结论，$x_t \sim B_t$
+首先上述过程均为布朗运动这个正态过程的线性组合，因而也为正态过程。根据正态过程与布朗运动的关系，计算可以得到，$E[x_t] = 0, Cov[x_t,x_s] = \min (s,t)$ ，因此，$x_t \sim B_t$
 
 ## Conditional Density
 
