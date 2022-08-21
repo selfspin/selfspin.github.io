@@ -1,7 +1,7 @@
 ---
 title: 'Benign Overfitting of SGD for Least Square'
 toc: true
-excerpt_separator: <!--moer-->
+excerpt_separator: <!--more-->
 tags:
   - 随机优化
 ---
