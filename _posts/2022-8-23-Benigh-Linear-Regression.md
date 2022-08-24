@@ -150,10 +150,7 @@ $$
 $$
 
 
-
 而对于 ${\rm tr}(C)$, 使用Sherman-Woodbury-Morrison公式，可以得到
-
-
 
 $$
 \begin{align*}
@@ -170,7 +167,6 @@ $$
 &= \sum_{i \le k} \frac{\mu_{k+1}^{2}(A_{-i}) \Vert z_i \Vert^2}{ \mu_{n}^{2} (A_{-i}) \Vert \Pi_{k: \infty}z_i \Vert^4} + \sum_{i > k} \frac{\lambda_i^2 \Vert z_i \Vert^2}{\mu_n^{2}(A)}.
 \end{align*}
 $$
-
 
 
 其中，为了记号方便我们定义
