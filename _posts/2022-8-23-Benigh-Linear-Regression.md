@@ -180,7 +180,13 @@ $$
 \end{align*}
 $$
 
+也即,
 
+$$
+\begin{align*}
+{\rm tr}(C) \le \sum_{i \le k} \frac{\mu_{k+1}^{2}(A_{-i}) \Vert z_i \Vert^2}{ \mu_{n}^{2} (A_{-i}) \Vert \Pi_{k: \infty}z_i \Vert^4} + \sum_{i > k} \frac{\lambda_i^2 \Vert z_i \Vert^2}{\mu_n^{2}(A)}.
+\end{align*}
+$$
 
 
 
