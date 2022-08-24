@@ -150,15 +150,27 @@ $$
 $$
 
 
-而对于 ${\rm tr}(C)$, 使用Sherman-Woodbury-Morrison公式，可以得到
+而而对于 ${\rm tr}(C)$, 利用恒等式，我们有，
+
+
 
 $$
 \begin{align*}
 {\rm tr}(C) &= {\rm tr}((XX^\top)^{-1} X \Sigma X^\top (XX^\top)^{-1}) \\
 &= {\rm tr}( X \Sigma X^\top (XX^\top)^{-2}) \\
 &= {\rm tr}( Z \Sigma^2 Z^\top (Z\Sigma Z^\top)^{-2}) \\
-&= {\rm tr}( Z \Sigma^2 Z^\top A^{-2}) \\
-&=\sum_{i\le k} \lambda_i^2 z_i^\top  \left(\sum_j \lambda_j z_j z_j^\top \right)^{-2} z_i + \sum_{i > k } \lambda_i^2 z_i^\top A^{-2} z_i \\
+&= {\rm tr}( Z \Sigma^2 Z^\top A^{-2}).
+\end{align*}
+$$
+
+
+
+进一步，使用Sherman-Woodbury-Morrison公式，可以得到
+
+
+$$
+\begin{align*}
+{\rm tr}(C)&=\sum_{i\le k} \lambda_i^2 z_i^\top  \left(\sum_j \lambda_j z_j z_j^\top \right)^{-2} z_i + \sum_{i > k } \lambda_i^2 z_i^\top A^{-2} z_i \\
 &= \sum_{i \le k} \lambda_i^2 z_i^\top  \left(\lambda_i z_i z_i^\top + A_{-i} \right)^{-2} z_i + \sum_{i > k } \lambda_i^2 z_i^\top A^{-2} z_i \\
 &= \sum_{i \le k} \frac{\lambda_i^2 z_i^\top A_{{-i}}^{-2} z_i}{ (1 + \lambda_i z_i^\top A_{-i}^{-1} z_i)^2} + \sum_{i > k } \lambda_i^2 z_i^\top A^{-2} z_i \\
 &\le \sum_{i \le k} \frac{ z_i^\top A_{{-i}}^{-2} z_i}{ (  z_i^\top A_{-i}^{-1} z_i)^2} + \sum_{i > k } \lambda_i^2 z_i^\top A^{-2} z_i \\ 
@@ -167,6 +179,9 @@ $$
 &= \sum_{i \le k} \frac{\mu_{k+1}^{2}(A_{-i}) \Vert z_i \Vert^2}{ \mu_{n}^{2} (A_{-i}) \Vert \Pi_{k: \infty}z_i \Vert^4} + \sum_{i > k} \frac{\lambda_i^2 \Vert z_i \Vert^2}{\mu_n^{2}(A)}.
 \end{align*}
 $$
+
+
+
 
 
 其中，为了记号方便我们定义
