@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "TrueNobility303"
 title_separator          : "-"
 name                     : &name "Lesi Chen"
-description              : &description "an undergraduate in School of Data Science at Fudan University"
+description              : &description "undergraduate, School of Data Science, Fudan University"
 url                      : https://truenobility303.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "truenobility303.github.io"
