@@ -2,8 +2,6 @@
 main:
   - title: "Publications"
     url: /publications/
-  - title: "Courses"
-    url: /courses/
   - title: "Blogs"
     url: /posts/
   
