@@ -14,7 +14,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 
 ## Conference Publications
-* [NeurIPS 2022](https://luoluo-sds.github.io/paper/NIPS2022a.pdf) Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition.
+* [[NeurIPS 2022]](https://luoluo-sds.github.io/paper/NIPS2022a.pdf) Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition.
   **Lesi Chen**, Boyuan Yao and Luo Luo.
   
   
