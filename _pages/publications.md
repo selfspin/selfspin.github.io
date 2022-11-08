@@ -9,15 +9,12 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Preprints
 
-* **Lesi Chen** and Luo Luo. 
+* [ArXiV](https://arxiv.org/abs/2208.05925) Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization.  
+  **Lesi Chen** and Luo Luo.
 
-  Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization.  
-  
-  arXiv preprint:2208.05925, 2022.     
 
 ## Conference Publications
-* **Lesi Chen**, Boyuan Yao and Luo Luo.
-
-  Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition.
+* [NeurIPS 2022](https://luoluo-sds.github.io/paper/NIPS2022a.pdf) Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition.
+  **Lesi Chen**, Boyuan Yao and Luo Luo.
   
-  Advances in Neural Information Processing Systems (NeurIPS), 2022.
+  
