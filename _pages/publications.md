@@ -11,7 +11,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. 
  
-  **Lesi Chen** and Luo Luo. [[ArXiV]](https://arxiv.org/abs/2208.05925) 
+  **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925) 
   
   
  
