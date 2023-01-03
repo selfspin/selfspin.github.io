@@ -9,6 +9,10 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Preprints
 
+* On Bilevel Optimization without Lower-level Strong Convexity
+
+  **Lesi Chen**, Jing Xu and Jingzhao Zhang [[arXiv]](https://arxiv.org/abs/2301.00712)
+
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization
  
   **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925) 
