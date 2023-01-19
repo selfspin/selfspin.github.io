@@ -15,7 +15,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
  
-  **Lesi Chen**, Jing Xu and Luo Luo [[arXiv]]https://arxiv.org/pdf/2301.06428.pdf)
+  **Lesi Chen**, Jing Xu and Luo Luo [[arXiv]](https://arxiv.org/pdf/2301.06428.pdf)
   
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization
  
