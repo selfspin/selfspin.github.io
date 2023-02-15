@@ -15,7 +15,7 @@ Paper Reading: Optimal Stochastic Non-smooth Non-convex Optimization through Onl
 
 
 
-![image-20230215153359260](images/posts/Optimal-NSNC/image-20230215153359260.png)
+![image-20230215153359260](/images/posts/Optimal-NSNC/image-20230215153359260.png)
 
 
 
