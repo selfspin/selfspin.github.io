@@ -88,7 +88,7 @@ $$
 
 $$
 \begin{align*}
-\frac{1}{K} \sum_{k=1}^K \mathbb{E} \left \Vert \frac{1}{T} \sum_{t=1}^T \nabla F(w_t^k) \right \Vert \le \frac{F(x_0) - F^*}{D T K} + \frac{2G}{\sqrt{T}}.
+\frac{1}{K} \sum_{k=1}^K \mathbb{E} \left \Vert \frac{1}{T} \sum_{t=1}^T \nabla F(w_t^k) \right \Vert \le \frac{F(x_0) - F^\ast}{D T K} + \frac{2G}{\sqrt{T}}.
 \end{align*}
 $$
 
