@@ -15,12 +15,11 @@ Paper Reading: Optimal Stochastic Non-smooth Non-convex Optimization through Onl
 
 
 
-![image-20230215153359260](/images/posts/Optimal-NSNC/image-20230215153359260.png)
+![image-20230215153359260](/images/posts/NSNC/image-20230215153359260.png)
 
 
 
 使用online 梯度下降算法作为子算法 $\mathcal{A}$, 并且每次向直径为 $D$ 的球内投影，可以得到如下的更新公式，
-
 
 $$
 \begin{align*}
