@@ -1,15 +1,14 @@
 ---
-title:  'Online-to-Non-convex Conversion'
-
+title: 'Optimal Stochastic Nonsmooth Nonconvex Optimization'
+toc: true
+excerpt_separator: <!--more-->
+tags:
+  - 优化
 ---
-
-
-
-
 
 Paper Reading: Optimal Stochastic Non-smooth Non-convex Optimization through Online-to-Non-convex Conversion
 
-
+<!--more-->
 
 文章提出如下基于online learning的算法，可以达到nonsmooth nonconvex optimization问题的最优复杂度。
 
