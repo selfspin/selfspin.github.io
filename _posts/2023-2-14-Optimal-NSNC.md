@@ -25,12 +25,12 @@ $$
 \begin{align*}
 x_n &= x_{n-1} +\Delta_n \\
 g_n &= \nabla g(x_{n-1} + s_n \Delta_n; \xi_t) \\
-\Delta_{n+1} &= {\rm Clip}_D (\Delta_n + \eta g_n). 
+\Delta_{n+1} &= \text{Clip}_D (\Delta_n + \eta g_n). 
 \end{align*}
 $$
 
 
-其中 $s_n$ 从区间 $[0,1]$ 之内均匀采样，首先观察到
+其中 $s_n$ 从区间 $ [0,1] $ 之内均匀采样，首先观察到
 
 
 $$
