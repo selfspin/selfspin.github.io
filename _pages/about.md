@@ -9,8 +9,7 @@ redirect_from:
 ---
 
 Welcome! I am currently an undergraduate in [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University. 
-My research interests are mainly on Artificial Intelligence, Statistics and Algorithm.
+My research interests are mainly on optimization and other related topics in machine learning theory. I also serve as a reviewer for AISTATS, ICML.
 
-During my undergraduate career, I have the fortune to be advised by Professor [Luo Luo](https://luoluo-sds.github.io/), doing the research on stochastic optimization, minimax optimization and distributed optimization.
 
 
