@@ -7,11 +7,11 @@ author_profile: true
 
 You can find my articles on my [Google Scholar](https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao)
 
-## Preprints
+## Preprints (``*'' denotes equal contributions)
 
 * On Bilevel Optimization without Lower-level Strong Convexity
 
-  **Lesi Chen**, Jing Xu and Jingzhao Zhang [[arXiv]](https://arxiv.org/abs/2301.00712)
+  **Lesi Chen***, Jing Xu* and Jingzhao Zhang [[arXiv]](https://arxiv.org/abs/2301.00712)
 
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
  
