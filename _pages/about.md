@@ -12,6 +12,6 @@ Welcome! I am currently an undergraduate in [School of Data Science](http://www.
 My research interests are mainly on optimization and other related topics in machine learning theory.
 
 
-## TA
+## Teaching Assistant
 Optimization Theory [DATA 620020](https://luoluo-sds.github.io/teaching/data620020.html)
 
