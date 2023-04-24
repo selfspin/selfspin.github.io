@@ -13,5 +13,5 @@ My research interests are mainly on optimization and other related topics in mac
 
 
 ## Teaching Assistant
-Optimization Theory [DATA 620020](https://luoluo-sds.github.io/teaching/data620020.html)
+Optimization Theory [DATA620020](https://luoluo-sds.github.io/teaching/data620020.html)
 
