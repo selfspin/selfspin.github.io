@@ -27,13 +27,13 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 
 ## Conference Publications
-* Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition
-
-  **Lesi Chen**, Boyuan Yao and Luo Luo. [[NeurIPS 2022]](https://openreview.net/pdf?id=JSha3zfdmSo) 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
  
   **Lesi Chen**, Jing Xu and Luo Luo [[ICML 2023]](https://arxiv.org/pdf/2301.06428.pdf)
-  
+
+* Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition
+
+  **Lesi Chen**, Boyuan Yao and Luo Luo. [[NeurIPS 2022]](https://openreview.net/pdf?id=JSha3zfdmSo) 
   
   
