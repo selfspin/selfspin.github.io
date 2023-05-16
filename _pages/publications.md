@@ -31,6 +31,10 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
  
   **Lesi Chen**, Jing Xu and Luo Luo [[ICML 2023]](https://arxiv.org/pdf/2301.06428.pdf)
+  
+* Communication Efficient Distributed Newton Method with Fast Convergence Rates
+  
+  Chengchang Liu, **Lesi Chen** and Luo Luo [KDD 2023]
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition
 
