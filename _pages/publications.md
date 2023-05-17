@@ -34,7 +34,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
   
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates
   
-  Chengchang Liu, **Lesi Chen** and Luo Luo [KDD 2023]
+  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui [KDD 2023]
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition
 
