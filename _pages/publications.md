@@ -13,7 +13,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * On Bilevel Optimization without Lower-level Strong Convexity
 
-  **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang [[arXiv]](https://arxiv.org/abs/2301.00712)
+  **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
 
   
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization
@@ -30,12 +30,12 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates
   
-  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui [KDD 2023]
+  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [KDD 2023]
 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
  
-  **Lesi Chen**, Jing Xu and Luo Luo [[ICML 2023]](https://arxiv.org/pdf/2301.06428.pdf)
+  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://arxiv.org/pdf/2301.06428.pdf)
   
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition
