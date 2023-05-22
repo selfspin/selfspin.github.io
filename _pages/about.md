@@ -13,7 +13,7 @@ My research interests are mainly on optimization and other related topics in mac
 
 ## Services
 
-NeurIPS 2023 reviewer
+NeurIPS 2023 Reviewer
 
 ## Teaching Assistant
 Optimization Theory [DATA620020](https://luoluo-sds.github.io/teaching/data620020.html)
