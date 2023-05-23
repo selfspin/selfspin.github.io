@@ -44,7 +44,7 @@ Cov\left[ T(X), \frac{\partial \log f(X,\theta)}{\partial  \theta} \right] = \in
 \end{align*}
 $$
 
-根据Cuthy不等式，
+根据Cauthy不等式，
 
 $$
 \begin{align*}
