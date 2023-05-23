@@ -20,7 +20,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
  
   **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925) 
   
-* A Simple and Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization 
+* An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization 
  
   **Lesi Chen**, Haishan Ye and Luo Luo. [[arXiv]](https://arxiv.org/pdf/2212.02387.pdf) 
   
