@@ -11,7 +11,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Preprints 
 
-* On Bilevel Optimization without Lower-level Strong Convexity
+* Bilevel Optimization without Lower-level Strong Convexity from the Hyper-Objective Perspective
 
   **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
 
