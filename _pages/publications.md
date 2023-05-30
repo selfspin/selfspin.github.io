@@ -30,7 +30,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates
   
-  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [KDD 2023]
+  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [KDD 2023](https://arxiv.org/pdf/2305.17945.pdf)
 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization
