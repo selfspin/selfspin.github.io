@@ -29,7 +29,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization \
-  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://arxiv.org/pdf/2301.06428.pdf)
+  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://openreview.net/pdf?id=VqnEAUnfvu)
   
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. \
