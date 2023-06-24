@@ -11,8 +11,8 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Preprints 
 
-* Bilevel Optimization without Lower-level Strong Convexity \
-  from the Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
+* Bilevel Optimization without Lower-level Strong Convexity from the \
+  Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
 
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
   **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925) 
