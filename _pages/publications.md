@@ -11,8 +11,9 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Preprints 
 
-* Near-Optimal Fully First-Order Algorithms for Finding  Stationary Points in Bilevel Optimization. \
-  Lesi Chen*, Yaohua Ma* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/pdf/2306.14853.pdf)
+* Near-Optimal Fully First-Order Algorithms for Finding  Stationary Points in \
+  Bilevel Optimization. 
+  **Lesi Chen\***, Yaohua Ma\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/pdf/2306.14853.pdf)
   
 * Bilevel Optimization without Lower-level Strong Convexity from the \
   Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
