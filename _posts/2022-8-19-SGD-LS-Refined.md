@@ -8,7 +8,7 @@ tags:
 
 
 
-Paper Reading: Benign Overfifitting of Constant-Stepsize SGD for Linear Regression (JMLR' 21 and COLT' 21)
+Paper Reading: Benign Overfifitting of Constant-Stepsize SGD for Linear Regression
 
 
 
