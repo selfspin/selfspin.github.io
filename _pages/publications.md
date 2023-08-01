@@ -37,6 +37,6 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
   
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. \
-  **Lesi Chen**, Boyuan Yao and Luo Luo. [[NeurIPS 2022]](https://papers.nips.cc/paper_files/paper/2022/file/5a4699b3d0bf7ba934fe10cdba5a8a32-Supplemental-Conference.pdf) 
+  **Lesi Chen**, Boyuan Yao and Luo Luo. [[NeurIPS 2022]](https://arxiv.org/abs/2307.15868) 
   
   
