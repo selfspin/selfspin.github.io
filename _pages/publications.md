@@ -13,7 +13,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 * Near-Optimal Fully First-Order Algorithms for Finding  Stationary Points in \
   Bilevel Optimization. 
-  **Lesi Chen\***, Yaohua Ma\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/pdf/2306.14853.pdf)
+  **Lesi Chen\***, Yaohua Ma\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2306.14853)
   
 * Bilevel Optimization without Lower-level Strong Convexity from the \
   Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
@@ -24,11 +24,11 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 ## Conference Publications
 
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates. \
-  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [[KDD 2023]](https://arxiv.org/pdf/2305.17945.pdf)
+  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [[KDD 2023]](https://arxiv.org/abs/2305.17945)
 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization \
-  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://openreview.net/pdf?id=VqnEAUnfvu)
+  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://arxiv.org/abs/2301.06428)
   
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. \
