@@ -27,7 +27,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
   Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [[KDD 2023]](https://arxiv.org/abs/2305.17945)
 
   
-* Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization \
+* Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. \
   **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://arxiv.org/abs/2301.06428)
   
 
