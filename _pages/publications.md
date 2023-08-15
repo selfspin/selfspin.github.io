@@ -9,18 +9,20 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
  \* denotes equal contributions.
 
-## Selected Preprints 
+## Recent Preprints 
 
 * Near-Optimal Fully First-Order Algorithms for Finding  Stationary Points in \
   Bilevel Optimization. 
-  **Lesi Chen\***, Yaohua Ma\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2306.14853)
+  **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2306.14853)
   
 * Bilevel Optimization without Lower-level Strong Convexity from the \
-  Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\* and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
+  Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
 
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
-  **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925) 
-
+  **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925)
+  
+* An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization \\
+  Lesi Chen, Haishan Ye, and Luo Luo. [[arXiv]](https://arxiv.org/abs/2212.02387)
 ## Conference Publications
 
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates. \
@@ -28,10 +30,10 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
   
 * Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. \
-  **Lesi Chen**, Jing Xu and Luo Luo. [[ICML 2023]](https://arxiv.org/abs/2301.06428)
+  **Lesi Chen**, Jing Xu, and Luo Luo. [[ICML 2023]](https://arxiv.org/abs/2301.06428)
   
 
 * Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. \
-  **Lesi Chen**, Boyuan Yao and Luo Luo. [[NeurIPS 2022]](https://arxiv.org/abs/2307.15868) 
+  **Lesi Chen**, Boyuan Yao, and Luo Luo. [[NeurIPS 2022]](https://arxiv.org/abs/2307.15868) 
   
   
