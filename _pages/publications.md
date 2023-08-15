@@ -21,8 +21,8 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
   **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925)
   
-* An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization \
-  Lesi Chen, Haishan Ye, and Luo Luo. [[arXiv]](https://arxiv.org/abs/2212.02387)
+* An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave \
+  Minimax Optimization. Lesi Chen, Haishan Ye, and Luo Luo. [[arXiv]](https://arxiv.org/abs/2212.02387)
   
 ## Conference Publications
 
