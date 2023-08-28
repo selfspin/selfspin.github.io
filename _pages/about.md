@@ -8,8 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am currently an undergraduate in [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University. 
+Welcome! I am currently an undergraduate in 
 My research interests are mainly on optimization and other related topics in machine learning theory.
+,,，
+
+I am now a Ph.D. student at the Institute for Interdisciplinary Information Sciences ([IIIS](https://iiis.tsinghua.edu.cn/about/)), Tsinghua University, advised by Professor [Jingzhao Zhang](https://scholar.google.com/citations?user=8NudxYsAAAAJ&hl=en&oi=ao). Previously, I did my undergraduate at [School of Data Science](http://www.sds.fudan.edu.cn), Fudan University, advised by Professor [Luo Luo](https://luoluo-sds.github.io). 
 
 ## Services
 
