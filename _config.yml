@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "TrueNobility303"
 title_separator          : "-"
 name                     : &name "Lesi Chen"
-description              : &description "undergraduate, School of Data Science, Fudan University"
+description              : &description "Ph.D. student, IIIS, Tsinghua University"
 url                      : https://truenobility303.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "truenobility303.github.io"
@@ -87,7 +87,7 @@ author:
   pubmed           :
   orcid            : #"http://orcid.org/0000-0001-9259-3883"
   googlescholar    : "https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao"
-  email            : "lschen19@fudan.edu.cn"
+  email            : "chenlc23@mails.tsinghua.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
