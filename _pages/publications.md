@@ -11,7 +11,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Recent Preprints 
 
-* Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles.
+* Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. \
   **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2306.14853)
   
 * Bilevel Optimization without Lower-level Strong Convexity from the \
