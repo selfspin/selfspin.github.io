@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "TrueNobility303"
 title_separator          : "-"
 name                     : &name "Lesi Chen"
-description              : &description "Ph.D. student, IIIS, Tsinghua University"
+description              : &description "PhD student, IIIS, Tsinghua University"
 url                      : https://truenobility303.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "truenobility303.github.io"
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Lesi Chen (陈乐偲)"
   avatar           : "profile.jpg"
-  bio              : "Ph.D. student, IIIS, Tsinghua University"
+  bio              : "PhD student, IIIS, Tsinghua University"
   location         : "Beijing"
   employer         :
   pubmed           :
