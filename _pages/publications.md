@@ -12,13 +12,13 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 ## Recent Preprints 
 
 * Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with \
-  Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2306.14853)
+  Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://truenobility303.github.io/files/2023-F2BA.pdf)
   
 * Bilevel Optimization without Lower-level Strong Convexity from the \
-  Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv]](https://arxiv.org/abs/2301.00712)
+  Hyper-Objective Perspective. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2301.00712)
 
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
-  **Lesi Chen** and Luo Luo. [[arXiv]](https://arxiv.org/abs/2208.05925)
+  **Lesi Chen** and Luo Luo. [[arXiv 2022]](https://arxiv.org/abs/2208.05925)
 
 ## Conference Publications
 
