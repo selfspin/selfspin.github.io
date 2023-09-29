@@ -17,5 +17,6 @@ ICLR 2024 Reviewer
 NeurIPS 2023 Reviewer
 
 ## Teaching Assistant
-[Optimization Theory 2023](https://luoluo-sds.github.io/teaching/data620020.html) 
+
+Optimization Theory 2023, Spring, Fudan University
 
