@@ -186,8 +186,8 @@ $$
 
 
 
-首先，我们证明给定 $\epsilon>0$, 存在$K$ 使得可以通过在$[n]$ 中有放回的采样 $K$ 个样本点计算对应的样本均值 $\hat X_j $, 以高概率在 ${\rm supp}(\hat X) = {\rm supp}(\hat X_1) \times \cdots {\rm supp} (\hat X_m)$ 中存在一个$\epsilon$-近似-$\sigma$-光滑-Nash均衡点. 上述结论实际上是Smoothed Analysis with Adaptive Adversaries 中的Theorem 2.1 的直接推论. 沿用上一节的分析思路，令 
-$x \in ({K_{\sigma,n})^m$ 满足 $x$ 为决策空间均为 $K_{\sigma,n}$ 的博弈的0-Nash均衡点，然后根据Lemma 3.2 我们可以选择 $k$ 然后对于每一个 $j \in [m]$ 都采样对应的 $B_{1,j}, \cdots B_{k,j} \sim x_j$ 然后计算其样本均值$\hat X_j$ 就可以以概率 $1-\delta$得到一个-近似-$\sigma$-光滑-Nash均衡点。记这个从 $x$ 采样的大小为$k$的样本集合为$S$， 根据Smoothed Analysis with Adaptive Adversaries文中的结论，存在一个coupling给出一个从均匀分布采样的大小为 $K = k / \sigma \log (k / \delta)$  的样本集合 $S' $ 以 $1-\delta$ 的概率包含集合 $S$. 对所有的 $j \in [m]$ 取联合概率界，那么根据这个coupling，取 
+首先，我们证明给定 $\epsilon>0$, 存在$K$ 使得可以通过在$[n]$ 中有放回的采样 $K$ 个样本点计算对应的样本均值 $\hat X_j $, 以高概率在 ${\rm supp}(\hat X) = {\rm supp}(\hat X_1) \times \cdots {\rm supp} (\hat X_m)$ 中存在一个$\epsilon$-近似-$\sigma$-光滑-Nash均衡点. 上述结论实际上是Smoothed Analysis with Adaptive Adversaries 中的Theorem 2.1 的直接推论. 
+沿用上一节的分析思路，令 $ x \in ({K_{\sigma,n})^m $ 满足 $x$ 为决策空间均为 $K_{\sigma,n}$ 的博弈的0-Nash均衡点，然后根据Lemma 3.2 我们可以选择 $k$ 然后对于每一个 $j \in [m]$ 都采样对应的 $B_{1,j}, \cdots B_{k,j} \sim x_j $ 然后计算其样本均值 $\hat X_j$ 就可以以概率 $1-\delta$得到一个-近似-$\sigma$-光滑-Nash均衡点。记这个从 $x$ 采样的大小为$k$的样本集合为$S$， 根据Smoothed Analysis with Adaptive Adversaries文中的结论，存在一个coupling给出一个从均匀分布采样的大小为 $K = k / \sigma \log (k / \delta)$  的样本集合 $S' $ 以 $1-\delta$ 的概率包含集合 $S$. 对所有的 $j \in [m]$ 取联合概率界，那么根据这个coupling，取 
 
 
 $$
