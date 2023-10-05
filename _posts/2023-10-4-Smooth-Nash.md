@@ -172,11 +172,11 @@ $$
 
 由于我们在连续的空间内寻找Nash均衡点，这个引理允许我们在一个 $\epsilon$-网格中遍历的寻找，越大的 $k$ 值对应了越小的 $\epsilon$.
 
-这个引理自然地引出一个朴素的算法，给定 $\epsilon$, 根据上述引理设定对应的$k$, 那么每个玩家的搜索空间从无限维的空间离散化为了 $n^k$ 个取值，对于所有的$m$ 个玩家，总的搜索空间总共只有 $n^{mk}$ 种组合，我们可以遍历所有的这些点，逐一判断其是否为  $\epsilon$-近似-$\sigma$-光滑-Nash均衡点。 注意到 $\max_{w \in \mathcal{K}_{\sigma,n}} A_j(w,x_{-j})$ 实际上等价于前 $1/(n\sigma)$ 大的所有动作的效用函数的平均值，因此上述的判断可以在 $n$ 次对于效用函数 $A$ 的query中完成，最终的复杂度为 $\tilde{\mathcal{O}}(n^{m^2 \epsilon^{-2}+1})$. 这个复杂度对应于原文的Theorem 5.1中给出的结论。
+这个引理自然地引出一个朴素的算法，给定 $\epsilon$, 根据上述引理设定对应的$k$, 那么每个玩家的搜索空间从无限维的空间离散化为了 $n^k$ 个取值，对于所有的$m$ 个玩家，总的搜索空间总共只有 $n^{mk}$ 种组合，我们可以遍历所有的这些点，逐一判断其是否为  $\epsilon$-近似-$\sigma$-光滑-Nash均衡点。 注意到 $\max_{w \in K_{ \sigma,n}} A_j(w,x_{-j})$ 实际上等价于前 $1/(n\sigma)$ 大的所有动作的效用函数的平均值，因此上述的判断可以在 $n$ 次对于效用函数 $A$ 的query中完成，最终的复杂度为 $\tilde{\mathcal{O}}(n^{m^2 \epsilon^{-2}+1})$. 这个复杂度对应于原文的Theorem 5.1中给出的结论。
 
 
 
-然而上述的复杂度当决策空间 $n$ 很大的时候并不可接受，上述的复杂度中关于 $n$ 的依赖来源于两个方面，第一个方面是每个玩家离散化后的决策空间为 $n^k$仍然指数级依赖于 $n$, 第二个方面是在判断是否为  $\epsilon$-近似-$\sigma$-光滑-Nash均衡点 的时候必须计算所有的 $n$ 个动作排序后得到其对应的  $\max_{w \in \mathcal{K}_{\sigma,n}} A_j(w,x_{-j})$ 的效用值，这需要 $\Omega(n)$ 的复杂度。
+然而上述的复杂度当决策空间 $n$ 很大的时候并不可接受，上述的复杂度中关于 $n$ 的依赖来源于两个方面，第一个方面是每个玩家离散化后的决策空间为 $n^k$仍然指数级依赖于 $n$, 第二个方面是在判断是否为  $\epsilon$-近似-$\sigma$-光滑-Nash均衡点 的时候必须计算所有的 $n$ 个动作排序后得到其对应的  $\max_{w \in K_{\sigma,n}} A_j(w,x_{-j})$ 的效用值，这需要 $\Omega(n)$ 的复杂度。
 
 下面我们分别解决上述的这两个问题，这也构成了本文的主要贡献。也即证明了对于寻找  $\epsilon$-近似-$\sigma$-光滑-Nash均衡点的问题，实际上的复杂度可以不依赖于决策空间的大小 $n$。这主要由于 $\sigma$-光滑化带来的好处。
 
@@ -186,7 +186,7 @@ $$
 
 
 
-首先，我们证明给定 $\epsilon>0$, 存在$K$ 使得可以通过在$[n]$ 中有放回的采样 $K$ 个样本点计算对应的样本均值 $\hat X_j $, 以高概率在 ${\rm supp}(\hat X) = {\rm supp}(\hat X_1) \times \cdots {\rm supp} (\hat X_m)$ 中存在一个$\epsilon$-近似-$\sigma$-光滑-Nash均衡点. 上述结论实际上是Smoothed Analysis with Adaptive Adversaries 中的Theorem 2.1 的直接推论. 沿用上一节的分析思路，令 $x \in (\mathcal{K}_{\sigma,n})^m $ 满足 $x$ 为决策空间均为 $\mathcal{K}_{\sigma,n}$ 的博弈的0-Nash均衡点，然后根据Lemma 3.2 我们可以选择 $k$ 然后对于每一个 $j \in [m]$ 都采样对应的 $B_{1,j}, \cdots B_{k,j} \sim x_j$ 然后计算其样本均值$\hat X_j$ 就可以以概率 $1-\delta$得到一个-近似-$\sigma$-光滑-Nash均衡点。记这个从 $x$ 采样的大小为$k$的样本集合为$S$， 根据Smoothed Analysis with Adaptive Adversaries文中的结论，存在一个coupling给出一个从均匀分布采样的大小为 $K = k / \sigma \log (k / \delta)$  的样本集合 $S' $ 以 $1-\delta$ 的概率包含集合 $S$. 对所有的 $j \in [m]$ 取联合概率界，那么根据这个coupling，取 
+首先，我们证明给定 $\epsilon>0$, 存在$K$ 使得可以通过在$[n]$ 中有放回的采样 $K$ 个样本点计算对应的样本均值 $\hat X_j $, 以高概率在 ${\rm supp}(\hat X) = {\rm supp}(\hat X_1) \times \cdots {\rm supp} (\hat X_m)$ 中存在一个$\epsilon$-近似-$\sigma$-光滑-Nash均衡点. 上述结论实际上是Smoothed Analysis with Adaptive Adversaries 中的Theorem 2.1 的直接推论. 沿用上一节的分析思路，令 $x \in ({K_{\sigma,n})^m $ 满足 $x$ 为决策空间均为 $K_{\sigma,n}$ 的博弈的0-Nash均衡点，然后根据Lemma 3.2 我们可以选择 $k$ 然后对于每一个 $j \in [m]$ 都采样对应的 $B_{1,j}, \cdots B_{k,j} \sim x_j$ 然后计算其样本均值$\hat X_j$ 就可以以概率 $1-\delta$得到一个-近似-$\sigma$-光滑-Nash均衡点。记这个从 $x$ 采样的大小为$k$的样本集合为$S$， 根据Smoothed Analysis with Adaptive Adversaries文中的结论，存在一个coupling给出一个从均匀分布采样的大小为 $K = k / \sigma \log (k / \delta)$  的样本集合 $S' $ 以 $1-\delta$ 的概率包含集合 $S$. 对所有的 $j \in [m]$ 取联合概率界，那么根据这个coupling，取 
 
 
 $$
