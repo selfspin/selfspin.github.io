@@ -69,7 +69,7 @@ $$
 
 ## Lemma 3.2
 
-根据Nash均衡点的存在性定理，存在 $x \in (\mathcal{K}_{\sigma,n})^m $ 满足 $x$ 为决策空间均为 $\mathcal{K}_{\sigma,n}$ 的博弈的0-Nash均衡点，即
+根据Nash均衡点的存在性定理，存在 $x \in (K_{\sigma,n})^m$ 满足 $x$ 为决策空间均为 $\mathcal{K}_{\sigma,n}$ 的博弈的0-Nash均衡点，即
 
 
 
