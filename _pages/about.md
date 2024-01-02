@@ -18,5 +18,5 @@ NeurIPS 2023 Reviewer
 
 ## Teaching Assistant
 
-Optimization Theory 2023, Spring, Fudan University
+Optimization Theory 2023, Spring, Fudan University [DATA 620020](https://luoluo-sds.github.io/teaching/data620020.html)
 
