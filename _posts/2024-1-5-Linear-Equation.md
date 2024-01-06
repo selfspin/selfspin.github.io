@@ -545,7 +545,7 @@ $$
 
 
 
-## Conjugate Gradients
+## Conjugate Gradient
 
 
 
