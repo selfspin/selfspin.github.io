@@ -775,7 +775,7 @@ $$
 $$
 
 
-为了达到 $\epsilon$ 最优解，其所需要的复杂度为 $\mathcal{O}(\sqrt{\kappa} \log(1/\epsilon))$，优于最速下降方法的 $\mathcal{O}(\kappa log(1/\epsilon))$ 的界。
+为了达到 $\epsilon$ 最优解，其所需要的复杂度为 $\mathcal{O}(\sqrt{\kappa} \log(1/\epsilon))$，优于最速下降方法的 $\mathcal{O}(\kappa \log(1/\epsilon))$ 的界。
 
 
 
