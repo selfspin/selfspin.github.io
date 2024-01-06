@@ -1,15 +1,11 @@
 ---
-​---
-title: 'Linear Equation'
+title: '线性方程组的迭代解法'
 toc: true
 excerpt_separator: <!--more-->
 tags:
   - 优化
   - 数值算法
 ​---
----
-
-
 
 线性方程组的迭代解法。
 
