@@ -338,7 +338,47 @@ $$
 
 
 这正好使得损失函数的第一项为 $0$, 恰为该损失函数的最优点。
+最后我们确定步长 $\eta$, 这可以通过在对应的等式两端取迹得到
 
+
+$$
+\begin{align*}
+\eta = \frac{\mathbb{E}_D \left [\hat w_D^\top X^\top \vec y \right]}{\mathbb{E}_D \left[\vec y^\top XX^\top \vec y  \right]}.
+\end{align*}
+$$
+
+
+最后我们在特殊的情况下显示计算出 $\eta$ 的值，考虑 $\epsilon_i = 0$ 的无噪声情况：
+
+
+$$
+\begin{align*}
+\eta &= \frac{\mathbb{E}_D \left [\hat w_D^\top X^\top \vec y \right]}{\mathbb{E}_D \left[\vec y^\top XX^\top \vec y  \right]} \\
+&= \frac{\mathbb{E}_D \left [ \vec y^\top X (X^\top X)^{-1} X^\top \vec y \right]}{\mathbb{E}_D \left[\vec y^\top XX^\top \vec y  \right]} \\
+&= \frac{\mathbb{E}_D \left [ w^\top X^\top  X (X^\top X)^{-1} X^\top X w \right]}{\mathbb{E}_D \left[\vec w^\top X^\top XX^\top Xw \right]} \\
+&=  \frac{{\rm tr}  \mathbb{E}_D \left [ X^\top  X \right]}{{\rm tr} \mathbb{E}_D \left[X^\top XX^\top X \right]} \\
+&= \frac{{\rm tr}  \mathbb{E}_D \left [ \sum_{i=1}^n x_ix_i^\top \right]}{{\rm tr} \mathbb{E}_D \left[\left( \sum_{i=1}^n x_ix_i^\top \right) \left( \sum_{i=1}^n x_ix_i^\top \right)\right]} \\
+&=\frac{n \mathbb{E}_x \Vert x \Vert^2  }{ n  \mathbb{E}_x \Vert x \Vert^4  + n(n-1) \left( \mathbb{E}_x \Vert x \Vert^2 \mathbb{E}_{x'} \Vert x' \Vert^2 \right) } \\
+&= \frac{nd}{ nd (d+2) + n(n-1) d} \\
+&= \frac{1}{n+d+1}.
+\end{align*}
+$$
+
+
+上面的倒数的第二行用到了
+
+
+$$
+\begin{align*}
+\mathbb{E}_x \Vert x \Vert^4 &= \mathbb{E} \left[  \left( \sum_{j=1}^d x_{[j]}^2\right)  \left( \sum_{j=1}^d x_{[j]}^2\right)\right] \\
+&= \sum_{j=1}^d \mathbb{E} \left[ x_{[j]}^4 \right] +  \sum_{j \ne j'} \mathbb{E} \left[ x_{[j]}^2   \right] \mathbb{E} \left[ x_{[j']}^2   \right] \\
+&= 3d + d(d-1) \\
+& =d(d+2).
+\end{align*}
+$$
+
+
+这就得到了和 [2,3] 相同的结果。
 
 
 ## Different Data Covariance Matrices
@@ -364,6 +404,14 @@ $$
 \end{align*}
 $$
 
+其中步长 $\eta$ 由下式给出
+
+
+$$
+\begin{align*}
+\eta = \frac{\mathbb{E}_D \left[ \vec y^\top  X (X^\top X + \sigma^2 \Sigma)^{-1} X^\top \vec y\right] }{\mathbb{E}_D \left[ \vec y^\top X \Sigma^{-1} X^\top \vec y \right]}.
+\end{align*}
+$$
 
 
 
@@ -399,6 +447,15 @@ $$
 $$
 \begin{align*}
 \hat y_{n+1} &= \eta \sum_{i=1}^n y_i x_i^\top x_{n+1}.
+\end{align*}
+$$
+
+其中步长 $\eta$ 由下式给出
+
+
+$$
+\begin{align*}
+\eta = \frac{\mathbb{E}_D \left[\hat u_D^\top X^\top \vec y   \right]}{\mathbb{E}_D \left[ \vec y^\top XX^\top \vec y \right]}, \quad {\rm where} \quad \hat u_D = \arg \min_u \mathbb{E}_{x_{n+1},y_{n+1} \mid D} [ (u^\top x_{n+1} - y_{n+1})^2 ].
 \end{align*}
 $$
 
