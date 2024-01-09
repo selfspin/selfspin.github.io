@@ -356,8 +356,8 @@ $$
 \eta &= \frac{\mathbb{E}_D \left [\hat w_D^\top X^\top \vec y \right]}{\mathbb{E}_D \left[\vec y^\top XX^\top \vec y  \right]} \\
 &= \frac{\mathbb{E}_D \left [ \vec y^\top X (X^\top X)^{-1} X^\top \vec y \right]}{\mathbb{E}_D \left[\vec y^\top XX^\top \vec y  \right]} \\
 &= \frac{\mathbb{E}_D \left [ w^\top X^\top  X (X^\top X)^{-1} X^\top X w \right]}{\mathbb{E}_D \left[\vec w^\top X^\top XX^\top Xw \right]} \\
-&=  \frac{{\rm tr}  \mathbb{E}_D \left [ X^\top  X \right]}{{\rm tr} \mathbb{E}_D \left[X^\top XX^\top X \right]} \\
-&= \frac{{\rm tr}  \mathbb{E}_D \left [ \sum_{i=1}^n x_ix_i^\top \right]}{{\rm tr} \mathbb{E}_D \left[\left( \sum_{i=1}^n x_ix_i^\top \right) \left( \sum_{i=1}^n x_ix_i^\top \right)\right]} \\
+&=  \frac{{ tr}  \mathbb{E}_D \left [ X^\top  X \right]}{{tr} \mathbb{E}_D \left[X^\top XX^\top X \right]} \\
+&= \frac{{ tr}  \mathbb{E}_D \left [ \sum_{i=1}^n x_ix_i^\top \right]}{{tr} \mathbb{E}_D \left[\left( \sum_{i=1}^n x_ix_i^\top \right) \left( \sum_{i=1}^n x_ix_i^\top \right)\right]} \\
 &=\frac{n \mathbb{E}_x \Vert x \Vert^2  }{ n  \mathbb{E}_x \Vert x \Vert^4  + n(n-1) \left( \mathbb{E}_x \Vert x \Vert^2 \mathbb{E}_{x'} \Vert x' \Vert^2 \right) } \\
 &= \frac{nd}{ nd (d+2) + n(n-1) d} \\
 &= \frac{1}{n+d+1}.
