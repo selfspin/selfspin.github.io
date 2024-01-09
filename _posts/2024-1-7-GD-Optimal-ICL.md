@@ -25,7 +25,16 @@ Paper Reading: One Step of Gradient Descent is Provably the Optimal In-Context L
 
 类似于 [4] 的问题设定，考虑单层线性Attention的Transformer对于线性回归问题。
 
-考虑标准的线性回归模型，数据分布 $x_i \sim \mathcal{N}(0_d,I_{d \times d})$, $w \sim \mathcal{N}(0_d,I_{d \times d})$,  $\epsilon_i \sim \mathcal{N}(0,\sigma^2), $$y_i = w^\top x_i + \epsilon_i$.
+考虑标准的线性回归模型，其数据分布
+
+
+$$
+\begin{align*}
+ x_i \sim \mathcal{N}(0_d,I_{d \times d}), \quad w \sim \mathcal{N}(0_d,I_{d \times d}), \quad  \epsilon_i \sim \mathcal{N}(0,\sigma^2), \quad  y_i = w^\top x_i + \epsilon_i.
+\end{align*}
+$$
+
+
 
 给定大小为 $n$ 的数据集 $D$, 样本为 $(x_1,y_1), \cdots (x_n,y_n)$. 以及测试点 $x_{n+1} $.
 
