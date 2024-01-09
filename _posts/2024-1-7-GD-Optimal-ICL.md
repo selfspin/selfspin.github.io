@@ -436,7 +436,7 @@ $$
 
 $$
 \begin{align*}
-p(f) \sim p(R f), \quad p(f) = p(-f),
+f \sim f \circ R, \quad f \sim -f,
 \end{align*}
 $$
 
@@ -455,7 +455,7 @@ $$
 
 $$
 \begin{align*}
-\eta = \frac{\mathbb{E}_D \left[\hat u_D^\top X^\top \vec y   \right]}{\mathbb{E}_D \left[ \vec y^\top XX^\top \vec y \right]}, \quad {\rm where} \quad \hat u_D = \arg \min_u \mathbb{E}_{x_{n+1},y_{n+1} \mid D} [ (u^\top x_{n+1} - y_{n+1})^2 ].
+\eta = \frac{\mathbb{E}_D \left[\hat u_D^\top X^\top \vec y   \right]}{\mathbb{E}_D \left[ \vec y^\top XX^\top \vec y \right]},  \quad \hat u_D = \arg \min_u \mathbb{E}_{x_{n+1},y_{n+1} \mid D} [ (u^\top x_{n+1} - y_{n+1})^2 ].
 \end{align*}
 $$
 
