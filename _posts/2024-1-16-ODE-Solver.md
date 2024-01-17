@@ -520,7 +520,7 @@ $$
 \begin{align*}
 \begin{cases}
 b_1 + b_2 + b_3 = 1 \\
-b_2 c_2 + b_3 c_2 = \dfrac{1}{2} \\
+b_2 c_2 + b_3 c_3 = \dfrac{1}{2} \\
 b_2 c_2^2 + b_3 c_3^2 = \dfrac{1}{3} \\
 b_3 a_{32} c_2 = \dfrac{1}{6}.
 \end{cases}
