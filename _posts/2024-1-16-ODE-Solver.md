@@ -681,6 +681,8 @@ $$
 \bar h = \frac{\sigma (\exp(i \theta))}{\rho (\exp(i \theta))}.
 \end{align*}
 $$
+
+
 这称为边界轨迹技巧。
 
 
@@ -754,11 +756,7 @@ A =
 \end{align*}
 $$
 
-$$
-\begin{align*}
 
-\end{align*}
-$$
 下面我们介绍强稳定性的概念，并且对于BDF2方法进行分析。
 
 我们称方法为强稳定的，若存在 $h_0$ 使得对任意的 $0 \le h \le h_0$ ，都存在一个范数使得上述系数矩阵的范数不大于1.
@@ -873,6 +871,8 @@ y'(x) &= f(x,y(x)) \\
 y''(x) &=  \left(\frac{\partial f}{\partial x}+ f \frac{\partial f}{\partial y} \right)(x,y(x)).
 \end{align*}
 $$
+
+
 我们计算方法的截断误差如
 
 
