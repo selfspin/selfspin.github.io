@@ -91,8 +91,13 @@ $$
 
 
 
-最后一步使用了 $f$ 的一致连续性，因此上面的推导说明单步法相容的充分必要条件是  $\lim_{h \rightarrow 0} \varphi(x,y;h) = f(x,y)$. 
+最后一步使用了 $f$ 的一致连续性，因此上面的推导说明单步法相容的充分必要条件是  
 
+$$
+\begin{align*}
+\lim_{h \rightarrow 0} \varphi(x,y;h) = f(x,y)$. 
+\end{align*}
+$$
 
 
 下面我们讨论算法的收敛性。假设 $\{ x_n \} $ 为区间 $[a,b]$ 上的等距剖分: $x_{n} = a + n h$. 
@@ -678,7 +683,7 @@ $$
 
 $$
 \begin{align*}
-\bar h = \frac{\sigma (\exp(i \theta))}{\rho (\exp(i \theta))}.
+\bar h = \frac{\rho (\exp(i \theta))}{\sigma (\exp(i \theta))}.
 \end{align*}
 $$
 
