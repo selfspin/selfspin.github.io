@@ -23,7 +23,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 ## Conference Publications
 
 * An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave \
-  Minimax Optimization. **Lesi Chen**, Haishan Ye, Luo Luo [[AISTATS 2024]](https://arxiv.org/abs/2212.02387)
+  Minimax Optimization. **Lesi Chen**, Haishan Ye, Luo Luo. [[AISTATS 2024]](https://arxiv.org/abs/2212.02387)
 
 * Communication Efficient Distributed Newton Method with Fast Convergence Rates. \
   Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [[SIGKDD 2023]](https://arxiv.org/abs/2305.17945)
