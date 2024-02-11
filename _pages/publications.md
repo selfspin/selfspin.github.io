@@ -15,7 +15,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
   and Improved Analysis. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
   
 * Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with \
-  Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/pdf/2306.14853.pdf)
+  Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2306.14853)
 
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
   **Lesi Chen** and Luo Luo. [[arXiv 2022]](https://arxiv.org/abs/2208.05925)
