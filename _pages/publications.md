@@ -11,8 +11,8 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Recent Preprints 
 
-* On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results \
-  and Improved Analysis. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
+* On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and \
+  Improved Analysis. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
   
 * Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with \
   Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2306.14853)
