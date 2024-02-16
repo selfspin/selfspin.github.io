@@ -11,7 +11,11 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Recent Preprints 
 
-<font size="3"> 
+<li><p> <font size="3"> Block Broyden's Methods for Solving Nonlinear Equations. <br />
+<b>Chengchang Liu</b>, Cheng Chen, Luo Luo, John C.S. Lui.<br />
+NeurIPS 2023<br />
+<a href="https://openreview.net/pdf?id=hHv3UuffXV">[pdf]</a> </font> </p>
+</li>
 
 * On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. \ 
   **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
@@ -21,7 +25,6 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
   
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
   **Lesi Chen** and Luo Luo. [[arXiv 2022]](https://arxiv.org/abs/2208.05925)
-
 </font>
 
 ## Conference Publications
