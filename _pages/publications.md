@@ -9,31 +9,39 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
  \* denotes equal contributions.
 
-## Recent Preprints 
+<h2> Recent Preprints </h2>
 
 <ul>
 <font size="3">
 <li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
  <b>Lesi Chen*</b>, Jing Xu*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2301.00712">[arXiv 2024] </a>
+</p></li>
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
+ </p></li>
 <li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
- <b>Lesi Chen*</b> and Luo Luo <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
+ <b>Lesi Chen*</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
+ </p></li>
 </font>
 </ul>
 
-## Conference Publications
+<h2> Conference Publications </h2>
 
-* An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave \
-  Minimax Optimization. **Lesi Chen**, Haishan Ye, Luo Luo. [[AISTATS 2024]](https://arxiv.org/abs/2212.02387)
-
-* Communication Efficient Distributed Newton Method with Fast Convergence Rates. \
-  Chengchang Liu, **Lesi Chen**, Luo Luo and John C.S. Lui. [[SIGKDD 2023]](https://arxiv.org/abs/2305.17945)
-
-* Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. \
-  **Lesi Chen**, Jing Xu, and Luo Luo. [[ICML 2023]](https://arxiv.org/abs/2301.06428)
-  
-* Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. \
-  **Lesi Chen**, Boyuan Yao, and Luo Luo. [[NeurIPS 2022]](https://arxiv.org/abs/2307.15868) 
+<ul>
+<font size="3">
+<li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
+ <b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
+</p> </li>
+<li><p> Communication Efficient Distributed Newton Method with Fast Convergence Rates. <br />
+ Chengchang Liu, <b>Lesi Chen</b>, Luo Luo and John C.S. Lui. <a href="https://arxiv.org/abs/2305.17945">[SIDKDD 2023] </a>
+</p> </li>
+ <li><p>  Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. <br />
+ <b>Lesi Chen</b>, Jing Xu, and Luo Luo. <a href="https://arxiv.org/abs/2301.06428"> [ICML 2023] </a>
+ </p> </li>
+ <li><p>  Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. <br />
+ <b>Lesi Chen</b>, Boyuan Yao, and Luo Luo. <a href="https://arxiv.org/abs/2307.15868"> [NeurIPS 2022] </a>
+ </p> </li>
+</font>
+</ul>
   
   
