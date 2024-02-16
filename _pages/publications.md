@@ -11,25 +11,19 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Recent Preprints 
 
-<font size="1"> This is font size 1 </font>
+<font size="3"> 
 
-<font size="2"> This is font size 2 </font>
-
-<font size="3"> This is font size 3 </font>
-
-<font size="4"> This is font size 4 </font>
-
-<font size="5"> This is font size 5 </font>
-
-* On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and \
-   Improved Analysis. **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
+* On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. \ 
+  **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
   
-* Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with \
-  Fully First-Order Oracles. **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2306.14853)
+* Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. \
+   **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2306.14853)
   
 * Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
   **Lesi Chen** and Luo Luo. [[arXiv 2022]](https://arxiv.org/abs/2208.05925)
-  
+
+</font>
+
 ## Conference Publications
 
 * An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave \
