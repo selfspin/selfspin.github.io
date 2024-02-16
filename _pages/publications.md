@@ -11,21 +11,16 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 ## Recent Preprints 
 
-<li><p> <font size="3"> Block Broyden's Methods for Solving Nonlinear Equations. <br />
-<b>Chengchang Liu</b>, Cheng Chen, Luo Luo, John C.S. Lui.<br />
-NeurIPS 2023<br />
-<a href="https://openreview.net/pdf?id=hHv3UuffXV">[pdf]</a> </font> </p>
-</li>
-
-* On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. \ 
-  **Lesi Chen\***, Jing Xu\*, and Jingzhao Zhang. [[arXiv 2024]](https://arxiv.org/abs/2301.00712)
-  
-* Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. \
-   **Lesi Chen\***, Yaohua Ma\*, and Jingzhao Zhang. [[arXiv 2023]](https://arxiv.org/abs/2306.14853)
-  
-* Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. \
-  **Lesi Chen** and Luo Luo. [[arXiv 2022]](https://arxiv.org/abs/2208.05925)
+<ul>
+<font size="3">
+<li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
+ <b>Lesi Chen*</b>, Jing Xu*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2301.00712">[arXiv 2024] </a>
+<li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
+ <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
+<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
+ <b>Lesi Chen*</b> and Luo Luo <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
 </font>
+</ul>
 
 ## Conference Publications
 
