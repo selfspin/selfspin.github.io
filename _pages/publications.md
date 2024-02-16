@@ -33,7 +33,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
  <b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
 </p> </li>
 <li><p> Communication Efficient Distributed Newton Method with Fast Convergence Rates. <br />
- Chengchang Liu, <b>Lesi Chen</b>, Luo Luo and John C.S. Lui. <a href="https://arxiv.org/abs/2305.17945">[SIDKDD 2023] </a>
+ Chengchang Liu, <b>Lesi Chen</b>, Luo Luo, and John C.S. Lui. <a href="https://arxiv.org/abs/2305.17945">[SIDKDD 2023] </a>
 </p> </li>
  <li><p>  Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. <br />
  <b>Lesi Chen</b>, Jing Xu, and Luo Luo. <a href="https://arxiv.org/abs/2301.06428"> [ICML 2023] </a>
