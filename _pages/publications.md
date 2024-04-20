@@ -20,7 +20,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
 <li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
- <b>Lesi Chen*</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
+ <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
  </p></li>
 </font>
 </ul>
