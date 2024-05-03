@@ -29,12 +29,12 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
- <li><p>
+<li><p>
 Decentralized Convex Finite-Sum Optimization with Better Dependence on Condition Numbers. <br />
 Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. [ICML 2024] 
- </p>
+</p>
 <li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
- <b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
+<b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
 </p> </li>
 <li><p> Communication Efficient Distributed Newton Method with Fast Convergence Rates. <br />
  Chengchang Liu, <b>Lesi Chen</b>, Luo Luo, and John C.S. Lui. <a href="https://arxiv.org/abs/2305.17945">[SIDKDD 2023] </a>
