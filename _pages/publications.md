@@ -32,7 +32,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 <li><p>
 Decentralized Convex Finite-Sum Optimization with Better Dependence on Condition Numbers. <br />
 Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. [ICML 2024] 
-</p>
+</p></li>
 <li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
 <b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
 </p> </li>
