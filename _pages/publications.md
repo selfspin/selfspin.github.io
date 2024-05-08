@@ -13,9 +13,6 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
-<li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
- <b>Lesi Chen*</b>, Jing Xu*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2301.00712">[arXiv 2024] </a>
-</p></li>
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
@@ -29,6 +26,9 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
+<li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
+ <b>Lesi Chen*</b>, Jing Xu*, and Jingzhang Zhang. <a href="https://arxiv.org/abs/2301.00712">[COLT 2024] </a>
+</p></li>
 <li><p>
 Decentralized Convex Finite-Sum Optimization with Better Dependence on Condition Numbers. <br />
 Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. [ICML 2024] 
