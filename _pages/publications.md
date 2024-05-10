@@ -22,7 +22,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 </font>
 </ul>
 
-<h2> Conference Publications </h2>
+<h2> Publications </h2>
 
 <ul>
 <font size="3">
