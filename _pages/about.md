@@ -20,7 +20,7 @@ Reviewer: ICML2024, ICLR 2024, NeurIPS 2023.
 
 [Introduction to Optimization 2023](https://sites.google.com/view/jingzhao/teaching/fall-2023-intro-to-optimization), Fall, Tsinghua University.
 
-<h2> Selected Publications </h2>
+<h2> Selected Papers </h2>
 
 <ul>
 <font size="3">
