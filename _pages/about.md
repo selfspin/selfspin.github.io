@@ -30,7 +30,6 @@ Reviewer: ICML2024, ICLR 2024, NeurIPS 2023.
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
-
 </ul>
 
 
