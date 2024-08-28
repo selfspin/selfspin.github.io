@@ -23,15 +23,14 @@ I am now a Ph.D. student at [Institute for Interdisciplinary Information Science
 </font>
 </ul>
 
-## Teaching Assistant
-
-[Optimization Theory 2023](https://luoluo-sds.github.io/teaching/data620020.html), Spring, Fudan University.
-
-[Introduction to Optimization 2023](https://sites.google.com/view/jingzhao/teaching/fall-2023-intro-to-optimization), Fall, Tsinghua University.
-
-## Services
-
-Reviewer: ICML2024, ICLR 2024, NeurIPS 2023.
+<h2> Teaching Assistant </h2> 
+<ul>
+<font size="3">
+<li><p> <a href="https://luoluo-sds.github.io/teaching/data620020.html">[Optimization Theory 2023]</a> , Spring, Fudan University.
+</p> </li>
+<li><p> <a href="https://sites.google.com/view/jingzhao/teaching/fall-2023-intro-to-optimization">[Introduction to Optimization 2023] </a>, Fall, Tsinghua University.
+</p> </li>
+</font>
 
 
 
