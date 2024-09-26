@@ -26,7 +26,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
-<li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems <br />
+<li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang* <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530v1">[NeurIPS 2024]  </a>
  </p></li>
 <li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
