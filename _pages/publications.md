@@ -8,20 +8,7 @@ author_profile: true
 You can find my articles on my [Google Scholar](https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao). 
 
  \* denotes equal contributions.
-
-<h2> Preprints </h2>
-
-<ul>
-<font size="3">
-<li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
- <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
- </p></li>
-<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
- <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
- </p></li>
-</font>
-</ul>
-
+ 
 <h2> Publications </h2>
 
 <ul>
@@ -50,5 +37,19 @@ Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. <a href="https://openreview.net/pdf?
  </p> </li>
 </font>
 </ul>
+
+<h2> Preprints </h2>
+
+<ul>
+<font size="3">
+<li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
+ <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
+ </p></li>
+<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
+ <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arXiv 2022]  </a>
+ </p></li>
+</font>
+</ul>
+
   
   
