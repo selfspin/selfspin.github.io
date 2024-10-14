@@ -608,7 +608,7 @@ P (\text{Reach a significant vertex}) \le 2^{\epsilon n } 2^{c n^2}  2^{2 (\beta
 $$
 
 
-观察上式的主项，我们发现只要 $c \le \delta \beta$ 条件满足，该概率一定小于 $2^{-\epsilon n}$.  
+观察上式的主项，我们发现只要 $c \le 2\delta \beta$ 条件满足，该概率一定小于 $2^{-\epsilon n}$.  
 
 这就证明了所需要的结论，从而完成本文主要定理的证明。
 
