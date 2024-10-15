@@ -14,7 +14,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 <ul>
 <font size="3">
 <li><p> Second-Order Min-Max Optimization with Lazy Hessians. <br />
- <b>Lesi Chen*</b>, Chengchang Liu*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
+ <b>Lesi Chen*</b>, Chengchang Liu*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2024]  </a>
  </p></li>
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
