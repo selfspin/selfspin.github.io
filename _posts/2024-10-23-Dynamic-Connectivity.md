@@ -31,7 +31,7 @@ tags:
 
 
 
-![image-20241023140013616](images/posts/Dynamic-Connectivity/image-20241023140013616.png)
+![image-20241023140013616](/images/posts/Dynamic-Connectivity/image-20241023140013616.png)
 
 
 
@@ -39,7 +39,7 @@ tags:
 
 
 
-![image-20241023140245797](images/posts/Dynamic-Connectivity/image-20241023140245797.png)
+![image-20241023140245797](/images/posts/Dynamic-Connectivity/image-20241023140245797.png)
 
 
 
@@ -47,7 +47,7 @@ tags:
 
 
 
-![image-20241023140432705](images/posts/Dynamic-Connectivity/image-20241023140432705.png)
+![image-20241023140432705](/images/posts/Dynamic-Connectivity/image-20241023140432705.png)
 
 
 
@@ -55,7 +55,7 @@ tags:
 
 
 
-![image-20241023140503999](images/posts/Dynamic-Connectivity/image-20241023140503999.png)
+![image-20241023140503999](/images/posts/Dynamic-Connectivity/image-20241023140503999.png)
 
 
 
@@ -63,7 +63,7 @@ tags:
 
 
 
-![image-20241023140555079](images/posts/Dynamic-Connectivity/image-20241023140555079.png)
+![image-20241023140555079](/images/posts/Dynamic-Connectivity/image-20241023140555079.png)
 
 
 
@@ -71,7 +71,7 @@ tags:
 
 
 
-![image-20241023140721250](images/posts/Dynamic-Connectivity/image-20241023140721250.png)
+![image-20241023140721250](/images/posts/Dynamic-Connectivity/image-20241023140721250.png)
 
 
 
@@ -79,7 +79,7 @@ tags:
 
 
 
-![image-20241023140819297](images/posts/Dynamic-Connectivity/image-20241023140819297.png)
+![image-20241023140819297](/images/posts/Dynamic-Connectivity/image-20241023140819297.png)
 
 
 
@@ -89,7 +89,7 @@ tags:
 
 根据上一小节，我们知道树上的动态连通性问题非常好解决。但我们关注与图上的动态连通性问题，我们将从树上的连通性出发，设计解决图上的动态连通性的数据结构和算法。我们的想法是动态地维护一个生成森林，借此来回答连通性问题，如下图所示
 
-![image-20241023142044192](images/posts/Dynamic-Connectivity/image-20241023142044192.png)
+![image-20241023142044192](/images/posts/Dynamic-Connectivity/image-20241023142044192.png)
 
 
 
@@ -97,7 +97,7 @@ tags:
 
 
 
-![image-20241023142139216](images/posts/Dynamic-Connectivity/image-20241023142139216.png)
+![image-20241023142139216](/images/posts/Dynamic-Connectivity/image-20241023142139216.png)
 
 
 
@@ -105,7 +105,7 @@ tags:
 
 
 
-![image-20241023142542506](images/posts/Dynamic-Connectivity/image-20241023142542506.png)
+![image-20241023142542506](/images/posts/Dynamic-Connectivity/image-20241023142542506.png)
 
 
 
@@ -119,7 +119,7 @@ tags:
 
 
 
-![image-20241023161143629](images/posts/Dynamic-Connectivity/image-20241023161143629.png)
+![image-20241023161143629](/images/posts/Dynamic-Connectivity/image-20241023161143629.png)
 
 
 
@@ -133,7 +133,7 @@ tags:
 
 
 
-![image-20241024101023197](images/posts/Dynamic-Connectivity/image-20241024101023197.png)
+![image-20241024101023197](/images/posts/Dynamic-Connectivity/image-20241024101023197.png)
 
 
 
@@ -141,7 +141,7 @@ tags:
 
 
 
-![image-20241024101130801](images/posts/Dynamic-Connectivity/image-20241024101130801.png)
+![image-20241024101130801](/images/posts/Dynamic-Connectivity/image-20241024101130801.png)
 
 
 
@@ -153,7 +153,7 @@ tags:
 
 
 
-![image-20241024101253140](images/posts/Dynamic-Connectivity/image-20241024101253140.png)
+![image-20241024101253140](/images/posts/Dynamic-Connectivity/image-20241024101253140.png)
 
 
 
@@ -161,7 +161,7 @@ tags:
 
 
 
-![image-20241024101448705](images/posts/Dynamic-Connectivity/image-20241024101448705.png)
+![image-20241024101448705](/images/posts/Dynamic-Connectivity/image-20241024101448705.png)
 
 
 
@@ -169,7 +169,7 @@ tags:
 
 
 
-![image-20241024101603455](images/posts/Dynamic-Connectivity/image-20241024101603455.png)
+![image-20241024101603455](/images/posts/Dynamic-Connectivity/image-20241024101603455.png)
 
 
 
@@ -203,7 +203,7 @@ tags:
 
 
 
-![image-20241024105104327](images/posts/Dynamic-Connectivity/image-20241024105104327.png)
+![image-20241024105104327](/images/posts/Dynamic-Connectivity/image-20241024105104327.png)
 
 
 
@@ -211,7 +211,7 @@ tags:
 
 
 
-![image-20241024105252595](images/posts/Dynamic-Connectivity/image-20241024105252595.png)
+![image-20241024105252595](/images/posts/Dynamic-Connectivity/image-20241024105252595.png)
 
 
 
@@ -219,7 +219,7 @@ tags:
 
 
 
-![image-20241024105413227](images/posts/Dynamic-Connectivity/image-20241024105413227.png)
+![image-20241024105413227](/images/posts/Dynamic-Connectivity/image-20241024105413227.png)
 
 
 
@@ -251,7 +251,7 @@ tags:
 
 
 
-![image-20241024111837158](images/posts/Dynamic-Connectivity/image-20241024111837158.png)
+![image-20241024111837158](/images/posts/Dynamic-Connectivity/image-20241024111837158.png)
 
 
 
@@ -261,7 +261,7 @@ tags:
 
 
 
-![image-20241024145521656](images/posts/Dynamic-Connectivity/image-20241024145521656.png)
+![image-20241024145521656](/images/posts/Dynamic-Connectivity/image-20241024145521656.png)
 
 
 
@@ -269,7 +269,7 @@ tags:
 
 
 
-![image-20241024150149126](images/posts/Dynamic-Connectivity/image-20241024150149126.png)
+![image-20241024150149126](/images/posts/Dynamic-Connectivity/image-20241024150149126.png)
 
 
 
@@ -283,7 +283,7 @@ tags:
 
 
 
-![image-20241024151121094](images/posts/Dynamic-Connectivity/image-20241024151121094.png) 
+![image-20241024151121094](/images/posts/Dynamic-Connectivity/image-20241024151121094.png) 
 
 
 
@@ -317,7 +317,7 @@ tags:
 
 
 
-![image-20241024153144187](images/posts/Dynamic-Connectivity/image-20241024153144187.png)
+![image-20241024153144187](/images/posts/Dynamic-Connectivity/image-20241024153144187.png)
 
 
 
