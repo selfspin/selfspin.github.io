@@ -1,5 +1,5 @@
 ---
-title: 'Lower Bound for Matrix Multiplication'
+title: '矩阵乘法的复杂度下界'
 toc: true
 excerpt_separator: <!--more-->
 tags: 		
@@ -7,8 +7,6 @@ tags:
   - 理论计算机科学
   - 复杂度下界
 ---
-
-# 矩阵乘法的复杂度下界
 
 Paper Reading: On the complexity of matrix product (STOC'02).
 
@@ -78,7 +76,7 @@ $$
 \end{align*}
 $$
 
-不失一般性，我们假设 $r <k$ (否则显然有 ${\rm Rig}_r[L_1,\cdots,L_k] = 0$). 我们用如下的方式对 $L_1,\cdots,L_k$ 如下排序：令 $L_1$ 为 $\{ L_1,\cdots,L_k\}$ 中最大化 ${\rm Vol}_1[L_i]$ 的向量 $L_i$, $L_2$ 为 $\{ L_2,\cdots,L_k\}$ 中最大化 ${\rm Vol}_1[L_1，L_i]$ 的向量 $L_i$， 以此反复进行下去... (即，对于任意的 $1 \le i \le k$, 我们令 $L_i$ 为$L \in \{L_i,\cdots,L_k \}$) 中最大化 ${\rm Vol}_i[L_1,\cdots,L_{i-1},L]$ 中的向量 $L$.
+不失一般性，我们假设 $r<k$ (否则显然有 ${\rm Rig}_r[L_1,\cdots,L_k] = 0$). 我们用如下的方式对 $L_1,\cdots,L_k$ 进行重排序：令 $L_1$ 为 $\{ L_1,\cdots,L_k\}$ 中最大化 ${\rm Vol}_1[L_i]$ 的向量 $L_i$, $L_2$ 为 $\{ L_2,\cdots,L_k\}$ 中最大化 ${\rm Vol}_1[L_1，L_i]$ 的向量 $L_i$， 以此反复进行下去... 
 
 定义每次的体积的相对变化量 $v_i = {\rm Vol}_r[L_1,\cdots,L_i] / {\rm Vol}_{i-1}[L_1,\cdots,L_{i-1}]$. 根据我们的构造，实际上我们每次都在寻找距离原来所张成的空间最远的向量，那么根据体积公式，有
 
