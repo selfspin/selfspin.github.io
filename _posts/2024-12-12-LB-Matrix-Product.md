@@ -64,7 +64,7 @@ $$
 
 $$
 \begin{align*}
-{\rm Rig}_r[L_1,\cdots,L_k] = \min_V \max_i {\rm dist}[L_i,V], \quad \forall $1 \le r \le n,
+{\rm Rig}_r[L_1,\cdots,L_k] = \min_V \max_i {\rm dist}[L_i,V], \quad \forall 1 \le r \le n,
 \end{align*}
 $$
 
