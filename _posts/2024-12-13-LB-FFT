@@ -1,0 +1,141 @@
+---
+title: '傅里叶变换的复杂度下界'
+toc: true
+excerpt_separator: <!--more-->
+tags: 		
+  - 傅里叶变换
+  - 理论计算机科学
+  - 复杂度下界
+---
+
+本文证明傅里叶变换的复杂度下界，至少需要 $\Omega(n \log n)$ 的时间。
+
+<!--more-->
+
+关于傅里叶变换，之前写过一个简单的介绍：[傅里叶变换](https://truenobility303.github.io/FFT/).
+
+傅里叶变换可以看成基于如下矩阵的一个线性变换：
+
+$$
+\begin{align*}
+F = 
+\begin{bmatrix}
+1 & 1 &  1 & \cdots & 1 \\
+1 & \omega & \omega^2 & \cdots & \omega^{n-1} \\
+1 & \omega^2 & \omega^4 & \cdots & \omega^{2(n-1)} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & \omega^{2(n-1)} & \omega^{3(n-1)} &\cdots & \omega^{(n-1)(n-1)}
+\end{bmatrix}.
+\end{align*}
+$$
+
+上面矩阵给出的是未归一化的傅里叶变换，归一化的傅里叶变换对应于矩阵 $\hat F = \frac{1}{\sqrt{n}} F$.
+
+## 未归一化的傅里叶变换
+
+参考自 Jacques Morgenstern. Note on a lower bound on the linear complexity of the fast Fourier transform. J. ACM, 20(2):305–306, April 1973.
+
+正如之前关于 [矩阵乘法的复杂度下界](https://truenobility303.github.io/LB-Matrix-Product/) 中的结论, 对于一个有界线性电路 $C$（其定义也可以参考之前的博文），满足
+
+$$
+{\rm Size}(C) \ge \log_2 \vert \det[F] \vert, \quad \forall 1 \le r \le k.
+$$
+
+由于 $FF^* = n I_n$ ，我们知道 $\det(F) = n^{n/2}$. 因此电路的大小至少为 $\Omega(n \log n)$.
+
+## 归一化的傅里叶变换
+
+参考自 Ailon, Nir. "A lower bound for fourier transform computation in a linear model over 2x2 unitary gates using matrix entropy." arXiv preprint arXiv:1305.4745 (2013).
+
+上面给出的证明仅仅适用于未归一化的傅里叶变换，我们下面给出一个适用于归一化的傅里叶变化的下界证明。该下界适用于2x2酉变换矩阵对应的电路。该计算模型分为 $m$ 层，记作为 $L_1,\cdots,L_m$. 每一层由一个 $n$ 维的向量表示，最后一层表示其输出。对于第i层，有两个下标 $k_i,l_i$, 以及一个2x2的酉矩阵 $A_i$。然后第i层的输出为
+
+$$
+\begin{align*}
+\begin{pmatrix}
+L_i(k_i) \\
+L_i(l_i)
+\end{pmatrix} = A_i 
+\begin{pmatrix}
+L_{i-1}(k_i) \\
+L_{i-1}(l_i)
+\end{pmatrix}
+\end{align*}
+$$
+
+注意到一个2x2的酉矩阵的每个元素都是有界的，因此上述模型明显涵盖了有界线性模型。 下面我们证明，对于我们所定义的计算模型，模型的层数至少需要 $\Omega(n \log n)$. 
+
+定义如下的矩阵熵函数：
+
+$$
+\begin{align*}
+\Phi(M) = - \sum_{i,j} \vert M_{ij} \vert ^2 \log \vert M_{ij} \vert^2.
+\end{align*}
+$$
+
+我们知道输出的时候 $\Phi(I_n)=0$, 输出的结果满足 $\Phi(\hat F) = n \log_2 n$. 
+我们下面证明计算模型的每一层至多使得熵增加2。我们定义 $x,y$ 为第i层被选中的向量，然后经过酉矩阵变换得到的向量为 $x',y'$, 那么根据定义，对于所有的 $j \in [n]$ 我们有
+
+$$
+\begin{align*}
+\begin{pmatrix}
+x_j' \\
+y_j'
+\end{pmatrix} = A_i 
+\begin{pmatrix}
+x_j \\
+y_j
+\end{pmatrix}
+\end{align*}
+$$
+
+由于 $A_i$ 为酉矩阵，施加该变换不改变范数，因此对于所有的 $j \in [n]$ 有 
+
+$$
+\begin{align*}
+\vert x'_j \vert^2 + \vert y_j' \vert^2 = \vert x_j \vert^2 + \vert y_j \vert^2 := r_j.
+\end{align*}
+$$
+
+并且如果成立 $\Vert x \Vert^2 = \Vert y \Vert^2 = 1$, 那么也有
+
+$$
+\begin{align*}
+\Vert x \Vert^2 &= \vert a_{11} \vert^2 \Vert x \Vert^2 + \vert a_{12} \vert^2 \Vert y \Vert^2 = 1;\\
+\Vert y \Vert^2 &= \vert a_{21} \vert^2 \Vert x \Vert^2 + \vert a_{22} \vert^2 \Vert y \Vert^2 = 1.
+\end{align*}
+$$
+
+我们定义如下的向量，
+
+$$
+\begin{align*}
+(\alpha, \beta) &= ( ( \vert x_1 \vert^2, \cdots, \vert x_n \vert^2), ( \vert y_1 \vert^2, \cdots, \vert y_n \vert^2) ); \\
+(\alpha', \beta') &= ( ( \vert x_1' \vert^2, \cdots, \vert x_n' \vert^2), ( \vert y_1' \vert^2, \cdots, \vert y_n' \vert^2) ).
+\end{align*}
+$$
+
+我们知道向量对 $(\alpha,\beta)$ 以及 $(\alpha',\beta')$ 都落在如下的集合中：
+
+$$
+\begin{align*}
+\sum_{j=1}^n \alpha_j \le 1, \quad \sum_{j=1}^n \beta_j \le 1, \quad \alpha_j + \beta_j = r_j, ~~\forall j \in [n].
+\end{align*}
+$$
+
+而且有 $\sum_{j=1}^n r_j = 2$. 定义这样的集合为 $S$, 我们考虑矩阵熵函数的变化量
+
+$$
+\begin{align*}
+\Phi(\alpha,\beta) = - \sum_{j=1}^n \alpha_j \log \alpha_j - \sum_{j=1}^n \beta_j \log \beta_j.
+\end{align*}
+$$
+
+经过简单的计算容易得到
+
+$$
+\begin{align*}
+\sup_{(\alpha,\beta) \in S} \Phi(\alpha, \beta) - \inf_{(\alpha,\beta) \in S} \Phi(\alpha, \beta) \le 2.
+\end{align*}
+$$
+
+证毕。
