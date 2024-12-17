@@ -32,6 +32,16 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530v1">[NeurIPS 2024]  </a>
  </p></li>
+<!--  <li><p>
+Decentralized Convex Finite-Sum Optimization with Better Dependence on Condition Numbers. <br />
+Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. <a href="https://openreview.net/pdf?id=LLdeUPOUXk">[ICML 2024] </a> 
+</p></li>
+<li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
+<b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
+</p> </li>
+<li><p> Communication Efficient Distributed Newton Method with Fast Convergence Rates. <br />
+ Chengchang Liu, <b>Lesi Chen</b>, Luo Luo, and John C.S. Lui. <a href="https://arxiv.org/abs/2305.17945">[SIGKDD 2023] </a>
+</p> </li> -->
 <li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
  <b>Lesi Chen*</b>, Jing Xu*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2301.00712">[COLT 2024] </a>
 </p></li>
