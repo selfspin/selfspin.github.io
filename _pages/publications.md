@@ -26,9 +26,9 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
-<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
+<!-- <li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
  <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[JMLR 2025]  </a>
- </p></li>
+ </p></li> -->
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530v1">[NeurIPS 2024]  </a>
  </p></li>
