@@ -19,6 +19,9 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
+<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
+ <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[arxiv 2022]</a> accepted by JMLR
+</p></li> 
 </font>
 </ul>
 
@@ -26,9 +29,6 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 
 <ul>
 <font size="3">
-<li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
- <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[JMLR 2024]  </a>
-</p></li>
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530v1">[NeurIPS 2024]  </a>
  </p></li>
