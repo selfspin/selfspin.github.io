@@ -30,7 +30,7 @@ You can find my articles on my [Google Scholar](https://scholar.google.com/citat
 <ul>
 <font size="3">
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
-Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530v1">[NeurIPS 2024]  </a>
+Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530">[NeurIPS 2024]  </a>
  </p></li>
 <!--  <li><p>
 Decentralized Convex Finite-Sum Optimization with Better Dependence on Condition Numbers. <br />
