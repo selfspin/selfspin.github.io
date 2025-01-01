@@ -14,6 +14,9 @@ I am now a Ph.D. student at [Institute for Interdisciplinary Information Science
 
 <ul>
 <font size="3">
+<li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
+Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530">[NeurIPS 2024]  </a>
+ </p></li>
 <li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
  <b>Lesi Chen*</b>, Jing Xu*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2301.00712">[COLT 2024] </a>
 </p></li>
