@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-My full publications list is on [Google Scholar](https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao). 
+My full publications list is on [Google Scholar](https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao). (Due to the possibility of making minor updates to the published version on arXiv, please refer to the following links on my homepage for the latest version of my publications if you are interested in them)
 
  \* denotes equal contributions.
 
