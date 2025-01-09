@@ -11,7 +11,6 @@ redirect_from:
 I am now a Ph.D. student at [Institute for Interdisciplinary Information Sciences](https://iiis.tsinghua.edu.cn/about/), Tsinghua University, advised by Professor [Jingzhao Zhang](https://scholar.google.com/citations?user=8NudxYsAAAAJ&hl=en&oi=ao). Previously, I did my undergraduate at [School of Data Science](http://www.sds.fudan.edu.cn), Fudan University, advised by Professor [Luo Luo](https://luoluo-sds.github.io). 
 
 <!--<h2> Selected Papers </h2>
-
 <ul>
 <font size="3">
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
