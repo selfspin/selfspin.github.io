@@ -25,7 +25,7 @@ Note that \* denotes equal contributions.
 </font>
 </ul>
 
-<h2> Publications </h2>
+<h2> Selected Publications </h2>
 
 <ul>
 <font size="3">
@@ -42,15 +42,15 @@ Yuxing Liu, <b>Lesi Chen</b>,  and Luo Luo. <a href="https://openreview.net/pdf?
 <li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
  <b>Lesi Chen*</b>, Jing Xu*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2301.00712">[COLT 2024] </a>
 </p></li>
- <li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
+<!--  <li><p> An Efficient Stochastic Algorithm for Decentralized Nonconvex-Strongly-Concave Minimax Optimization. <br />
 <b>Lesi Chen</b>, Haishan Ye, and Luo Luo. <a href="https://arxiv.org/abs/2212.02387">[AISTATS 2024] </a>
-</p> </li>
+</p> </li> -->
  <li><p>  Faster Gradient-Free Algorithms for Nonsmooth Nonconvex Stochastic Optimization. <br />
  <b>Lesi Chen</b>, Jing Xu, and Luo Luo. <a href="https://arxiv.org/abs/2301.06428"> [ICML 2023] </a>
  </p> </li>
- <li><p>  Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. <br />
+<!--  <li><p>  Faster Stochastic Algorithms for Minimax Optimization under Polyak-Łojasiewicz Condition. <br />
  <b>Lesi Chen</b>, Boyuan Yao, and Luo Luo. <a href="https://arxiv.org/abs/2307.15868"> [NeurIPS 2022] </a>
- </p> </li>
+ </p> </li> -->
 </font>
 </ul>
 
