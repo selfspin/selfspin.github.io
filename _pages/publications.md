@@ -13,9 +13,6 @@ Note that \* denotes equal contributions.
 
 <ul>
 <font size="3">
-<li><p> Second-Order Min-Max Optimization with Lazy Hessians. <br />
- <b>Lesi Chen*</b>, Chengchang Liu*, and Jingzhao Zhang. <a href="https://arxiv.org/pdf/2410.09568">[arXiv 2024]  </a>
- </p></li>
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
@@ -29,6 +26,9 @@ Note that \* denotes equal contributions.
 
 <ul>
 <font size="3">
+<li><p> Second-Order Min-Max Optimization with Lazy Hessians. <br />
+ <b>Lesi Chen*</b>, Chengchang Liu*, and Jingzhao Zhang. <a href="https://arxiv.org/pdf/2410.09568">[ICLR 2025]  </a>
+ </p></li>
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang*, <b>Lesi Chen*</b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530">[NeurIPS 2024]  </a>
  </p></li>
