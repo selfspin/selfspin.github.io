@@ -13,6 +13,9 @@ Note that \* denotes equal contributions.
 
 <ul>
 <font size="3">
+<li><p> Computationally Faster Newton Methods by Lazy Evaluations. <br />
+ <b>Lesi Chen</b>, Chengchang Liu, Luo Luo, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2501.17488">[arXiv 2025]  </a>
+</p></li>
 <li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
  <b>Lesi Chen*</b>, Yaohua Ma*, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
  </p></li>
