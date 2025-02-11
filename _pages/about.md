@@ -10,8 +10,6 @@ redirect_from:
 
 I am now a Ph.D. student at [Institute for Interdisciplinary Information Sciences](https://iiis.tsinghua.edu.cn/about/), Tsinghua University, advised by Professor [Jingzhao Zhang](https://scholar.google.com/citations?user=8NudxYsAAAAJ&hl=en&oi=ao). Previously, I did my undergraduate at [School of Data Science](http://www.sds.fudan.edu.cn), Fudan University, advised by Professor [Luo Luo](https://luoluo-sds.github.io). 
 
-I have got my papers published in journals such as JMLR (which accepts about 400 papers per year) and conferences such as COLT (which accepts about 150 papers per year), ICML, ICLR, NeurIPS, and AISTATS.
-
 
 <h2> Teaching Assistant </h2> 
 <ul>
