@@ -20,6 +20,21 @@ I am now a second-year Ph.D. student at [Institute for Interdisciplinary Informa
 </p> </li>
 </font>
 
+<h2> Representative Works </h2>
+<ul>
+<font size="3">
+<li><p> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles. <br />
+ <b>Lesi Chen<sup>1</sup></b>, Yaohua Ma<sup>1</sup>, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2306.14853">[arXiv 2023]  </a>
+ </p></li>
+<li><p> On Finding Small Hyper-Gradients in Bilevel Optimization: Hardness Results and Improved Analysis. <br />
+ <b>Lesi Chen<sup>1</sup></b>, Jing Xu<sup>1</sup>, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2301.00712">[COLT 2024] </a>
+</p></li>
+</font>
+</ul>
+
+
+
+
 
 
 
