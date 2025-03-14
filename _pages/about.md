@@ -19,6 +19,7 @@ I am now a second-year Ph.D. student at [Institute for Interdisciplinary Informa
 <li><p> <a href="https://sites.google.com/view/jingzhao/teaching/fall-2023-intro-to-optimization">[Introduction to Optimization 2023] </a>, Fall, Tsinghua University.
 </p> </li>
 </font>
+</ul>
 
 <h2> Representative Works </h2>
 <ul>
