@@ -30,7 +30,7 @@ Note that <sup>1</sup> denotes equal contributions.
  <b>Lesi Chen<sup>1</sup></b>, Chengchang Liu<sup>1</sup>, and Jingzhao Zhang. <a href="https://arxiv.org/pdf/2410.09568">[ICLR 2025]</a>  <b>Oral</b>
  </p></li>
 <li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
- <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[JMLR 2024]</a>
+ <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[J. Mach. Learn. Res. 2024]</a>
 </p></li> 
 <li><p> Functionally Constrained Algorithm Solves Convex Simple Bilevel Problems. <br />
 Huaqing Zhang<sup>1</sup>, <b>Lesi Chen<sup>1</sup></b>, Jing Xu, and Jingzhao Zhang. <a href="https://arxiv.org/abs/2409.06530">[NeurIPS 2024]  </a>
