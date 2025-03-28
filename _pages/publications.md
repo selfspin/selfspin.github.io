@@ -25,9 +25,9 @@ Note that <sup>1</sup> denotes equal contributions.
 <h2> Selected Publications </h2>
 
 <ul>
-<font size="3">
-<li><p> Second-Order Min-Max Optimization with Lazy Hessians. <br />
- <b>Lesi Chen<sup>1</sup></b>, Chengchang Liu<sup>1</sup>, and Jingzhao Zhang. <a href="https://arxiv.org/pdf/2410.09568">[ICLR 2025]</a>  <b>Oral</b>
+<font size="3">  
+<li><p> <b>Lesi Chen<sup>1</sup></b>, Chengchang Liu<sup>1</sup>, Jingzhao Zhang,  <i> Second-Order Min-Max Optimization with Lazy Hessians. </i> in the Conference on Representation Learning (ICLR), 2025 <b> (Oral) </b>. 
+ <a href="https://arxiv.org/pdf/2410.09568">[paper]</a> 
  </p></li>
 <li><p> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization. <br />
  <b>Lesi Chen</b> and Luo Luo. <a href="https://arxiv.org/abs/2208.05925">[J. Mach. Learn. Res. 2024]</a>
