@@ -44,6 +44,7 @@ R_T \le \eta^{-1} \Vert x_0 -x^\ast \Vert^2 ({\rm tr}(S_0) +1) + \eta \sum_{t=1}
 $$
 
 那么我们知道对于每一个时间点 $t$ 来说最优的preconditioner就是使得上式的右端项最小的解，若 $S_t$ 取得无穷大则右端项应当趋近于0，但是无穷大的 $S$ 会导致数值计算问题，我们限制 $S$ 有限得约束下进行求解：
+
 $$
 \begin{align*}
 S_t = \arg \min_{S} \sum_{t=1}^T  \langle g_t, S^{-1} g_t \rangle , \quad {\rm s.t.} \quad S \succeq O, ~ {\rm tr}(S) \le c.
