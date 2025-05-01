@@ -10,6 +10,8 @@ tags:
 
 本文整理神经网络中的著名优化器的推导过程，包括自适应算法Adagrad、Adam，以及为了节省内存所提出的Adafactor、GaLore及相关优化器，以及近期关注度很高的在特征空间上作用的新型优化器Shampoo、SOAP以及Muon, 试图用简单的方式总结其联系。
 
+<!--more-->
+
 ## Adagrad (matrix version)
 
 
