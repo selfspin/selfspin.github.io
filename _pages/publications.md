@@ -30,6 +30,8 @@ Note that <sup>1</sup> denotes equal contributions.
 
 <ol>
 <font size="3">  
+<li><p> <b>Lesi Chen</b>, Chengchang Liu, Luo Luo, and Jingzhao Zhang,  <i> Solving Convex-Concave Problems with $\tilde{\mathcal{O}}(\epsilon^{-4/7})$ Second-Order Oracle Complexity</i>, in Conference on Learning Theory (COLT), 2025.
+</p></li> 
 <li><p> <b>Lesi Chen<sup>1</sup></b>, Chengchang Liu<sup>1</sup>, and Jingzhao Zhang,  <i> Second-Order Min-Max Optimization with Lazy Hessians</i>, in International Conference on  Learning Representations (ICLR), 2025 <b>(Oral)</b>. 
  <a href="https://arxiv.org/pdf/2410.09568">[paper]</a> 
  </p></li>
