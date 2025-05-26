@@ -18,11 +18,6 @@ Note that <sup>1</sup> denotes equal contributions.
  arXiv preprint, 2025 (extension of ICLR 2025)
  <a href="https://arxiv.org/abs/2501.17488">[paper]  </a> 
 </p></li>
-<li><p> <b>Lesi Chen<sup>1</sup></b>, Yaohua Ma<sup>1</sup>, and Jingzhao Zhang,
- <i> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles </i>,
- arXiv preprint, 2023.
-  <a href="https://arxiv.org/abs/2306.14853">[paper]  </a>
- </p></li>
 </font>
 </ul>
 
@@ -30,12 +25,16 @@ Note that <sup>1</sup> denotes equal contributions.
 
 <ol>
 <font size="3">  
+<li><p> <b>Lesi Chen<sup>1</sup></b>, Yaohua Ma<sup>1</sup>, and Jingzhao Zhang,
+ <i> Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles </i>, Journal of Machine Learning Research (JMLR), 2025.
+  <a href="https://arxiv.org/abs/2306.14853">[paper]  </a>
+ </p></li>
 <li><p> <b>Lesi Chen</b>, Chengchang Liu, Luo Luo, and Jingzhao Zhang,  <i> Solving Convex-Concave Problems with $\tilde{\mathcal{O}}(\epsilon^{-4/7})$ Second-Order Oracle Complexity</i>, in Conference on Learning Theory (COLT), 2025.
 </p></li> 
 <li><p> <b>Lesi Chen<sup>1</sup></b>, Chengchang Liu<sup>1</sup>, and Jingzhao Zhang,  <i> Second-Order Min-Max Optimization with Lazy Hessians</i>, in International Conference on  Learning Representations (ICLR), 2025 <b>(Oral)</b>. 
  <a href="https://arxiv.org/pdf/2410.09568">[paper]</a> 
  </p></li>
-<li><p> <b>Lesi Chen</b> and Luo Luo, <i> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization</i>, Journal of Machine Learning (JMLR), 2024.
+<li><p> <b>Lesi Chen</b> and Luo Luo, <i> Near-Optimal Algorithms for Making the Gradient Small in Stochastic Minimax Optimization</i>, Journal of Machine Learning Research (JMLR), 2024.
   <a href="https://arxiv.org/abs/2208.05925">[paper]</a>
 </p></li> 
 <li><p> Huaqing Zhang<sup>1</sup>, <b>Lesi Chen<sup>1</sup></b>, Jing Xu, and Jingzhao Zhang, <i>
