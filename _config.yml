@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "TrueNobility303"
+title                    : "selfspin"
 title_separator          : "-"
-name                     : &name "Lesi Chen"
-description              : &description "PhD student, IIIS, Tsinghua"
-url                      : https://truenobility303.github.io
+name                     : &name "Junzhe Jiang"
+description              : &description "PhD student, School of Data Science, Fudan University"
+url                      : https://selfspin.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "truenobility303.github.io"
+repository               : "selfspin.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -79,15 +79,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lesi Chen (陈乐偲)"
+  name             : "Junzhe Jiang (姜俊哲)"
   avatar           : "profile.jpg"
-  bio              : "PhD student, IIIS, Tsinghua"
-  location         : "Beijing"
+  bio              : "PhD student, School of Data Science, Fudan University"
+  location         : "Shanghai"
   employer         :
   pubmed           :
   orcid            : #"http://orcid.org/0000-0001-9259-3883"
-  googlescholar    : "https://scholar.google.com/citations?user=ynGzhugAAAAJ&hl=en&oi=ao"
-  email            : "chenlc23@mails.tsinghua.edu.cn"
+  googlescholar    : "https://scholar.google.com/citations?user=gnDoDP4AAAAJ"
+  email            : "jzjiang19@fudan.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "TrueNobility303"
+  github           : "selfspin"
   gitlab           : #"jayrobwilliams"
   google_plus      :
   keybase          :
