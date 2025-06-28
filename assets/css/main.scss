@@ -71,10 +71,6 @@
         flex-direction: column;
         justify-content: center;  // ⭐️ 让里面的标题/作者/链接垂直居中对齐图像
     }
-    
-    .paper-box-text p{
-        margin-bottom: 0.4em;  /* 或 0px，具体看你要多紧凑 */
-    }
 
     @include breakpoint($medium) {
         .paper-box-image{
