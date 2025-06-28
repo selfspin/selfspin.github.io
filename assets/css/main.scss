@@ -67,6 +67,9 @@
     .paper-box-text{
         max-width: 100%;
         order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  // ⭐️ 让里面的标题/作者/链接垂直居中对齐图像
     }
     
     @include breakpoint($medium) {
