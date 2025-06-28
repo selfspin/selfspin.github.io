@@ -8,22 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I am now a second-year Ph.D. student at [Institute for Interdisciplinary Information Sciences](https://iiis.tsinghua.edu.cn/about/), Tsinghua University, advised by Professor [Jingzhao Zhang](https://scholar.google.com/citations?user=8NudxYsAAAAJ&hl=en&oi=ao). Previously, I did my undergraduate at [School of Data Science](http://www.sds.fudan.edu.cn), Fudan University, advised by Professor [Luo Luo](https://luoluo-sds.github.io). 
-
-
-<h2> Teaching Assistant </h2> 
-<ul>
-<font size="3">
-<li><p> <a href="https://luoluo-sds.github.io/teaching/data620020.html">[Optimization Theory 2023]</a> , Spring, Fudan University.
-</p> </li>
-<li><p> <a href="https://sites.google.com/view/jingzhao/teaching/fall-2023-intro-to-optimization">[Introduction to Optimization 2023] </a>, Fall, Tsinghua University.
-</p> </li>
-</font>
-</ul>
-
-
-
-
-
-
+I am currently a second-year Ph.D. student in the [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University, where I am advised by Professor [Li Zhang](https://lzrobots.github.io/). Prior to that, I completed my undergraduate studies in the same school.
 
