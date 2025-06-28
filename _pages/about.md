@@ -15,7 +15,7 @@ I am currently a second-year Ph.D. student in the [School of Data Science](http:
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
     <a href="https://github.com/fudan-zvg/BezierGS">BézierGS: Dynamic Urban Scene Reconstruction with Bézier Curve Gaussian Splatting</a><br>
-    Zipei Ma*, <strong>Junzhe Jiang</strong>*, Yurui Chen, Li Zhang†<br>
+    Zipei Ma<sup>⚖️</sup>, <strong>Junzhe Jiang</strong><sup>⚖️</sup>, Yurui Chen, Li Zhang<sup>✉</sup><br>
     <a href="https://github.com/fudan-zvg/BezierGS">[Project]</a> <a href="https://github.com/fudan-zvg/BezierGS">[Paper]</a>
   </p>
 </div>
