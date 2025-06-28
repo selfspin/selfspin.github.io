@@ -16,13 +16,11 @@ I am currently a second-year Ph.D. student in the [School of Data Science](http:
 <div class='paper-box-text' markdown="1">
 
 
-[BézierGS: Dynamic Urban Scene Reconstruction with Bézier Curve Gaussian Splatting](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[BézierGS: Dynamic Urban Scene Reconstruction with Bézier Curve Gaussian Splatting]()
 
 Zipei Ma\*, **Junzhe Jiang**\*, Yurui Chen, Li Zhang†
 
-[**Code**](https://github.com/fudan-zvg/BezierGS)
-
-- TL;DR: We propose a method that models object motion using Bézier curves, achieving accurate reconstruction and effective foreground-background separation.
+[**Project**](https://github.com/fudan-zvg/BezierGS) [**Paper**](https://github.com/fudan-zvg/BezierGS)
 
 </div>
 </div>
