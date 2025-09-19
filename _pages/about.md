@@ -15,7 +15,7 @@ I am currently a second-year Ph.D. student in the [School of Data Science](http:
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
     <a href="">UniMotion: A Unified Motion Framework for Simulation, Prediction and Planning</a><br>
-    Nan Song, <strong>Junzhe Jiang</strong>, Jingyu Li, Xiatian Zhu, Li Zhang, Li Zhang<sup>✉️</sup><br>
+    Nan Song, <strong>Junzhe Jiang</strong>, Jingyu Li, Xiatian Zhu, Li Zhang<sup>✉️</sup><br>
     <a href="">[Project]</a> <a href="">[Paper]</a>
   </p>
 </div>
