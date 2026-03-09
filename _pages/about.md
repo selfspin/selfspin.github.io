@@ -8,9 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a second-year Ph.D. student in the [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University, where I am advised by Professor [Li Zhang](https://lzrobots.github.io/). Prior to that, I completed my undergraduate studies in the same school.
+I am currently a third-year Ph.D. student in the [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University, where I am advised by Professor [Li Zhang](https://lzrobots.github.io/). Prior to that, I completed my undergraduate studies in the same school.
 
 ## 📝 Publications & Preprints
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/publications/driveweaver.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  <p style="margin: 0;">
+    <a href="">DriveWeaver: Point-Conditioned Video Inpainting for Controllable Vehicle Insertion in Autonomous Driving Simulation</a><br>
+    <strong>Junzhe Jiang</strong><sup>⚖️</sup>, Zipei Ma<sup>⚖️</sup>, Zijie Pan, Li Zhang<sup>✉️</sup><br>
+    <a href="">[Project]</a> <a href="">[Paper]</a>
+  </p>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/publications/unimotion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
@@ -51,7 +61,7 @@ I am currently a second-year Ph.D. student in the [School of Data Science](http:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv preprint</div><img src='images/publications/pvg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCV 2026</div><img src='images/publications/pvg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
     <a href="https://github.com/fudan-zvg/PVG">Periodic Vibration Gaussian: Dynamic Urban Scene Reconstruction and Real-time Rendering</a><br>
