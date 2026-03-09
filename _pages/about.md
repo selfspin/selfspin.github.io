@@ -21,6 +21,16 @@ I am currently a third-year Ph.D. student in the [School of Data Science](http:/
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/publications/fdvla.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  <p style="margin: 0;">
+    <a href="">First Act Then Imagine: Learning Action Policies via Forward Dynamics</a><br>
+    Zipei Ma, <strong>Junzhe Jiang</strong>, Jiahui Zhang, Juntong Zhang, Chun Gu, Bozhou Zhang, Li Zhang <sup>✉️</sup><br>
+    <a href="">[Project]</a> <a href="">[Paper]</a>
+  </p>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/publications/unimotion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
