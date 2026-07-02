@@ -16,7 +16,7 @@ I am currently a third-year Ph.D. student in the [School of Data Science](http:/
   <p style="margin: 0;">
     <a href="">DriveWeaver: Point-Conditioned Video Inpainting for Controllable Vehicle Insertion in Autonomous Driving Simulation</a><br>
     <strong>Junzhe Jiang</strong>, Zipei Ma, Zijie Pan, Li Zhang<sup>✉️</sup><br>
-    <a href="">[Project]</a> <a href="">[Paper]</a>
+    <a href="https://github.com/LogosRoboticsGroup/DriveWeaver">[Project]</a> <a href="https://arxiv.org/abs/2606.31918">[Paper]</a>
   </p>
 </div>
 </div>
