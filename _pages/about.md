@@ -8,9 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a third-year Ph.D. student in the [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University, where I am advised by Professor [Li Zhang](https://lzrobots.github.io/). Prior to that, I completed my undergraduate studies in the same school.
+I am currently a fourth-year Ph.D. student in the [School of Data Science](http://www.sds.fudan.edu.cn) at Fudan University, where I am advised by Professor [Li Zhang](https://lzrobots.github.io/). Prior to that, I completed my undergraduate studies in the same school.
 
 ## 📝 Publications & Preprints
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/publications/occlucast.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  <p style="margin: 0;">
+    <a href="">OccluCast: Casting Hidden Backgrounds from Multi-View Driving Videos</a><br>
+    <strong>Junzhe Jiang<sup>⚖️</sup></strong>, Chengbo Wang<sup>⚖️</sup>, Chunhui Chen, Xiaozhi Chen, Jiankang Deng, Xiatian Zhu, Li Zhang<sup>✉️</sup><br>
+    <a href="">[Project]</a> <a href="">[Paper]</a>
+  </p>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><img src='images/publications/driveweaver.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   <p style="margin: 0;">
